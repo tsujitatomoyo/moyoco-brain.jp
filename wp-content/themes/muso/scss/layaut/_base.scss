@@ -1,0 +1,68 @@
+.section__padding {
+	padding-top: 5%;
+	padding-bottom: 5%;
+	@include media-sp {
+		padding-top: 10%;
+	}
+}
+.section-margin {
+	margin-top: 10%;
+}
+.ins--block {
+	padding: 1rem;
+    display: block;
+    border: solid medium #ffcd00;
+    background: #fff3c4;
+    color: #000;
+}
+.MT0 {
+	margin-top: 0 !important;
+}
+.MB0 {
+	margin-bottom: 0 !important;
+}
+.PT0 {
+	padding-top:0 !important;
+}
+.PB0 {
+	padding-bottom: 0 !important;
+}
+.MT10 {
+	margin-top: 1rem !important;
+}
+.MB10 {
+	margin-bottom: 1rem !important;
+}
+.PT10 {
+	padding-top:1rem !important;
+}
+.PB10 {
+	padding-bottom: 1rem !important;
+}
+.MT20 {
+	margin-top: 2rem !important;
+}
+.MB20 {
+	margin-bottom: 2rem !important;
+}
+.PT20 {
+	padding-top:2rem !important;
+}
+.PB20 {
+	padding-bottom: 2rem !important;
+}
+.Box-pc {
+	@include media-sp {
+		display:none;
+	}
+}
+.Box-sp {
+	@include media-pc {
+		display:none;
+	}
+}
+@include media-sp {
+	.w--sp-70 {
+		width: 70%;
+	}
+}

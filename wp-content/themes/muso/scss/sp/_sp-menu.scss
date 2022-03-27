@@ -1,0 +1,76 @@
+body.linkNone a{
+	pointer-events:none;
+}
+#content-area {
+	left:0;
+	z-index: 10;
+	position:relative;
+	overflow:hidden;
+	background:$base-color;
+	padding-top: 36.5px;//iphone8 仮止め
+  transition: left .2s ease;
+	&.on {
+		left:-82.4%;
+	}
+}
+
+.logo-menu-wrap {
+	width:100%;
+	background: #FFF;
+	position:fixed;
+	z-index: 99999;
+	top: 0;
+	left: 0;
+	margin:0;
+	padding:0;
+	display:table;
+	transition:all .2s ease;
+	box-shadow: 0 1px 0 #EEE;
+	box-sizing:content-box;
+	&.on {
+		left:-82.4%;
+	}
+}
+.logo-menu-wrap > li {
+  display: table-cell;
+  padding: 0;
+  vertical-align: middle;
+}
+
+.logo-menu-wrap > li img {
+  max-width: 100%;
+}
+.logo-menu-wrap > li:nth-child(2n) img {
+  max-width: 100%;
+}
+
+/* �n���o�[�K�[�A�C�R��*/
+#hamburger {
+  width: 17.6%;
+  padding: 0;
+  background: url(/wp-content/themes/bsc-sp/img/common/menu_off.svg) center no-repeat;
+       background-size: cover; }
+
+#hamburger.on {
+  background: url(/wp-content/themes/bsc-sp/img/common/menu_on.svg) center no-repeat;
+       background-size: cover; }
+
+.global-menu {
+  opacity:0;
+  position:fixed;
+  right:0;
+  top:0;
+  left:inherit;
+  height:100%;
+  z-index: 0;
+  overflow: hidden;
+  width: 82.4%;
+  color: #FFF;
+  background:#E9E9E9;
+  padding: 2.5%;
+  &.on {
+	opacity:1;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}

@@ -1,0 +1,36 @@
+.youtube {
+	display: block;
+	width:100%;
+	background-color: #000;
+	img {
+		display: block;
+		margin: auto;
+	}
+}
+.video-icon {
+	display:block;
+	position: relative;
+	&:after{
+		position:absolute;
+		top:50%;
+		left:50%;
+		transform:scale(1.2) translate(-40%, -40%);
+		content: url(/wp-content/themes/bsc-pc/img/common/video-red.svg);
+		height:42px;
+		width:60px;
+	}
+}
+.video {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,48 @@
+.tab__wrap {
+	margin:1rem 0;
+	width:100%;
+	overflow: hidden;
+}
+.tab__item {
+	padding: 0;
+	display: flex;
+	margin: 0 0 0 -.3rem;
+	overflow-x: auto;
+	overflow-y: hidden;
+	>li {
+		list-style: none;
+		width: 10rem;
+		min-width: 8rem;
+		background: #FFF;
+		border: solid medium #FFF;
+		border-bottom: none;
+		margin: 0;
+		margin-left: .3rem;
+		transform: translateY(1rem);
+		transition:.2s;
+		cursor:pointer;
+		&.on {
+			border-color: $point-color;
+			transform: translateY(0);
+		}
+	}
+}
+.tab__cont {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	>li {
+		display: none;
+		margin: 0;
+		padding: 1rem;
+		border: solid medium $point-color;
+		position: relative;
+		opacity:0;
+		transition:.2s;
+		background: $base-color2;
+		&.on {
+			display: block;
+			opacity:1;
+		}
+	}
+}

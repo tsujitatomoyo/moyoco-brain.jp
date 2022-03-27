@@ -1,0 +1,114 @@
+/* CSS Document */
+.flex {
+	display: flex;
+	&--pc {
+		@include media-pc {
+			display: flex;
+		}
+	}
+}
+.flex--margin {
+	display:flex;
+	>* {
+		padding: 1%;
+		box-sizing: border-box;
+	}
+}
+.fw--wrap {
+	flex-wrap:wrap;
+}
+.jc--center {
+	justify-content: center;
+}
+.ai--start {
+	align-items: flex-start;
+}
+.ai--center {
+	align-items: center;
+}
+.ai--end {
+	align-items: flex-end;
+}
+@include media-pc {
+	.ai--pc-end {
+		align-items: flex-end;
+	}
+}
+@include media-pc {
+	.ai--pc-end {
+		align-items: flex-end;
+	}
+}
+.ai--st {
+	align-items: stretch;
+}
+@include media-pc {
+	.ai--pc-st {
+		align-items: stretch;
+	}
+}
+@include media-sp {
+	.ai--sp-st {
+		align-items: stretch;
+	}
+}
+
+.fg--1 {
+	flex-grow:1;
+}
+.fg--2 {
+	flex-grow:2;
+}
+.fg--3 {
+	flex-grow:3;
+}
+.fg--4 {
+	flex-grow:4;
+}
+.fg--5 {
+	flex-grow:5;
+}
+
+.fs--0 {
+	flex-shrink:0;
+}
+
+
+$fb_num: 1;
+@while $fb_num <= 10 {
+	.fb--#{$fb_num*10} {
+		flex-basis: (100%/(10/$fb_num));
+	}
+	@include media-pc {
+		.fb--pc-#{$fb_num*10} {
+			flex-basis: (100%/(10/$fb_num));
+		}
+	}
+	@include media-sp {
+		.fb--sp-#{$fb_num*10} {
+			flex-basis: (100%/(10/$fb_num));
+		}
+	}
+	$fb_num: $fb_num + 1;
+}
+
+$od_num: 1;
+@while $od_num <= 5 {
+	.od--#{$od_num} {
+		order:$od_num;
+	}
+	@include media-pc {
+		.od--pc-#{$od_num} {
+			order:$od_num;
+		}
+	}
+	@include media-sp {
+		.od--sp-#{$od_num} {
+			order:$od_num;
+		}
+	}
+	$od_num: $od_num + 1;
+}
+
+
+

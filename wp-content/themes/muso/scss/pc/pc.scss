@@ -1,0 +1,19 @@
+@import "../var";
+@import "../mixin";
+@import "heder-pc";
+@import "main-img";
+.heder-pc .wrap {
+	display:flex;
+}
+.entry-wrap {
+	display: flex;
+    flex-direction: row-reverse;
+    margin-top:2rem;
+}
+.entry-pc {
+	width:700px;
+	padding-left: 20px;
+}
+.sidebar-pc {
+	width: 280px;
+}

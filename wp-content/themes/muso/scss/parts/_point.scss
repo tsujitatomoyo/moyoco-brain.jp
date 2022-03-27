@@ -1,0 +1,159 @@
+@import "var";
+@import "mixin";
+.point__wrap {
+	margin: 2rem 0;
+	text-align: center;
+}
+.point {
+	position:relative;
+	display:inline-block;
+	padding:0;
+	margin:0;
+	border-radius:.2rem;
+	color:#000;
+	text-align:left;
+}
+.point__title {
+	display:inline-block;
+	position:absolute;
+	transform:translateY(-100%);
+	top:0;
+	left:2.5%;
+	max-width:95%;
+	box-sizing:border-box;
+	background:$main-color;
+	color:#FFF;
+	line-height: 1.3;
+	padding:0.3rem 1rem;
+	margin:0;
+	border-radius:.2rem .2rem 0 0;
+	font-size:$font-size--L;
+	font-weight:normal;
+}
+
+.point__item {
+	margin:0;
+	padding:2.5%;
+	background:#FFF;
+	border-radius:.2rem;
+}
+
+
+
+.point-anchor {
+	display: inline-block;
+	margin:0;
+}
+
+.point-anchor__wrap {
+	text-align: center;
+}
+
+.point-anchor__title {
+	background: #EEE;
+	color: #FFF;
+	padding: 2.5%;
+	border-radius: .2rem .2rem 0 0;
+	margin:0;
+	line-height: 1.3;
+	small {
+		font-weight:  normal;
+	}
+}
+
+.point-anchor__item {
+	margin: 0;
+	padding:.5rem;
+	background: #FFF;
+	border-bottom: dotted 1px #ccc;
+	&:first-of-type {
+		padding-top:.5rem;
+	}
+	&:last-of-type {
+		padding-top:.5rem;
+	}
+	>a {
+		text-decoration: none;
+		position: relative;
+		padding: 1rem 1rem .5rem 3rem;
+		min-height: 3rem;
+		display: block;
+		text-align: left;
+		line-height: 1.3;
+		box-sizing: border-box;
+	}
+}
+
+.circle-num {
+	position: absolute;
+	top: 50%;
+	left:0;
+	transform:translateY(-50%);
+	box-sizing: border-box;
+	width: 2.7rem;
+	display: block;
+	border-radius: 9999999px;
+	font-family: FB Agency Bold;
+}
+
+.circle-num:before {
+	content: "";
+	padding-top: 100%;
+	display: block;
+}
+
+small.circle-num__text {
+	position: absolute;
+	transform: translate(-50%,-50%);
+	top: 30%;
+	left: 50%;
+	font-size: .5rem;
+}
+
+span.circle-num__num {
+	position: absolute;
+	transform: translate(-50%,-50%);
+	top: 67%;
+	left: 50%;
+	font-size: 1.2rem;
+}
+
+.point-icon {
+	@extend .point-anchor;
+	font-size: $font-size--L;
+}
+.point-icon__wrap {
+	@extend .point-anchor__wrap;
+}
+.point-icon__title {
+	@extend .point-anchor__title;
+}
+.point-icon__item {
+	margin: 0;
+	padding: 1.5rem 1.5rem 1.5rem 4rem;
+	background: #FFF;
+	border-bottom: dotted 1px #ccc;
+	position: relative;
+	line-height: 1.3;
+	text-align: left;
+}
+.point-icon__icon {
+	@extend .circle-num;
+	left: .5rem;
+	.fa {
+		position:absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%) ;
+	}
+}
+
+
+
+
+.point-anchor__item>a .fa {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}

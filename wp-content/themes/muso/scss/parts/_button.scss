@@ -1,0 +1,296 @@
+.button {
+	display: inline-block;
+	text-decoration: none;
+	box-sizing:border-box;
+	line-height: 1.1;
+	font-size: 1rem;
+	margin-top:1rem;
+	max-width: 100%;
+	padding: 1.5rem 3%;
+	border-radius: .2rem;
+	@include media-pc {
+		min-width: 70%;
+	}
+	@include media-sp {
+		min-width: 70%;
+	}
+}
+.button-text {
+    @extend .button;
+    color:$font-color__link;
+    padding: 1rem;
+    cursor: pointer;
+	text-decoration: none;
+	&:after {
+		@include webfont;
+		content:"\f054";
+		margin-left:.3rem;
+	}
+}
+.button-link-text{
+	margin: 0;
+	display: inline-block;
+	font-size: .8rem;
+	background: #CCC;
+	padding: .5rem 1rem;
+	color:$font-color__defo;
+	text-decoration: none;
+}
+.button__wrap {
+	text-align: center;
+	margin: 1rem 0 2rem;
+}
+.button__white {
+	@extend .button;
+	text-align: center;
+	border:solid 1px $font-color__defo;
+	color: $font-color__defo;
+	background:#FFF;
+}
+.button__ghost--white {
+	@extend .button;
+	text-align: center;
+	border:solid 2px #FFF;
+	color: #FFF;
+}
+.button__ghost--defo {
+	@extend .button;
+	text-align: center;
+	border:solid 2px $font-color__defo;
+	color: $font-color__defo;
+}
+.button__ghost--main {
+	@extend .button;
+	text-align: center;
+	border:solid 2px $main-color;
+	color: $main-color;
+}
+.button__ghost--point {
+	@extend .button;
+	text-align: center;
+	border:solid 2px $point-color;
+	color: $point-color;
+}
+.button__ghost--bule {
+	@extend .button;
+	text-align: center;
+	border:solid 2px $font-color__link;
+	color: $font-color__link;
+}
+.button__ghost--kaigo {
+	@extend .button;
+	text-align: center;
+	border:solid 2px $kaigo-color;
+	color: $kaigo-color;
+}
+.button__ghost--syafuku {
+	@extend .button;
+	text-align: center;
+	border:solid 2px $syafuku-color;
+	color: $syafuku-color;
+}
+.button__ghost--jido {
+	@extend .button;
+	text-align: center;
+	border:solid 2px $jido-color;
+	color: $jido-color;
+}
+.button__ghost--cc {
+	@extend .button;
+	text-align: center;
+	border:solid 2px $cc-color;
+	color: $cc-color;
+}
+.button__ghost--sougou {
+	@extend .button;
+	text-align: center;
+	border:solid 2px $blue-color;
+	color: $blue-color;
+}
+.button__ghost--spo {
+	@extend .button;
+	text-align: center;
+	border:solid 2px $spo-color;
+	color: $spo-color;
+}
+.button__back--point {
+	@extend .button;
+	text-align: center;
+	background: $point-color;
+	border:solid 2px $point-color;
+	color:#FFF;
+}
+.button__back--white {
+	@extend .button;
+	text-align: center;
+	background: #FFF;
+	padding: 1rem;
+}
+.button__back--kaigo {
+	@extend .button;
+	text-align: center;
+	background: $kaigo-back-color;
+	border:solid 2px $kaigo-back-color;
+	color:#FFF;
+}
+.button__back--syafuku {
+	@extend .button;
+	text-align: center;
+	background: $syafuku-back-color;
+	border:solid 2px $syafuku-back-color;
+	color:#FFF;
+}
+.button__back--jido {
+	@extend .button;
+	text-align: center;
+	background: $jido-back-color;
+	border:solid 2px $jido-back-color;
+	color:#FFF;
+}
+.button__back--cc {
+	@extend .button;
+	text-align: center;
+	background: $cc-back-color;
+	border:solid 2px $cc-back-color;
+	color:#FFF;
+}
+.button__back--bule {
+	@extend .button;
+	text-align: center;
+	background: $font-color__link;
+	border:solid 2px $font-color__link;
+	color:#FFF;
+	>i {
+		color: #FFF;
+	}
+	&:hover {
+		color: $font-color__link;
+		background: #FFF;
+		>i {
+			color: $font-color__link;
+		}
+	}
+}
+.button__back--bule2 {
+	@extend .button;
+	text-align: center;
+	background: $blue2-color;
+	border:solid 2px $blue2-color;
+	color:#FFF;
+}
+.button__icon--left {
+	@extend .button;
+	position: relative;
+	padding-left: 2.5rem;
+	text-align: left;
+	>i {
+		position: absolute;
+		top: 50%;
+		left: .7rem;
+		font-size: 1.3rem;
+		transform: translateY(-50%);
+	}
+}
+.button__icon--right {
+	@extend .button;
+	position: relative;
+	padding-right: 2rem;
+	text-align: left;
+	&.center {
+		text-align: center;
+	}
+	&:after {
+		@include webfont;
+		content:"\f054";
+		position: absolute;
+		top: 50%;
+		right: .7rem;
+		transform: translateY(-50%);
+		color:$main-color;
+	}
+    &.oc-banner__button:after {
+        color: #fff;
+        right: .6rem;
+		transform: translateY(-44%);
+    }
+}
+.button__icon--down {
+	@extend .button;
+	position: relative;
+	&:after {
+		@include webfont;
+		content:"\f078";
+		position: absolute;
+		bottom: .3em;
+		left: 50%;
+		transform: translateX(-50%);
+		color:$main-color;
+	} 
+}
+
+.btn_movie { 
+	display: block;
+	position: relative;
+	transition: 0.3s;
+	img {
+		width: 100%;
+	}
+	&:hover {
+		img {
+			opacity: 1;
+		}
+	}
+}
+
+
+.btn_movie:after {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	content: url(../../../uploads/common/youtube.svg);
+}
+.btn_movie:before {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	position: absolute;
+	border: solid 20px rgba(0, 0, 0, 0.7);
+	transition: 0.1s;
+}
+.button-oc {
+	display: block;
+	border-radius: .3rem;
+	overflow: hidden;
+}
+.button-shiryo {
+	position: relative;
+	padding: 5% 10% 3.5%;
+	color:$point-color;
+	letter-spacing: .3rem;
+	line-height: 1;
+	font-weight: 300;
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	background:#FFF;
+	border-radius: .3rem;
+	@include media-pc {
+		font-size: 2.5rem;
+		border: solid .25rem $point-color;
+	}
+	@include media-sp {
+		font-size: 2rem;
+		border: solid .2rem $point-color;
+	}
+}
+.button-shiryo img {
+	width:12%;
+	margin-right:5%;
+	margin-top:-2.5%;
+}
+.link-visited:visited{
+	color: #aaa;
+}

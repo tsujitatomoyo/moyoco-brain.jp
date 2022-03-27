@@ -1,0 +1,280 @@
+/* CSS Document */
+.this-table {
+	display:table;
+}
+.this-tr {
+	display:table-row;
+}
+.this-td {
+	display:table-cell;
+	vertical-align:middle;
+}
+[class^="table-"]{
+	border-spacing: 1px;
+	th,td {
+		font-weight: normal;
+		font-size: .8rem;
+		line-height: 140%;
+		padding:.8rem 1rem;
+		border:solid 1px #ccc;
+	}
+	.table-h {
+		font-size: 1.5rem;
+	}
+	.tyui {
+		font-size: 1em;
+	}
+	th {
+		background: #FFF7F8;
+	}
+    thead {
+        th {
+            background: $main-color--light;
+            color: $font-color__defo--dark;
+            font-size: 120%;
+            font-weight: bold;
+        }
+    }
+    .center {
+    	text-align: center;
+    }
+}
+.table-color--defo th {
+	background:#EEE;
+}
+.entry-wrap {
+	.entry {
+		.table-style--none {
+			td,th {
+				font-size: 1rem;
+				background:none;
+				border:none;
+				padding:0;
+				color:$font-color__defo;
+			}
+		}
+	}
+}
+.table-w--100 {
+	width:100%;
+}
+td.table__cell--border-none, th.table__cell--border-none {
+	table & {
+		border:none;
+	}
+}
+.table-nomal {
+}
+.table-vertical-top {
+	th,td{
+		vertical-align:top;
+	}
+}
+.table-size-defo {
+	th,td {
+		font-size:1rem;
+	}
+	&--pc {
+		@include media-pc {
+			th,td {
+				font-size:1rem;
+			}
+		}
+	}
+}
+.table-left {
+	th {
+		text-align: left;
+	}
+}
+.table-td-right {
+	td {
+		text-align: right;
+	}
+}
+.table-th-nowrap {
+	th{
+		white-space: nowrap;
+	}
+}
+.table-center {
+	td {
+		text-align: center;
+	}
+}
+.table-black {
+	thead {
+		th {
+			background:#555;
+			color:#FFF;
+			padding:1rem;
+		}
+	}
+}
+
+@include media-sp {
+	.sp-list {
+		display: block;
+		td,th {
+			width: 100% !important;
+			display: list-item;
+			list-style: none;
+			padding: 0 !important;
+		}
+	}
+}
+@include media-pc {
+	.table-noWrap {
+		th {
+			white-space: nowrap;
+		}
+	}
+}
+@include media-sp {
+	.table-spList {
+		tr {
+			display:block;
+		}
+		th,td {
+			display:list-item;
+			list-style: none;
+			font-size: 1rem;
+			line-height: 150%;
+		}
+		th {
+			background:#ddd;
+			color:#111;
+		}
+	}
+	.sp-table-scllor,
+	.sp-scllor {
+		width:100%;
+		overflow-x: scroll;
+		th {
+			white-space: nowrap;
+			small {
+				display:block;
+			}
+		}
+	}
+	@for $i from 4 through 12 {
+        .sp-table-w#{$i * 5}rem {
+        	width:#{$i * 5}rem;
+        }
+    }
+    @for $i from 4 through 12 {
+        .sp-w#{$i * 5}rem {
+        	width:#{$i * 5}rem !important;
+        	max-width: none;
+        }
+    }
+}
+
+.table-ol {
+	counter-reset: count1;
+	th {
+		background:#EEE;
+		color:#333;
+		vertical-align: middle;
+		padding:.5rem;
+		.num,.text {
+			display:table-cell;
+			vertical-align: middle;
+			text-align: left;
+		}
+		.num {
+			height: 100%;
+		    background: #555;
+		    padding: .5rem;
+		    color: #FFF;
+			&:before {
+			counter-increment: count1;
+			content: "Step.0" counter(count1);
+			}
+		}
+		.text {
+			padding-left:.5rem;
+		}
+		small {
+			line-height: 120%;
+			display:inline-block;
+		}
+	}
+	@include media-sp {
+		th,td {
+			display:list-item;
+			list-style: none;
+		}
+	}
+	tr:nth-of-type(n+10) {
+		th .num:before {
+			content: "Step." counter(count1);
+		}
+	}
+}
+
+.table-flow {
+    border:none;
+    th,td {
+        border:none;
+    }
+    th {
+        text-align: left;
+        white-space: nowrap;
+        width:1rem;
+    }
+    td {
+        background:#FFF;
+    }
+}
+
+th.table-flow__h-number {
+	font-size: 1.5rem;
+}
+
+.table-flow__title {
+	margin: 0 0 1rem;
+	font-size: 1.5rem;
+	line-height: 1.3;
+	border-bottom: dotted 1px #999;
+}
+
+td.table-flow__content {
+	padding: 5%;
+	>* {
+		margin:1rem 0;
+	}
+	>*:nth-child(1){
+		margin-top: 0;
+	}
+	>*:last-child{
+		margin-bottom: 0;
+	}
+}
+
+.table-sotuken {
+	width:100%;
+	margin:1rem 0;
+	th {
+		font-size: 1rem;
+		font-weight: bold;
+		color:#FFF;
+	}
+	td {
+		padding-left: 1.5rem;
+		vertical-align: top;
+		a {
+			text-decoration: none;
+			display:block;
+			padding-left: 1rem;
+			position: relative;
+			color:$font-color__defo;
+		}
+		i {
+			position:absolute;
+			top: .2rem;
+			left:0;
+			color:$main-color;
+		}
+	}
+}

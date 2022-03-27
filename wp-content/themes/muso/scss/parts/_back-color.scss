@@ -1,0 +1,38 @@
+.back-color__point {
+	background-color: $point-color;
+	color:#FFF;
+}
+.back-color__white {
+	background-color: #FFF;
+}
+.back-opa-color--main {
+	position: relative;
+	&:before {
+		content: "";
+		display:block;
+		position:absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 0;
+		background-color:rgba( $main-color, .7 );
+	}
+}
+.back-opa-color--main__title {
+	position:relative;
+	z-index: 1;
+}
+
+@mixin back-stripe($color) {
+	.back-stripe--#{$color} {
+		background-image: url(../img/common/stripe--#{$color}.svg);
+		background-repeat:  repeat;
+	}
+}
+@include back-stripe(black);
+@include back-stripe(gray50);
+
+.back-img__text {
+	background: rgba($base-color,0.7);
+}

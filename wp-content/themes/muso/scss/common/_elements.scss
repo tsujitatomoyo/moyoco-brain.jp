@@ -1,0 +1,159 @@
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+html,body{
+    width: 100%;
+}
+html {
+	box-sizing: border-box;
+	@include media-spS {
+		font-size: 85%;
+	}
+	@include media-spM {
+		font-size: 90%;
+	}
+	@include media-spL {
+		font-size: 95%;
+	}
+	@include media-pcS {
+		font-size: 100%;
+	}
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+body {
+	background: $base-color;
+}
+
+
+blockquote {
+	position:relative;
+	padding:.5rem 2.5rem;
+	background:#fff;
+	margin: 0;
+	z-index: 0;
+	color:$font-color__defo--light;
+}
+blockquote:before,blockquote:after {
+	position: absolute;
+	content:"“";
+	color:#EEE;
+	font-size: 6rem;
+	line-height: 1;
+	z-index: -1;
+}
+blockquote:before {
+	left: .5rem;
+	top:.5rem;
+}
+blockquote:after {
+	transform:rotate(180deg);
+	right: .5rem;
+	bottom:.5rem;
+}
+q {
+	quotes: "“" "”" "‘" "’";
+	&:before {content: open-quote; color:$font-color__defo; font-size: 2em}
+	&:after {content: close-quote; color:$font-color__defo; font-size: 2em}
+	color:$font-color__defo--light;
+}
+
+
+
+hr {
+	background-color: #ccc;
+	border: 0;
+	height: 1px;
+	margin: 2rem 0;
+}
+
+ul,
+ol {
+	margin: 2em 0;
+	padding:0 0 0 1em;
+}
+
+
+
+li {
+	margin:1em 0;
+	line-height: 1.5;
+	list-style-position: outside;
+}
+li  ul, li  ol {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+dl {
+	margin:3rem 0;
+}
+
+dt {
+	font-weight: bold;
+	margin:3rem 0 1rem;
+}
+
+dd {
+	margin: 1rem 0 1rem 1rem;
+}
+
+img {
+	height: auto; /* Make sure images are scaled correctly. */
+	max-width: 100%; /* Adhere to container width. */
+	vertical-align: middle;
+}
+
+table {
+	border-collapse: collapse;
+	text-align: left;
+	width:auto;
+	max-width: 100%;
+	 th {
+		padding: .5rem 1rem;
+		font-weight: bold;
+		vertical-align: top;
+		border: 1px solid #ccc;
+		background:#EEE;
+		color:$font-color__defo--dark;
+		line-height: 1.3;
+	}
+	 td {
+		padding: .5rem 1rem;
+		vertical-align: top;
+		border: 1px solid #ccc;
+		background:#FFF;
+		color:$font-color__defo;
+		line-height: 1.3;
+	}
+	thead {
+		background:$main-color;
+		color:#FFF;
+		th,td {
+			color:#FFF;
+			background:none;
+		}
+	}
+}
+
+.clearfix:after {
+    content:" ";
+    display:block;
+    clear:both;
+}
+
+.entry-content {
+	margin:0;
+}
+
+.entry-title {
+	margin:0;
+}
+
+

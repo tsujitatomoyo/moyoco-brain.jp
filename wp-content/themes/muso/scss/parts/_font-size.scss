@@ -1,0 +1,85 @@
+.font-size-- {
+	&3S {
+		font-size: $font-size--3S !important;
+	}
+	&2S {
+		font-size: $font-size--2S !important;
+	}
+	&S {
+		font-size: $font-size--S !important;
+	}
+	&M {
+		font-size: $font-size--M !important;
+	}
+	&L {
+		font-size: $font-size--L !important;
+	}
+	&2L {
+		font-size: $font-size--2L !important;
+	}
+	&3L {
+		font-size: $font-size--3L !important;
+	}
+	&4L {
+		font-size: $font-size--4L !important;
+	}
+}
+
+@include media-pc {
+	.font-size--pc- {
+		&3S {
+		font-size: $font-size--3S !important;
+		}
+		&2S {
+			font-size: $font-size--2S !important;
+		}
+		&S {
+			font-size: $font-size--S !important;
+		}
+		&M {
+			font-size: $font-size--M !important;
+		}
+		&L {
+			font-size: $font-size--L !important;
+		}
+		&2L {
+			font-size: $font-size--2L !important;
+		}
+		&3L {
+			font-size: $font-size--3L !important;
+		}
+		&4L {
+			font-size: $font-size--4L !important;
+		}
+	}
+}
+
+@include media-sp {
+	.font-size--sp- {
+		&3S {
+		font-size: $font-size--3S !important;
+		}
+		&2S {
+			font-size: $font-size--2S !important;
+		}
+		&S {
+			font-size: $font-size--S !important;
+		}
+		&M {
+			font-size: $font-size--M !important;
+		}
+		&L {
+			font-size: $font-size--L !important;
+		}
+		&2L {
+			font-size: $font-size--2L !important;
+		}
+		&3L {
+			font-size: $font-size--3L !important;
+		}
+		&4L {
+			font-size: $font-size--4L !important;
+		}
+	}
+}
+

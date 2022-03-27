@@ -1,0 +1,72 @@
+.event-box {
+	margin:5rem 0;
+	&:nth-child(1){
+		margin-top:0;
+	}
+}
+
+.event-box__cont {
+	padding: 5%;
+}
+.event-box__title {
+	margin-top: 0;
+	border-bottom: solid 1px;
+	margin-bottom: 2.5%;
+	padding-bottom: 2.5%;
+	line-height: 1.3;
+	font-size: $font-size--3L;
+}
+.event-box__text {
+	line-height: 1.3;
+}
+.event-box__strong {
+	font-weight:  normal;
+	@include media-pc {
+		font-size: $font-size--2L;
+	}
+	@include media-sp {
+		font-size: $font-size--L;
+	}
+}
+.event-box__text {
+	margin: 1rem 0;
+}
+.event-box__list {
+	display: flex;
+	flex-wrap:  wrap;
+	align-items:  center;
+	margin: -1% 0 0 -1%;
+	padding:  0;
+}
+.event-box__list > li {
+	background: #FFF;
+	list-style: none;
+	padding: .5rem;
+	border-radius: .3rem;
+	line-height: 1;
+	margin: 1% 0 0 1%;
+	@include media-pc {
+		font-size: $font-size--L;
+	}
+	@include media-sp {
+		font-size: $font-size--M;
+	}
+	.back-color__main & {
+		color:$main-color;
+	}
+	.back-color__syafuku & {
+		color:$syafuku-color;
+	}
+	.back-color__jido & {
+		color:$jido-color;
+	}
+	.back-color__cc & {
+		color:$cc-color;
+	}
+	.back-color__kaigo & {
+		color:$kaigo-color;
+	}
+	.back-color__blue & {
+		color:$blue-color;
+	}
+}

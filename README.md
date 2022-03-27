@@ -1,1 +1,0 @@
-# moyoco-brain.jp

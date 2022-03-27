@@ -1,0 +1,75 @@
+/* Scss Document */
+
+/*メデイアクエリブレイクポイント*/
+
+@mixin media-spS {/*スマホ小*/
+  @media only screen and (max-width: $width-spS) {
+    @content;
+  }
+}
+@mixin media-spM {/*スマホ中*/
+  @media only screen and (min-width: $width-spS) and  (max-width: $width-spM) {
+    @content;
+  }
+}
+@mixin media-spL {/*スマホ大*/
+  @media only screen and (min-width: $width-spM) and (max-width: $width-spL) {
+    @content;
+  }
+}
+@mixin media-sp {/*全スマホ*/
+  @media only screen and (max-width: $width-spL) {
+    @content;
+  }
+}
+@mixin media-pc {/*PC*/
+  @media all and (min-width: $width-spL){
+    @content;
+  }
+}
+@mixin media-pcS {/*PC小*/
+  @media all and (min-width: $width-tab){
+    @content;
+  }
+}
+@mixin media-pcM {/*PC中*/
+  @media all and (min-width: $width-pcS){
+    @content;
+  }
+}
+@mixin media-pcL {/*PC大*/
+  @media all and (min-width: $width-pcL){
+    @content;
+  }
+}
+
+
+/*clearfix*/
+@mixin clearfix {
+    @if $support-ie6 or $support-ie7 {
+      *zoom: 1;
+    }
+    &:after {
+      content: "."; 
+      display: block;
+      clear: both;
+      height: 0; 
+      visibility: hidden;
+    }
+}
+
+/*webfont*/
+@mixin webfont() {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+
+
+

@@ -1,0 +1,78 @@
+.col__wrap {
+	padding: 0;
+	margin: 0 auto;
+	display : flex;
+	flex-wrap : wrap;
+	&--margin {
+		@extend .col__wrap;
+		margin:1% -1%;
+		>li {
+			padding:1%;
+		}
+	}
+	&--marginL {
+		@extend .col__wrap;
+		margin:2% -2%;
+		>li {
+			padding:2%;
+		}
+	}
+	&--marginS {
+		@extend .col__wrap;
+		margin:.5% -.5%;
+		>li {
+			padding:.5%;
+		}
+	}
+	&--stretch {
+		align-items:stretch;
+	}
+	&--center {
+		@extend .col__wrap;
+		>li {
+			align-self:center;
+		}
+	}
+}
+
+$col_num: 1;
+@while $col_num <= 12 {
+	.col--#{$col_num} {
+		width: (100%/(12/$col_num));
+		list-style: none;
+		text-indent: inherit;
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+		&.col--right {
+			float: right;
+		}
+	}
+	@include media-pc {
+		.col--pc-#{$col_num} {
+			width: (100%/(12/$col_num));
+			list-style: none;
+			text-indent: inherit;
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+			&.col--right {
+				float: right;
+			}
+		}
+	}
+	@include media-sp {
+		.col--sp-#{$col_num} {
+			width: (100%/(12/$col_num));
+			list-style: none;
+			text-indent: inherit;
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+			&.col--right {
+				float: right;
+			}
+		}
+	}
+	$col_num: $col_num + 1;
+}

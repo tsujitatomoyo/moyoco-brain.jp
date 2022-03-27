@@ -1,0 +1,92 @@
+/* Scss Document */
+
+//サポートブラウザの設定
+$support-ie6: false;
+$support-ie7: false;
+$support-ie8: false;
+$support-ie9: true;
+$support-mozilla: true;
+$support-webkit : true;
+$support-opera  : true;
+
+
+/*メディアサイズ*/
+$width-pcL: 90em;
+$width-pcS: 75em;
+$width-tab: 65em;
+$width-spL: 40em;
+$width-spM: 30em;
+$width-spS: 20em;
+
+/*色*/
+$font-color__defo: #555;
+$txt_base-color:#555555;
+$font-color__defo--light:lighten( $font-color__defo, 20% );
+$font-color__defo--dark:darken( $font-color__defo, 20% );
+$font-color__link :#4388e6;
+$base-color:#F5F5F5;
+$base-color--dark:darken( $base-color, 10% );
+$base-color2:#FCFBF5;
+$main-color:#F091A7;
+$main-color--light:#ffcbd3;
+$main-color--saturate:saturate( $main-color, 40% );
+$main-color--dark:darken( $main-color, 30% );
+$var_main-back-color:lighten( $main-color--light, 3% );
+$point-color:#f7a200;
+$link-color:#3d93de;
+$link-color--light:lighten($link-color, 20% );
+
+$kaigo-color:#9BCB60;
+$kaigo-color--light:#C9EAAB;
+$kaigo-color--dark:#4d6e24;
+$kaigo-color--font:#8DC740;
+$var_kaigo-back-color:lighten( $kaigo-color, 3% );
+$kaigo-back-color:desaturate($var_kaigo-back-color, 10%);
+
+$spo-color:#65c137;
+$spo-color--light:lighten( $spo-color, 20% );
+$var_spo-back-color:lighten( $spo-color, 3% );
+$spo-back-color:desaturate($var_spo-back-color, 10%);
+
+$blue-color:#59b9d8;
+$blue-color--light:lighten( $blue-color, 20% );
+$var_blue-back-color:lighten( $blue-color, 3% );
+$blue-back-color:desaturate($var_blue-back-color, 10%);
+
+$blue2-color:#587ec3;
+
+$site-red-color:#f76767;
+
+$syafuku-color:#6abcc3;
+$var_syafuku-color--light:desaturate( $syafuku-color, 0% );
+$syafuku-color--light:lighten( $var_syafuku-color--light, 20% );
+$syafuku-color--dark:#2b7177;
+$var_syafuku-back-color:lighten( $syafuku-color, 3% );
+$syafuku-back-color:desaturate($var_syafuku-back-color, 10%);
+
+$jido-color:#F6AD48;
+$jido-color--light:lighten( $jido-color, 20% );
+$jido-color--dark:#ce7c0a;
+$var_jido-back-color:lighten( $jido-color, 3% );
+$jido-back-color:desaturate($var_jido-back-color, 10%);
+
+$cc-color:#CE93BF;
+$cc-color--light:lighten( $cc-color, 15% );
+$cc-color--dark:#b95da6;
+$var_cc-back-color:lighten( $cc-color, 3% );
+$cc-back-color:desaturate($var_cc-back-color, 10%);
+
+
+/*フォントサイズ*/
+$font-size--3S: 0.7rem;
+$font-size--2S: 0.8rem;
+$font-size--S: 0.9rem;
+$font-size--M: 1rem;
+$font-size--L: 1.3rem;
+$font-size--2L: 1.6rem;
+$font-size--3L: 2rem;
+$font-size--4L: 3rem;
+
+
+
+
