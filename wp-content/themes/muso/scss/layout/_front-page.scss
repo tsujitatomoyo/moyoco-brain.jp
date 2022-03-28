@@ -1,0 +1,215 @@
+/* front-page
+/////////////////////////////////////////////////////////////////////////////////////// */
+
+.frontPage__bg{
+
+    position: relative;
+
+}
+.frontPage__main--ttl {
+  margin: 0;
+  font-size: 2rem;
+  letter-spacing: 1rem;
+  text-align: center;
+  background: url("/img/common/ttl_bg.jpg")no-repeat;
+  background-position: center bottom 0%;
+  background-size: contain;
+  position: relative;
+  @include media-sp {
+    background: url("/img/common/ttl_bg_sp.jpg")no-repeat;
+    background-position: center bottom 10%;
+    background-size: contain;
+    font-size: 1.5rem;
+    letter-spacing: 4px;
+  }
+}
+
+.frontPage__main--subttl {
+  margin: 0;
+  text-align: center;
+  font-family: din-2014, sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.frontPage__linkBox--ttl {
+  letter-spacing: 0.5rem;
+  font-size: 3rem;
+  font-weight: bold;
+  @include media-sp {
+    font-size: 1.8rem;
+  }
+}
+
+.frontPage__linkBox--subttl {
+  font-family: din-2014, sans-serif;
+  font-weight: bold;
+  font-size: 0.8rem;
+  @include media-sp {
+    font-size: 0.5rem;
+  }
+}
+
+.box_left {
+  width: 100%;
+  height: 500px; //border-radius: 5px;
+  //box-shadow: 0 2px 30px rgba(black, .2);
+  //background: lighten(#f0f4c3, 10%);
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+  background: url("/img/front_page/link_shinkyu.png")no-repeat;
+  background-position: right 0% bottom 40%;
+  right: -1.5rem;
+  @include media-sp {
+    left: 0px;
+    height: 260px;
+    margin-top: -0.5rem;
+    background-size: 60%;
+    background-position: left 30% bottom 30%;
+  }
+  @media screen and (max-width: 320px) {
+    background-position: left 30% bottom 15%;
+    background-size: 70%;
+    margin-top: -2.5rem;
+  }
+}
+
+.box_right {
+  width: 100%;
+  height: 500px; //border-radius: 5px;
+  //box-shadow: 0 2px 30px rgba(black, .2);
+  //background: lighten(#f0f4c3, 10%);
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+  background: url("/img/front_page/link_sekkotsu.png")no-repeat;
+  background-position: left 0% top 40%;
+  left: -1.5rem;
+  @include media-sp {
+    left: auto;
+    right: 0;
+    height: 260px;
+    background-size: 60%;
+    background-position: right 30% top 30%;
+    margin-top: -4rem;
+  }
+  @media screen and (max-width: 320px) {
+    background-position: right 30% top 15%;
+    background-size: 70%;
+  }
+}
+
+.wave {
+  opacity: .4;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 400px;
+  height: 400px;
+  margin: auto; //margin-left: -250px;
+  //margin-top: -250px;
+  transform-origin: 50% 48%;
+  border-radius: 48%;
+  animation: drift 3000ms infinite linear;
+  @include media-sp {
+    width: 220px;
+    height: 220px;
+  }
+  @media screen and (max-width: 320px) {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.wave_left {
+  @include media-sp {
+    top: 10%;
+    left: 2%;
+  }
+  @media screen and (max-width: 320px) {
+    top: 20%;
+  }
+}
+
+.wave_right {
+  @include media-sp {
+    top: 10%!important;
+    right: 2%!important;
+    left: auto!important;
+  }
+}
+
+.wave_green {
+  mix-blend-mode: multiply;
+  background: #cfff15;
+}
+
+.wave_blue {
+  mix-blend-mode: multiply;
+  background: #17f4ff;
+}
+
+.wave.-three {
+  animation: drift 5000ms infinite linear;
+}
+
+.wave.-two {
+  animation: drift 7000ms infinite linear;
+  opacity: .1;
+  background: yellow;
+}
+
+//.box:after {
+//  content: '';
+//  display: block;
+//  left: 0;
+//  top: 0;
+//  width: 100%;
+//  height: 100%;
+//  //background: linear-gradient(to bottom, rgba(#e8a, 1), rgba(#def, 0) 80%, rgba(white, .5));
+//  z-index: 11;
+//  transform: translate3d(0, 0, 0);
+//}
+.title {
+  position: absolute;
+  left: 0;
+  top: 9rem;
+  width: 100%;
+  z-index: 1; //line-height: 300px;
+  text-align: center;
+  transform: translate3d(0, 0, 0);
+  text-transform: uppercase;
+  text-shadow: 0 1px 0 rgba(black, .1);
+  text-indent: .3em;
+  &.--right {
+    @include media-sp {
+      left: auto;
+      right: -50px;
+      top: 5rem;
+    }
+    @media screen and (max-width: 320px) {
+      right: -35px;
+      top: 6.5rem;
+    }
+  }
+  &.--left {
+    @include media-sp {
+      left: -50px;
+      top: 5rem;
+    }
+    @media screen and (max-width: 320px) {
+      left: -35px;
+      top: 6.5rem;
+    }
+  }
+}
+
+@keyframes drift {
+  from {
+    transform: rotate(0deg);
+  }
+  from {
+    transform: rotate(360deg);
+  }
+}

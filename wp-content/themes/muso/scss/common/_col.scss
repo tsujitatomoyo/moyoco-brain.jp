@@ -35,6 +35,10 @@
 	}
 }
 
+.col__inner{
+	min-height: 100%;
+}
+
 $col_num: 1;
 @while $col_num <= 12 {
 	.col--#{$col_num} {

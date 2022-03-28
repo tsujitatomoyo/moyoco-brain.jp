@@ -1,0 +1,64 @@
+/*テキストサイズ
+******************************************************************************/
+.Font-S{
+	font-size: 70%;
+	}
+
+.Font-SS{
+	font-size: 80%;
+	}
+	
+.Font-L{
+	font-size: 110%;
+	}
+	
+.Font-LL{
+	font-size: 120%;
+	}
+	
+.Font-LLL{
+	font-size: 130%;
+	}
+
+.Font-4L{
+	font-size: 140%;
+	}
+
+.Font-5L{
+	font-size: 150%;
+	}
+
+
+$mp_num: 0;
+@while $mp_num <= 50 {
+	.Font--#{$mp_num} {
+		font-size: $mp_num * .1rem !important;
+	}
+	@include media-pc {
+		.Font--pc-#{$mp_num} {
+			font-size: $mp_num * .1rem !important;
+		}
+	}
+	@include media-sp {
+		.Font--sp-#{$mp_num} {
+			font-size: $mp_num * .1rem !important;
+		}
+	}
+	$mp_num: $mp_num + 1;
+}
+
+.Text--Center{
+  text-align: center;
+}
+
+.Text--pc-Center{
+  @include media-pc {
+    text-align: center!important;
+  }
+}
+
+.Text--sp-Center{
+  @include media-sp {
+    text-align: center!important;
+  }
+}

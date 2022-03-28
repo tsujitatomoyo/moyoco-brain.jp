@@ -1,0 +1,72 @@
+
+.entry-wrap {
+	@include media-pc {
+		width: $site-width__max;
+		display: flex;
+	    flex-direction: row-reverse;
+	    margin-top:2rem;
+	}
+	margin:auto;
+}
+.entry-wrap--1column{
+	@include media-pc {
+		width: $site-width__max;
+	    margin-top:2rem;
+	}
+	margin:auto;
+}
+.wrap {
+	@include media-pc {
+		max-width: $site-width__max;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	@include media-sp {
+		padding: 0 2.5%;
+	}
+	&--100 {
+		@extend .wrap;
+		padding:0;
+	}
+}
+@include media-sp {
+	.wrap-sp {
+		padding: 0 2.5%;
+	}
+}
+.entry-pc {
+	@include media-pc {
+		width:$site-width;
+		padding-left: 20px;
+		box-sizing: content-box;
+	}
+	@include media-sp {
+		width: 100%;
+	}
+}
+.entry-pc__sidebar-none{
+	width: 100%;
+}
+.entry-content {
+	@extend .wrap;
+}
+
+
+//1カラムの時
+//PC横幅おおきめ
+.site_column {
+	@include media-pc {
+		width: $site-width__max;
+		max-width: 100%;
+	}
+	margin:auto;
+}
+//PC横幅せまめ
+.site_column--min{
+	@include media-pc {
+		max-width: $site-width;	
+	    width: 100%;
+	}
+	margin:auto;
+}
+
