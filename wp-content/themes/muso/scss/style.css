@@ -1,30 +1,40 @@
 /*
-Error: File to import not found or unreadable: sass/variables-site/variables-site.
+Error: File to import not found or unreadable: parts/angled-edges.
        Load paths:
          /Applications/Adobe Dreamweaver 2021/Configuration/SassFrameworks/bourbon
          /Applications/Adobe Dreamweaver 2021/Configuration/SassFrameworks/neat
          /Applications/Adobe Dreamweaver 2021/Configuration/SassFrameworks/base
-        on line 7 of /Applications/MAMP/htdocs/moyoco-brain.jp/wp-content/themes/muso/style-editor.scss
+        on line 1 of /Applications/MAMP/htdocs/moyoco-brain.jp/wp-content/themes/muso/scss/layaut/_wrap.scss
+        from line 10 of /Applications/MAMP/htdocs/moyoco-brain.jp/wp-content/themes/muso/scss/style.scss
 
-2: Twenty Nineteen Editor Styles
-3: *\/
-4: 
-5: /** === Includes === *\/
-6: 
-7: @import "sass/variables-site/variables-site";
-8: @import "sass/mixins/mixins-master";
-9: 
-10: /** === Editor Frame === *\/
-11: 
-12: body {
+1: /* Scss Document *\/
+2: @import "var";
+3: @import "mixin";
+4: @import "keyfram";
+5: @import "common/normalize";
+6: @import "common/typography";
 
 Backtrace:
-/Applications/MAMP/htdocs/moyoco-brain.jp/wp-content/themes/muso/style-editor.scss:7
+/Applications/MAMP/htdocs/moyoco-brain.jp/wp-content/themes/muso/scss/layaut/_wrap.scss:1
+/Applications/MAMP/htdocs/moyoco-brain.jp/wp-content/themes/muso/scss/style.scss:10
 /Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/import_node.rb:67:in `rescue in import'
 /Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/import_node.rb:44:in `import'
 /Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/import_node.rb:28:in `imported_file'
 /Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/import_node.rb:37:in `css_import?'
 /Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:310:in `visit_import'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:325:in `block (2 levels) in visit_import'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:325:in `map'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:325:in `block in visit_import'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/stack.rb:88:in `block in with_import'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/stack.rb:88:in `with_import'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
 /Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
 /Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
 /Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
@@ -56,4 +66,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: sass/variables-site/variables-site.\A        Load paths:\A          /Applications/Adobe Dreamweaver 2021/Configuration/SassFrameworks/bourbon\A          /Applications/Adobe Dreamweaver 2021/Configuration/SassFrameworks/neat\A          /Applications/Adobe Dreamweaver 2021/Configuration/SassFrameworks/base\A         on line 7 of /Applications/MAMP/htdocs/moyoco-brain.jp/wp-content/themes/muso/style-editor.scss\A \A 2: Twenty Nineteen Editor Styles\A 3: */\A 4: \A 5: /** === Includes === */\A 6: \A 7: @import \"sass/variables-site/variables-site\";\A 8: @import \"sass/mixins/mixins-master\";\A 9: \A 10: /** === Editor Frame === */\A 11: \A 12: body {"; }
+  content: "Error: File to import not found or unreadable: parts/angled-edges.\A        Load paths:\A          /Applications/Adobe Dreamweaver 2021/Configuration/SassFrameworks/bourbon\A          /Applications/Adobe Dreamweaver 2021/Configuration/SassFrameworks/neat\A          /Applications/Adobe Dreamweaver 2021/Configuration/SassFrameworks/base\A         on line 1 of /Applications/MAMP/htdocs/moyoco-brain.jp/wp-content/themes/muso/scss/layaut/_wrap.scss\A         from line 10 of /Applications/MAMP/htdocs/moyoco-brain.jp/wp-content/themes/muso/scss/style.scss\A \A 1: /* Scss Document */\A 2: @import \"var\";\A 3: @import \"mixin\";\A 4: @import \"keyfram\";\A 5: @import \"common/normalize\";\A 6: @import \"common/typography\";"; }
