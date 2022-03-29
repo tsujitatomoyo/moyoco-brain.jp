@@ -77,7 +77,7 @@
     <!--/wrapper-->
   </div>
 				<div class="top_main_img">
-		<img src="<?php echo get_template_directory_uri(); ?>/img/common/brain.svg">
+		<?php /*?><img src="<?php echo get_template_directory_uri(); ?>/img/common/brain.svg"><?php */?>
 				</div>
 		
 		</div></div>

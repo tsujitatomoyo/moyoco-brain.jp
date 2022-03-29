@@ -4214,7 +4214,14 @@ a.btn-border-shadow:hover:before {
 /* ---- top ---- */
 .top_main_img {
   margin: 3rem auto;
-  width: 15rem; }
+  width: 15rem;
+  background-image: url(/wp-content/themes/muso/img/common/brain.svg);
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 50;
+  padding: 7rem;
+  background-size: contain;
+  background-position: center; }
   .top_main_img img {
     margin: auto;
     position: relative;

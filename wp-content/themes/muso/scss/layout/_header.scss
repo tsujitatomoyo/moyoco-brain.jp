@@ -107,6 +107,13 @@
 .top_main_img{
 	margin: 3rem auto;
 	width: 15rem;
+	background-image: url(#{$img_path}/common/brain.svg);
+	background-repeat: no-repeat;
+	position: relative;
+	z-index: 50;
+	padding: 7rem;
+	background-size: contain;
+	background-position: center;
 	img{
 		margin: auto;
 		position: relative;
