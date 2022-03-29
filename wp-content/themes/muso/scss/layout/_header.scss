@@ -19,6 +19,19 @@
 	}
 }
 
+.content02{
+  position: relative;
+  width: 100%;
+  background-color: $base-color;
+	&.__normal{
+		padding: 1rem 1rem 7rem;
+	}
+	&.__header{
+		height: 140px;
+		padding: 1rem;
+	}
+}
+
 
 .content01::after {
   content: '';
@@ -39,9 +52,32 @@
 }
 
 
+.content02::after {
+  content: '';
+  display: block;
+  position: absolute;
+  right:0;
+  bottom: 0;
+  border-top: 40px solid transparent;    
+  border-right: 50vw solid transparent;    
+  border-left: 50vw solid $main-color;   
+  border-bottom: 60px solid $main-color;  
+}
+@media only screen and (max-width: 2000px) {
+  .content02::after {
+    border-right: 1000px solid transparent;    
+    border-left: 1000px solid $main-color;   
+  }
+}
+
+
 .bg__main{
 	background-color: $main-color;
 }
+.bg__base{
+	background-color: $base-color;
+}
+
 .bg__point{
 	background-color: $point-color;
 }

@@ -18,11 +18,10 @@
 <?php /*?><body <?php body_class(); ?>><?php */?>
 	<body class="no-touchdevice is-chrome" style="">
 
-	  <div class="btn"><a href="">Button</a></div>
-<div id="cursor" class="c-follower is-blend" style="top: 170px; left: 859px; transform: scale(0.333, 0.333);"><span>View</span></div>
-<div id="pointer" class="c-pointer" style="top: 214px; left: 903px; transform: translate(0px, 0px);"></div>
+<div id="cursor" class="c-follower is-blend"><span>View</span></div>
+<div id="pointer" class="c-pointer"></div>
 	
-	<header class="">
+	<header>
 	
 	
 	
@@ -36,7 +35,7 @@
 
 			</div>
 				</section>
-				 <section class="content02"></section>
+				 
 						<div class="header_pc_menu">
 <ul class="col__wrap--margin">
       <li class="col--3"><p style="text-align: right;"><a href="https://www.google.com/">HOME</a></p></li>
@@ -45,13 +44,25 @@
 	<li class="col--3"><p style="text-align: right;">ABOUT</p></li>
     </ul>
 			</div>
+				
+				
+				
+
+				
 				</div>
 		
 		
-		
+		<div class="bg__base"></div>
+		<section class="content02 __normal"></section>
 				
 </header>
 
-	<script src="/wp-content/themes/muso/js/bundle.js"></script>
+	
 	
 <main>
+	<div>
+    <section style="position: relative">
+		<p style="position: absolute;">自由な場所</p>
+				</section>
+	
+				</div>

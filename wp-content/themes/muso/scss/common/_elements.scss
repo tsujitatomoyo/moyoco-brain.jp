@@ -19,6 +19,8 @@ body {
   font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
   font-weight: 500;
   margin: 0;
+ cursor: none;
+	background-color: #FFF;
 }
 
 body, button, input, select, textarea {
@@ -40,7 +42,9 @@ img {
   max-width: 100%;
 }
 
-
+a{
+	cursor:none;
+}
 
 
 
@@ -79,15 +83,12 @@ html {
 	-webkit-transform: scale(0);
 	transform: scale(0); 
 	pointer-events: none;
-
 	mix-blend-mode: none;
 }
 .c-follower.is-blend,
 .is-blend.c-pointer {
-	background-color: #fdfe00; 
-	-webkit-filter: invert(100%); 
-	filter: invert(100%);
-
+	background-color: #eb593c;
+	//filter: invert(100%)!important;
 	mix-blend-mode: exclusion;
 }
 .no-touchdevice .c-follower,

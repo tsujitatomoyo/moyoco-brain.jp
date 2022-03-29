@@ -508,7 +508,9 @@ html {
 body {
   font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
   font-weight: 500;
-  margin: 0; }
+  margin: 0;
+  cursor: none;
+  background-color: #FFF; }
 
 body, button, input, select, textarea {
   line-height: 1.5; }
@@ -525,6 +527,9 @@ hr {
 img {
   height: auto;
   max-width: 100%; }
+
+a, a:hover, a:visited {
+  cursor: none; }
 
 /*!
  * ress.css • v1.1.2
@@ -561,8 +566,7 @@ html {
 
 .c-follower.is-blend,
 .is-blend.c-pointer {
-  background-color: #fdfe00;
-  filter: invert(100%);
+  background-color: #eb593c;
   mix-blend-mode: exclusion; }
 
 .no-touchdevice .c-follower,
@@ -608,34 +612,34 @@ html {
 /* HTMLタグに適用 */
 p::-moz-selection {
   color: #fff;
-  background-color: #ABDCD6; }
+  background-color: #1A8BAC; }
 p::selection {
   color: #fff;
-  background-color: #ABDCD6; }
+  background-color: #1A8BAC; }
 
 a::-moz-selection, a:hover::-moz-selection, a:visited::-moz-selection {
   color: #fff;
-  background-color: #ABDCD6; }
+  background-color: #1A8BAC; }
 
 a::selection, a:hover::selection, a:visited::selection {
   color: #fff;
-  background-color: #ABDCD6; }
+  background-color: #1A8BAC; }
 
 /* classに適用 */
 .test::-moz-selection {
   color: #fff;
-  background-color: #ABDCD6; }
+  background-color: #1A8BAC; }
 .test::selection {
   color: #fff;
-  background-color: #ABDCD6; }
+  background-color: #1A8BAC; }
 
 /* idに適用 */
 #test::-moz-selection {
   color: #fff;
-  background-color: #ABDCD6; }
+  background-color: #1A8BAC; }
 #test::selection {
   color: #fff;
-  background-color: #ABDCD6; }
+  background-color: #1A8BAC; }
 
 /* 画像のリンクロールオーバー */
 a img, a:hover img, a:visited img {
@@ -819,7 +823,7 @@ a.btn-border-shadow {
     a.btn-border-shadow {
       font-size: 1.5rem; } }
   a.btn-border-shadow.--bg-green {
-    background: #ABDCD6; }
+    background: #1A8BAC; }
 
 a.btn-border-shadow:before {
   position: absolute;
@@ -4117,6 +4121,16 @@ a.btn-border-shadow:hover:before {
     height: 140px;
     padding: 1rem; }
 
+.content02 {
+  position: relative;
+  width: 100%;
+  background-color: #FFFCEC; }
+  .content02.__normal {
+    padding: 1rem 1rem 7rem; }
+  .content02.__header {
+    height: 140px;
+    padding: 1rem; }
+
 .content01::after {
   content: '';
   display: block;
@@ -4133,11 +4147,30 @@ a.btn-border-shadow:hover:before {
     border-right: 1000px solid transparent;
     border-left: 1000px solid #FFFCEC; } }
 
+.content02::after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-top: 40px solid transparent;
+  border-right: 50vw solid transparent;
+  border-left: 50vw solid #EB593C;
+  border-bottom: 60px solid #EB593C; }
+
+@media only screen and (max-width: 2000px) {
+  .content02::after {
+    border-right: 1000px solid transparent;
+    border-left: 1000px solid #EB593C; } }
+
 .bg__main {
   background-color: #EB593C; }
 
+.bg__base {
+  background-color: #FFFCEC; }
+
 .bg__point {
-  background-color: #ABDCD6; }
+  background-color: #1A8BAC; }
 
 .header_ttl {
   width: 400px;
@@ -4492,7 +4525,7 @@ ul.news-area {
   ul.news-area .new {
     display: inline-block;
     border-radius: 20px;
-    background-color: #ABDCD6;
+    background-color: #1A8BAC;
     padding: 0.2em 0.5em;
     color: #3a3a3a;
     font-weight: bold;
@@ -4568,7 +4601,7 @@ ul.news-area {
   display: inline-block; }
 
 .doctor--sekkotsu__name {
-  background: #ABDCD6;
+  background: #1A8BAC;
   padding: 1%;
   font-size: 1.5rem;
   font-weight: bold;
@@ -4587,7 +4620,7 @@ ul.news-area {
 
 .doctor--sekkotsu__border {
   padding-bottom: 1rem;
-  border-bottom: solid 1px #ABDCD6; }
+  border-bottom: solid 1px #1A8BAC; }
 
 .tate {
   position: absolute;
