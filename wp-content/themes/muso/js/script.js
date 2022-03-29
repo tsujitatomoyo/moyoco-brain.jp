@@ -15,13 +15,13 @@ function init() {
   colorList = [];
   // canvas1個めの色指定
   canvasList.push(document.getElementById("waveCanvas"));
-  colorList.push(["#eb593c", "#00ffce", "#eb593c", "#00ffce", "#eb593c"]); //重ねる波線の色設定
+  colorList.push(["#eb593c", "#eb593c", "#eb593c", "#abdcd6", "#abdcd6"]); //重ねる波線の色設定
 
   // 各キャンバスの初期化
   for (var canvasIndex in canvasList) {
     var canvas = canvasList[canvasIndex];
     canvas.width = document.documentElement.clientWidth; //Canvasのwidthをウィンドウの幅に合わせる
-    canvas.height = 200; //波の高さ
+    canvas.height = 100; //波の高さ
     canvas.contextCache = canvas.getContext("2d");
   }
   // 共通の更新処理呼び出し
@@ -68,7 +68,7 @@ function draw(canvas, color) {
 function drawWave(canvas, color, alpha, zoom, delay) {
   var context = canvas.contextCache;
   context.strokeStyle = color; //線の色
-  context.lineWidth = 1; //線の幅
+  context.lineWidth = 5; //線の幅
   context.globalAlpha = alpha;
   context.beginPath(); //パスの開始
   drawSine(canvas, info.t / 0.5, zoom, delay);

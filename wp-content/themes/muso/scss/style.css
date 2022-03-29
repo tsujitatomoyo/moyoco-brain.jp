@@ -4096,14 +4096,16 @@ a.btn-border-shadow:hover:before {
   margin-top: 3rem; }
 
 .waveaaaa {
-  position: relative; }
+  position: relative;
+  width: 100%; }
 
 .waveaaaa canvas {
   position: absolute;
   /*bottom: 0;*/
   left: 0;
+  top: 1.5rem;
   width: 100%;
-  top: 1.5rem; }
+  height: 90px; }
 
 /* front-page
 /////////////////////////////////////////////////////////////////////////////////////// */

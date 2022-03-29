@@ -72,7 +72,7 @@
 				
 					<div id="wrapper">
     <div class="waveaaaa top_main_wave">
-      <canvas id="waveCanvas"></canvas>
+      <canvas id="waveCanvas" height="100px"></canvas>
     </div>
     <!--/wrapper-->
   </div>
