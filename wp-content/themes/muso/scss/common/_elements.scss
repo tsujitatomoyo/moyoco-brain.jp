@@ -41,6 +41,133 @@ img {
 }
 
 
+
+
+
+@charset "UTF-8";
+/*!
+ * ress.css • v1.1.2
+ * MIT License
+ * github.com/filipelinhares/ress */
+/* # =================================================================
+ * # Global selectors
+ * # ================================================================= */
+html {
+	overflow-y: scroll;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	/* All browsers without overlaying scrollbars */
+
+	-webkit-text-size-adjust: 100%;
+	/* iOS 8+ */
+}
+
+
+.c-follower,
+.c-pointer {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	display: none;
+	width: 96px;
+	height: 96px;
+	border-radius: 50%;
+	background-color: rgba(253, 254, 0, .5);
+	-webkit-filter: none;
+	filter: none;
+	-webkit-transform: scale(0);
+	transform: scale(0); 
+	pointer-events: none;
+
+	mix-blend-mode: none;
+}
+.c-follower.is-blend,
+.is-blend.c-pointer {
+	background-color: #fdfe00; 
+	-webkit-filter: invert(100%); 
+	filter: invert(100%);
+
+	mix-blend-mode: exclusion;
+}
+.no-touchdevice .c-follower,
+.no-touchdevice .c-pointer {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+
+	-webkit-box-pack: center;
+
+	-ms-flex-pack: center;
+
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+.is-ie .c-follower,
+.is-ie .c-pointer {
+	background-color: rgba(253, 254, 0, .5);
+}
+.c-follower span,
+.c-pointer span {
+	color: #000;
+	font-weight: 700;
+	font-size: 20px;
+	font-family: "brandon-grotesque", "Yu Gothic Medium", "Yu Gothic", "YuGothic", "Hiragino Kaku Gothic ProN", "HiraKakuProN-W3", "Meiryo", sans-serif;
+	line-height: 1.4;
+	-webkit-transform: scale(0);
+	transform: scale(0);
+}
+
+.c-pointer {
+	display: none;
+	width: 8px;
+	height: 8px;
+	background-color: #000;
+}
+.no-touchdevice .c-pointer {
+	display: block;
+}
+
+#svg-sprite {
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+/* テキストドラッグカラー */
+/* HTMLタグに適用 */
+p::selection {
+  color: #fff;
+  background-color: $point-color;
+}
+
+a::selection {
+	color: #fff;
+  background-color: $point-color;
+}
+
+/* classに適用 */
+.test::selection {
+  color: #fff;
+  background-color: $point-color;
+}
+
+/* idに適用 */
+#test::selection {
+  color: #fff;
+  background-color: $point-color;
+}
+
+
 /* 画像のリンクロールオーバー */
 
 a img {

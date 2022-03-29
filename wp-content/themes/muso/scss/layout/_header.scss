@@ -8,19 +8,17 @@
 
 .content01{
   position: relative;
-  padding: 1rem 1rem 7rem;;
   width: 100%;
   background-color: $main-color;
+	&.__normal{
+		padding: 1rem 1rem 7rem;
+	}
+	&.__header{
+		height: 140px;
+		padding: 1rem;
+	}
 }
-.content {
-  overflow: hidden; /* はみ出た部分は表示しない */
-}
-.content01{
-  position: relative;
-  padding: 1rem 1rem 7rem;
-  width: 100%;
-  background-color: $main-color;
-}
+
 
 .content01::after {
   content: '';
@@ -28,7 +26,7 @@
   position: absolute;
   right:0;
   bottom: 0;
-  border-top: 60px solid transparent;    
+  border-top: 40px solid transparent;    
   border-right: 50vw solid transparent;    
   border-left: 50vw solid $base-color;   
   border-bottom: 60px solid $base-color;  
@@ -48,100 +46,19 @@
 	background-color: $point-color;
 }
 
+.header_ttl{
+	width: 400px;
+	font-size: 0.8rem;
+	color: #FFF;
+	position: absolute;
+	left: 0;
+}
 
-
-@include media-pc {
-    .heder-pc {
-    	//background: #FFF;
-    }
-    .heder-pc .wrap_2 {
-        display: flex;
-        align-items: center; 
-    }
-    .heder-pc__logo {
-        padding: .8rem 0;
-    }
-
-    .heder-pc__right {
-        width:  400px;
-        padding-left:  20px;
-        margin-bottom: .3rem;
-		    right: 0;
-    position: absolute;
-		padding:0 1rem 0 0;
-    }
-
-    .heder-pc__text-link {
-        margin:.3rem 0 0 0;
-        padding: 0;
-        list-style: none;
-        display:  flex;
-        justify-content: flex-end;
-    }
-
-    .heder-pc__button-wrap {
-        //display: flex;
-        justify-content: flex-end;
-        padding-top: .3rem;
-    }
-
-    .heder-pc__text-link-item {
-        margin: 0;
-    }
-
-    .heder-pc__text-link-item a {
-        display: inline-block;
-        text-decoration:  none;
-        padding-left: 1rem;
-        margin-left:.3rem;
-        position: relative;
-        font-size: .8rem;
-        color:$font-color__defo;
-        i {
-        	color: $main-color;
-        	position:absolute;
-        	left: .5rem;
-        	top:50%;
-        	transform: translate(-50%,-50%);
-        }
-    }
-
-    a.heder-pc__button {
-        display: inline-block;
-        text-decoration:  none;
-        text-align: center;
-        line-height:  1;
-        padding:.3rem .5rem;
-        border: solid 1px $point-color;
-        font-size: .8rem;
-        min-width: 150px;
-        margin-left: 10px;
-        border-radius: .2rem;
-        color: $point-color;
-        &:type-of-nth(1) {
-        	margin-left:0;
-        }
-    }
-
-    a.heder-pc__button small {
-        display:  block;
-        display: block;
-        font-size: .4rem;
-    }
-
-    a.heder-pc__button strong {
-        display: block;
-        margin: .3rem 0;
-    }
-
-    a.heder-pc__button--cv {
-    	@extend .heder-pc__button;
-    	background-color:$point-color;
-    	border:none;
-    	display:flex;
-    	align-items: center;
-    	justify-content: center;
-    	color:#FFF;
-    }
-
+.header_pc_menu{
+	width: 400px;
+	font-weight: bold;
+	position: absolute;
+	right: 0;
+	top:0;
+	padding: 0 1rem 0 0;
 }

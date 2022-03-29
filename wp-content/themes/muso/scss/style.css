@@ -457,6 +457,83 @@ img {
   height: auto;
   max-width: 100%; }
 
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0; }
+
+body {
+  position: relative;
+  cursor: none; }
+
+.cursor,
+.follower {
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none; }
+
+.cursor {
+  width: 8px;
+  height: 8px;
+  background-color: #000;
+  z-index: 1001; }
+
+.follower {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(253, 254, 0, 0.5);
+  z-indes: 1000;
+  transition: transform ease .1s;
+  text-align: center; }
+  .follower span {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    transform: scale(0); }
+  .follower.is-active {
+    transform: scale(3); }
+
+.btn {
+  display: inline-block;
+  width: 160px;
+  margin: 16px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1; }
+  .btn a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 16px;
+    background-color: #000;
+    cursor: none; }
+
+/* テキストドラッグカラー */
+/* HTMLタグに適用 */
+p::selection {
+  color: #fff;
+  background-color: #ABDCD6; }
+
+a::selection, a:hover::selection, a:visited::selection {
+  color: #fff;
+  background-color: #ABDCD6; }
+
+/* classに適用 */
+.test::selection {
+  color: #fff;
+  background-color: #ABDCD6; }
+
+/* idに適用 */
+#test::selection {
+  color: #fff;
+  background-color: #ABDCD6; }
+
 /* 画像のリンクロールオーバー */
 a img, a:hover img, a:visited img {
   -webkit-transition: all .3s;
@@ -3890,19 +3967,13 @@ a.btn-border-shadow:hover:before {
 
 .content01 {
   position: relative;
-  padding: 1rem 1rem 7rem;
   width: 100%;
   background-color: #EB593C; }
-
-.content {
-  overflow: hidden;
-  /* はみ出た部分は表示しない */ }
-
-.content01 {
-  position: relative;
-  padding: 1rem 1rem 7rem;
-  width: 100%;
-  background-color: #EB593C; }
+  .content01.__normal {
+    padding: 1rem 1rem 7rem; }
+  .content01.__header {
+    height: 140px;
+    padding: 1rem; }
 
 .content01::after {
   content: '';
@@ -3910,7 +3981,7 @@ a.btn-border-shadow:hover:before {
   position: absolute;
   right: 0;
   bottom: 0;
-  border-top: 60px solid transparent;
+  border-top: 40px solid transparent;
   border-right: 50vw solid transparent;
   border-left: 50vw solid #FFFCEC;
   border-bottom: 60px solid #FFFCEC; }
@@ -3925,83 +3996,21 @@ a.btn-border-shadow:hover:before {
 .bg__point {
   background-color: #ABDCD6; }
 
-/*pc769px以上*/
-@media all and (min-width: 48.0625em) {
-  .heder-pc .wrap_2 {
-    display: flex;
-    align-items: center; }
+.header_ttl {
+  width: 400px;
+  font-size: 0.8rem;
+  color: #FFF;
+  position: absolute;
+  left: 0; }
 
-  .heder-pc__logo {
-    padding: .8rem 0; }
+.header_pc_menu {
+  width: 400px;
+  font-weight: bold;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0 1rem 0 0; }
 
-  .heder-pc__right {
-    width: 400px;
-    padding-left: 20px;
-    margin-bottom: .3rem;
-    right: 0;
-    position: absolute;
-    padding: 0 1rem 0 0; }
-
-  .heder-pc__text-link {
-    margin: .3rem 0 0 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    justify-content: flex-end; }
-
-  .heder-pc__button-wrap {
-    justify-content: flex-end;
-    padding-top: .3rem; }
-
-  .heder-pc__text-link-item {
-    margin: 0; }
-
-  .heder-pc__text-link-item a {
-    display: inline-block;
-    text-decoration: none;
-    padding-left: 1rem;
-    margin-left: .3rem;
-    position: relative;
-    font-size: .8rem;
-    color: #333333; }
-    .heder-pc__text-link-item a i {
-      color: #EB593C;
-      position: absolute;
-      left: .5rem;
-      top: 50%;
-      transform: translate(-50%, -50%); }
-
-  a.heder-pc__button, a.heder-pc__button--cv {
-    display: inline-block;
-    text-decoration: none;
-    text-align: center;
-    line-height: 1;
-    padding: .3rem .5rem;
-    border: solid 1px #ABDCD6;
-    font-size: .8rem;
-    min-width: 150px;
-    margin-left: 10px;
-    border-radius: .2rem;
-    color: #ABDCD6; }
-    a.heder-pc__button:type-of-nth(1), a.heder-pc__button--cv:type-of-nth(1) {
-      margin-left: 0; }
-
-  a.heder-pc__button small, a.heder-pc__button--cv small {
-    display: block;
-    display: block;
-    font-size: .4rem; }
-
-  a.heder-pc__button strong, a.heder-pc__button--cv strong {
-    display: block;
-    margin: .3rem 0; }
-
-  a.heder-pc__button--cv {
-    background-color: #ABDCD6;
-    border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #FFF; } }
 /* front-page
 /////////////////////////////////////////////////////////////////////////////////////// */
 .frontPage__bg {
@@ -4531,6 +4540,9 @@ mod-schedule
   @media (max-width: 48em) {
     .clinic_map {
       height: 300px; } }
+
+.p_r_wrap {
+  position: relative; }
 
 .entry-wrap {
   /*pc769px以上*/
