@@ -1,0 +1,27 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+h1 {
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+}
+
+.form {
+  text-align: center;
+}
+.form__item {
+  display: none;
+  margin: 0 5px;
+  padding: 0 10px;
+  background: #272727;
+  border-radius: 5px;
+}
+.form__label, .form__field {
+  display: none;
+  text-align: center;
+}
+.form__label {
+  padding: 10px 5px 10px 0;
+  cursor: pointer;
+}

@@ -14,8 +14,10 @@
 		padding: 1rem 1rem 7rem;
 	}
 	&.__header{
+		position: relative;
 		height: 140px;
 		padding: 1rem;
+		z-index: 10;
 	}
 }
 
@@ -91,10 +93,53 @@
 }
 
 .header_pc_menu{
-	width: 400px;
+	width: 530px;
 	font-weight: bold;
 	position: absolute;
 	right: 0;
 	top:0;
 	padding: 0 1rem 0 0;
+	z-index: 10;
 }
+
+
+/* ---- top ---- */
+.top_main_img{
+	margin: 3rem auto;
+	width: 15rem;
+	img{
+		margin: auto;
+		position: relative;
+		z-index: 90;
+		top:2rem;
+		
+	}
+}
+
+.top_main_wave{
+	//transform:rotate(6deg);
+}
+
+.top_bg_circle{
+	position: absolute;
+	transform: rotate(6deg);
+	top: 120px;
+}
+
+
+.top_main_bg_margin{
+	margin-top: 3rem;
+}
+
+.waveaaaa {
+  position: relative;
+}
+
+.waveaaaa canvas {
+  position: absolute;
+  /*bottom: 0;*/
+  left: 0;
+  width: 100%;
+	top:1.5rem;
+}
+
