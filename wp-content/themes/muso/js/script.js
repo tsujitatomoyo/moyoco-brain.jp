@@ -1,3 +1,68 @@
+/**
+ * スマホヘッダーナビ
+ */
+
+$(".openbtn1").click(function () {//ボタンがクリックされたら
+  $(this).toggleClass('active');//ボタン自身に activeクラスを付与し
+    $("#g-nav").toggleClass('panelactive');//ナビゲーションにpanelactiveクラスを付与
+    $(".circle-bg").toggleClass('circleactive');//丸背景にcircleactiveクラスを付与
+});
+
+$("#g-nav a").click(function () {//ナビゲーションのリンクがクリックされたら
+    $(".openbtn1").removeClass('active');//ボタンの activeクラスを除去し
+    $("#g-nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスを除去
+    $(".circle-bg").removeClass('circleactive');//丸背景のcircleactiveクラスを除去
+});
+
+
+
+/**
+ * 文字シュイーン
+ */
+
+// 動きのきっかけの起点となるアニメーションの名前を定義
+function BgFadeAnime(){
+
+    // 背景色が伸びて出現（左から右）
+  $('.bgLRextendTrigger').each(function(){ //bgLRextendTriggerというクラス名が
+    var elemPos = $(this).offset().top-50;//要素より、50px上の
+    var scroll = $(window).scrollTop();
+    var windowHeight = $(window).height();
+    if (scroll >= elemPos - windowHeight){
+      $(this).addClass('bgLRextend');// 画面内に入ったらbgLRextendというクラス名を追記
+    }else{
+      $(this).removeClass('bgLRextend');// 画面外に出たらbgLRextendというクラス名を外す
+    }
+  }); 
+
+   // 文字列を囲う子要素
+  $('.bgappearTrigger').each(function(){ //bgappearTriggerというクラス名が
+    var elemPos = $(this).offset().top-50;//要素より、50px上の
+    var scroll = $(window).scrollTop();
+    var windowHeight = $(window).height();
+    if (scroll >= elemPos - windowHeight){
+      $(this).addClass('bgappear');// 画面内に入ったらbgappearというクラス名を追記
+    }else{
+      $(this).removeClass('bgappear');// 画面外に出たらbgappearというクラス名を外す
+    }
+  });   
+}
+
+// 画面をスクロールをしたら動かしたい場合の記述
+  $(window).scroll(function (){
+    BgFadeAnime();/* アニメーション用の関数を呼ぶ*/
+  });// ここまで画面をスクロールをしたら動かしたい場合の記述
+
+// 画面が読み込まれたらすぐに動かしたい場合の記述
+  $(window).on('load', function(){
+    BgFadeAnime();/* アニメーション用の関数を呼ぶ*/
+  });// ここまで画面が読み込まれたらすぐに動かしたい場合の記述
+
+
+/**
+ * TOP 波線アニメーション
+ */
+
 var unit = 100,
   canvasList, // キャンバスの配列
   info = {}, // 全キャンバス共通の描画情報
@@ -100,3 +165,41 @@ function drawSine(canvas, t, zoom, delay) {
 }
 
 init();
+
+
+
+/**
+ * TOP スクロール遷移
+ */
+
+$.scrollify({
+	section : ".box",//1ページスクロールさせたいエリアクラス名
+	scrollbars:"false",//スクロールバー表示・非表示設定
+	interstitialSection : "#header,#footer",//ヘッダーフッターを認識し、1ページスクロールさせず表示されるように設定
+	easing: "swing", // 他にもlinearやeaseOutExpoといったjQueryのeasing指定可能
+    scrollSpeed: 300, // スクロール時の速度
+	
+	//以下、ページネーション設定
+	before:function(i,panels) {
+    var ref = panels[i].attr("data-section-name");
+      $(".pagination .active").removeClass("active");
+      $(".pagination").find("a[href=\"#" + ref + "\"]").addClass("active");
+    },
+    afterRender:function() {
+      var pagination = "<ul class=\"pagination\">";
+      var activeClass = "";
+      $(".box").each(function(i) {//1ページスクロールさせたいエリアクラス名を指定
+        activeClass = "";
+        if(i===$.scrollify.currentIndex()) {
+          activeClass = "active";
+        }
+        pagination += "<li><a class=\"" + activeClass + "\" href=\"#" + $(this).attr("data-section-name") + "\"><span class=\"hover-text\">" + $(this).attr("data-section-name").charAt(0).toUpperCase() + $(this).attr("data-section-name").slice(1) + "</span></a></li>";
+      });
+      pagination += "</ul>";
+
+      $("#box1").append(pagination);//はじめのエリアにページネーションを表示
+      $(".pagination a").on("click",$.scrollify.move);
+    }
+
+  });
+
