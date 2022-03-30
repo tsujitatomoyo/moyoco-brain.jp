@@ -79,11 +79,22 @@
             </div>
 			  <div class="top_main_img">
 				  <div class="top_ttl_txt--wrap">
-            <div class="p_r_wrap">
-              <p class="top_ttl_txt __box1"><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">TSUJITA</span></span></p>
-              <p class="text_tate top_ttl_txt __box2"><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">OMOYO</span></span></p>
-              <p class="top_ttl_txt __box3"><span class="bgextend bgLRextendTrigger"><span class="bgappearTrigger">PORTFOLI</span></span></p>
-            </div>
+					  
+            <p class="p_r_wrap">
+				<ul class="delay-show">
+					<li>
+              <div class="top_ttl_txt __box1"><p class="bgextend __box1 bgLRextendTrigger_1 top_ttl_txt_letter-spacing __box1">
+				  <span class="bgappearTrigger_1">TSUJITA</span></p></div>
+						</li>
+					<li>
+              <div class="text_tate top_ttl_txt __box2"><p class="bgextend bgLRextendTrigger_2 top_ttl_txt_letter-spacing __box2" ><span class="bgappearTrigger_2">OMOY</span></p></div>
+					</li>
+					<li>
+              <div class="top_ttl_txt __box3"><p class="bgextend bgLRextendTrigger_3 top_ttl_txt_letter-spacing __box3"><span class="bgappearTrigger_3">PORTFOLIO</span></p></div>
+					  </li>
+            </ul>
+					</p>
+					  
 				  </div>
 			  
 			  
