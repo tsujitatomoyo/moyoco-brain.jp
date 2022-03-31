@@ -1,3 +1,6 @@
+
+
+
 /**
  * スマホヘッダーナビ
  */
@@ -13,8 +16,6 @@ $("#g-nav a").click(function () {//ナビゲーションのリンクがクリッ
     $("#g-nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスを除去
     $(".circle-bg").removeClass('circleactive');//丸背景のcircleactiveクラスを除去
 });
-
-
 
 
 
@@ -149,7 +150,7 @@ function draw(canvas, color) {
 function drawWave(canvas, color, alpha, zoom, delay) {
   var context = canvas.contextCache;
   context.strokeStyle = color; //線の色
-  context.lineWidth = 5; //線の幅
+  context.lineWidth = 1; //線の幅
   context.globalAlpha = alpha;
   context.beginPath(); //パスの開始
   drawSine(canvas, info.t / 0.5, zoom, delay);
@@ -218,4 +219,7 @@ $.scrollify({
     }
 
   });
+
+
+
 

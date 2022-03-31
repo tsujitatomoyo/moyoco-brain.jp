@@ -69,7 +69,8 @@
 		
 
 	 	   <div id="box1" class="box bg__main" data-section-name="Service">
-		
+	
+			   
 <header class="header_wrap">
     <div class="header_ttl">
           <p class="MT--0 MB--0 fadeIn">TSUJITA TOMOYO PORTFOLIO</p>
