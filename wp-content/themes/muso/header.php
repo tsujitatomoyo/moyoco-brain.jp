@@ -10,12 +10,14 @@
 	<meta name="theme-color" content="#EB593C">
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	
 	<link rel="stylesheet" type="text/css" href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/6-1/css/reset.css">
 	
 <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/js/style.css">
 	
 	<!--ファビコン-->
 <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/img/common/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/style.css"/>
 	<?php wp_head(); ?>
 </head>
 	
@@ -38,13 +40,14 @@
 </nav>
 <div class="circle-bg"></div>
 		
-<header class="p_r_wrap">
-      <div class="slant-bg__header">
+		
+<?php /*?><header class="slant-bg__header bg__main">
+      <div class="">
     <div class="header_ttl">
           <p class="MT--0 MB--0 fadeIn">TSUJITA TOMOYO PORTFOLIO</p>
         </div>
     <div class="header_pc_menu">
-          <ul class="col__wrap--margin fadeIn gnavi">
+          <ul class="col__wrap fadeIn gnavi">
         <li class="col--3">
               <p><a href="https://www.google.com/">HOME</a></p>
             </li>
@@ -60,12 +63,41 @@
       </ul>
         </div>
   </div>
+    </header><?php */?>
+		
+		
+
+	 	   <div id="box1" class="box bg__main" data-section-name="Service">
+		
+<header class="header_wrap">
+    <div class="header_ttl">
+          <p class="MT--0 MB--0 fadeIn">TSUJITA TOMOYO PORTFOLIO</p>
+        </div>
+    <div class="header_pc_menu">
+          <ul class="col__wrap fadeIn gnavi">
+        <li class="col--3">
+              <p><a href="https://www.google.com/">HOME</a></p>
+            </li>
+        <li class="col--3">
+              <p><a href="https://www.google.com/">WORKS</a></p>
+            </li>
+        <li class="col--3">
+              <p><a href="https://www.google.com/">SKILL</a></p>
+            </li>
+        <li class="col--3">
+              <p><a href="https://www.google.com/">ABOUT</a></p>
+            </li>
+      </ul>
+        </div>
     </header>
 		
+
 		
-    <div id="box1" class="box" data-section-name="Service">
-      <div class="bg__base w--100 top_main_bg_margin">
-        <div class="bg__base p_r_wrap ">
+<div class="section1 w--100">
+<div class="container top_main_bg_margin">
+
+      <div class=" ">
+        <div class="p_r_wrap">
           <div class=" fadeIn">
             <div id="wrapper">
               <div class="top_wave">
@@ -74,6 +106,7 @@
               <!--/wrapper--> 
             </div>
 			  <div class="top_main_img">
+				
 				  <div class="top_ttl_txt--wrap">
 					  
             <p class="p_r_wrap">
@@ -92,35 +125,47 @@
 					</p>
 					  
 				  </div>
-			  
-			  
-            
-
+			  <div class="fadeIn scrolldown4_wrap" style="animation-delay: 2s;"><div class="scrolldown4"><span>Scroll</span></div>
+		</div>
+				  
             </div>
           </div>
         </div>
-        <section class="content02 __normal">
-	<div style="margin: 5rem;"></div>
-		  
-		  </section>
+        
       </div>
-    </div>
+    
+
+	
+	
+</div>
 	
 
 	
-	<section id="box3" class="box" data-section-name="Access">
-		<h2>Access</h2>
+	
+</div>
+		
+		
+	</div>	
+		
+   
+	
+	
+	
+	
+
+	
+	<section id="box2" class="box" data-section-name="Access">
+				<section class="section3">
+  <div class="container">
+  コンテンツコンテンツ<br>コンテンツコンテンツ<br>コンテンツコンテンツ<br>コンテンツコンテンツ<br>コンテンツコンテンツ<br>コンテンツコンテンツ<br>コンテンツコンテンツ<br>コンテンツコンテンツ<br>コンテンツコンテンツ<br>コンテンツコンテンツ<br>コンテンツコンテンツ<br>コンテンツコンテンツ<br>コンテンツコンテンツ<br>コンテンツコンテンツ<br>コンテンツコンテンツ<br>コンテンツコンテンツ<br>コンテンツコンテンツ<br>コンテンツコンテンツ<br>コンテンツコンテンツ<br>コンテンツコンテンツ<br>
+</div>
+</section>
 	<!--/box--></section>
 		
 		
 	
 		
 		
-	
-	<section id="box4" class="box" data-section-name="Contact">
-		<h2>Contact</h2>
-	<!--/box--></section>
-	
 <main>
 
 	

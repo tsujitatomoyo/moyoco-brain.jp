@@ -2,6 +2,70 @@
 /* ---- header ---- */
 
 
+
+
+.scrolldown4_wrap{
+	    //mix-blend-mode: exclusion;
+}
+
+.scrolldown4{
+    /*描画位置※位置は適宜調整してください*/
+  position:absolute;
+  left: -13.9rem;
+    /*矢印の動き1秒かけて永遠にループ*/
+  animation: arrowmove 1s ease-in-out infinite;
+	z-index: 50;
+}
+
+@keyframes arrowmove{
+      0%{bottom:1%;}
+      50%{bottom:3%;}
+     100%{bottom:1%;}
+ }
+
+.scrolldown4 span{
+    /*描画位置*/
+  position: absolute;
+  left:-20px;
+  bottom:150px;
+    /*テキストの形状*/
+  color: $main-color;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  /*縦書き設定*/
+  -ms-writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+}
+
+/* 矢印の描写 */
+.scrolldown4:before {
+    content: "";
+    /*描画位置*/
+    position: absolute;
+    bottom: 140;
+    right: -6px;
+    /*矢印の形状*/
+    width: 1px;
+    height: 20px;
+    background: $main-color;
+    transform: skewX(-31deg);
+}
+
+.scrolldown4:after{
+  content:"";
+    /*描画位置*/
+  position: absolute;
+  bottom:140;
+  right:0;
+    /*矢印の形状*/
+  width:1px;
+  height: 200px;
+  background:$main-color;
+}
+
+
+
 .slant-bg__header {
     width: 100%;
     margin: 0;
@@ -11,10 +75,6 @@
     overflow: hidden;
 }
 
-.slant-bg__header p {
-    width: 65%;
-    margin: 0 auto;
-}
 
 .slant-bg__header::after {
     content: '';
@@ -39,13 +99,27 @@
 }
 
 
+.section1{background-color:#E5E5E5;-webkit-transform: skew(0deg, 3deg);}
+.section1 .container{-webkit-transform: skew(0deg, -3deg);}
+.section2{
+	padding: 140px 30px;
+    background-color: #EB593C;
+    width: 100%;
+	bottom: -350px;
+}
+.section2 .container{-webkit-transform: skew(0deg, -3deg);}
+
+
+.section3{background-color:#EB593C;-webkit-transform: skew(0deg, 3deg);}
+.section3 .container{-webkit-transform: skew(0deg, -3deg);}
+
 
 .slant-bg {
     width: 100%;
     margin: 0;
     padding: 150px 0;
     position: relative;
-    top: 200px;
+    top: 20px;
 }
 
 .slant-bg p {
@@ -146,22 +220,29 @@
 	background-color: $point-color;
 }
 
+.header_wrap{
+	    height: 170px;
+}
+
 .header_ttl{
-	width: 400px;
+	//width: 400px;
 	font-size: 0.8rem;
 	color: #FFF;
 	position: absolute;
-	left: 0;
+	left: 10px;
+    top: 10px;
 }
 
 .header_pc_menu{
-	width: 530px;
+	//width: 530px;
 	font-weight: bold;
 	position: absolute;
-	right: 0;
+	right: 30px;
 	top:0;
-	padding: 0 1rem 0 0;
-	z-index: 10;
+	//z-index: 10;
+	p{
+		text-align: center;
+	}
 }
 
 
@@ -317,58 +398,21 @@ opacity: 1;
     width: 30%;
 }
 
-/*========= レイアウトのためのCSS ===============*/
-
-h1{
-  font-size:1.2rem;
-}
-
-h2{
-  font-size:1.2rem;
-  text-align: center;
-  margin: 0 0 30px 0;
-}
-
-p{
-  margin-top:20px;  
-}
-
-small{
-  color:#fff;
-  display: block;
-  text-align: center;
-}
-
-#header{
-  width:100%;
-  background:#333;
-  color:#fff;
-  text-align: center;
-  padding: 20px;
-}
-
-section{
-  padding:100px 30px;
-}
-
-section:nth-child(2n){
-  //background:#f3f3f3; 
-}
-
 
 
 
 /* ---- top ---- */
 .top_main_img{
-	margin: 3rem auto;
+	margin: 0rem auto;
 	width: 15rem;
 	background-image: url(#{$img_path}/common/brain.svg);
 	background-repeat: no-repeat;
 	position: relative;
 	z-index: 50;
-	padding: 7rem;
+	padding: 19rem 7rem;
 	background-size: contain;
 	background-position: center;
+	//top:-5rem;
 	img{
 		margin: auto;
 		position: relative;
@@ -388,11 +432,7 @@ section:nth-child(2n){
 
 
 .top_main_bg_margin{
-	background-color: #FFFCEC;
-    position: absolute;
-    top: 10%;
-	margin: 2rem;
-
+	margin: -3rem 0;
 }
 
 .top_wave {
@@ -404,15 +444,15 @@ section:nth-child(2n){
   position: absolute;
   /*bottom: 0;*/
   left: 0;
-	top:1.5rem;
+	top:15rem;
 	width: 100%;
 	height: 90px;
 }
 
 .top_ttl_txt--wrap{
 	position: absolute;
-    top: -2rem;
-    left: -15rem;
+    top: 12rem;
+    left: -14rem;
 	
 }
 
@@ -490,17 +530,17 @@ section:nth-child(2n){
 .box{
     //color: #fff;
     //padding: 40px;
-	display:flex;
+	//display:flex;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
 	position: relative;
 }
 #box1{
-    background: linear-gradient(0deg, rgba(235,89,60,1) 0%, rgba(235,89,60,1) 50%, rgba(255,252,236,1) 50%, rgba(255,252,236,1) 100%);
+    //background: linear-gradient(0deg, rgba(235,89,60,1) 0%, rgba(235,89,60,1) 50%, rgba(255,252,236,1) 50%, rgba(255,252,236,1) 100%);
 }
 #box2{
-    background: #666;
+    
 }
 #box3{
     background: #666;
@@ -519,6 +559,70 @@ section:nth-child(2n){
 #footer a{
 	color: #fff;
 }
+
+
+.pagination {
+  position:fixed;
+  right:20px;
+  top: 50%;
+    transform: translateY(-50%);
+  font-size:1em;
+  z-index: 10;
+  list-style: none;
+}
+
+.pagination a {
+  display:block;
+  height:20px;
+  margin-bottom:5px;
+  color:#fff;
+  position:relative;
+  padding:4px;
+}
+
+.pagination a.active:after {
+  box-shadow:inset 0 0 0 5px;
+}
+
+/*現在地表示のテキストの設定*/
+.pagination a .hover-text {
+  position:absolute;
+  right:15px;
+  top:0;
+  opacity:0;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+  padding-right: 15px;
+}
+
+.pagination a:hover .hover-text {
+  opacity: 1;
+}
+
+.pagination a:after {
+  -webkit-transition:box-shadow 0.5s ease;
+  transition:box-shadow 0.5s ease;
+  width:10px;
+  height:10px;
+  display: block;
+  border:1px solid;
+  border-radius:50%;
+  content:"";
+  position: absolute;
+  margin:auto;
+  top:0;
+  right:3px;
+  bottom:0;
+}
+
+/*768px以下は現在地表示のテキストを非表示*/
+@media screen and (max-width:768px) { 
+  .pagination a .hover-text{
+    display: none;
+  } 
+}
+
+
 
 
 
