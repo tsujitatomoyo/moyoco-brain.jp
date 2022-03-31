@@ -19,8 +19,6 @@
 	<?php wp_head(); ?>
 </head>
 	
-	
-	
 
 <?php /*?><body <?php body_class(); ?>><?php */?>
 	<body class="no-touchdevice is-chrome" style="">
@@ -40,29 +38,27 @@
 </nav>
 <div class="circle-bg"></div>
 		
-<header class="content p_r_wrap">
-      <div class="content01 __header">
-    <div class="p_r_wrap">
-          <div class="header_ttl">
-        <p class="MT--0 MB--0 fadeIn">TSUJITA TOMOYO PORTFOLIO</p>
-      </div>
+<header class="p_r_wrap">
+      <div class="slant-bg__header">
+    <div class="header_ttl">
+          <p class="MT--0 MB--0 fadeIn">TSUJITA TOMOYO PORTFOLIO</p>
         </div>
-  </div>
-      <div class="header_pc_menu">
-    <ul class="col__wrap--margin fadeIn gnavi">
-          <li class="col--3">
-        <p><a href="https://www.google.com/">HOME</a></p>
-      </li>
-          <li class="col--3">
-        <p><a href="https://www.google.com/">WORKS</a></p>
-      </li>
-          <li class="col--3">
-        <p><a href="https://www.google.com/">SKILL</a></p>
-      </li>
-          <li class="col--3">
-        <p><a href="https://www.google.com/">ABOUT</a></p>
-      </li>
-        </ul>
+    <div class="header_pc_menu">
+          <ul class="col__wrap--margin fadeIn gnavi">
+        <li class="col--3">
+              <p><a href="https://www.google.com/">HOME</a></p>
+            </li>
+        <li class="col--3">
+              <p><a href="https://www.google.com/">WORKS</a></p>
+            </li>
+        <li class="col--3">
+              <p><a href="https://www.google.com/">SKILL</a></p>
+            </li>
+        <li class="col--3">
+              <p><a href="https://www.google.com/">ABOUT</a></p>
+            </li>
+      </ul>
+        </div>
   </div>
     </header>
 		

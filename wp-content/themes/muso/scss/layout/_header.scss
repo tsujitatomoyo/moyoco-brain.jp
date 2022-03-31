@@ -2,6 +2,68 @@
 /* ---- header ---- */
 
 
+.slant-bg__header {
+    width: 100%;
+    margin: 0;
+    padding: 30px 0 100px;
+    position: relative;
+    top: 0px;
+    overflow: hidden;
+}
+
+.slant-bg__header p {
+    width: 65%;
+    margin: 0 auto;
+}
+
+.slant-bg__header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: $main-color;
+    transform: skewY(3deg) translateY(-40px);
+    z-index: -1;
+}
+.slant-bg__header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: $base-color;
+    z-index: -2;
+}
+
+
+
+.slant-bg {
+    width: 100%;
+    margin: 0;
+    padding: 150px 0;
+    position: relative;
+    top: 200px;
+}
+
+.slant-bg p {
+    width: 65%;
+    margin: 0 auto;
+}
+
+.slant-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #D1E28A;
+    transform: skewY(-7deg);
+    z-index: -1;
+}
 .content {
   overflow: hidden; /* はみ出た部分は表示しない */
 }
