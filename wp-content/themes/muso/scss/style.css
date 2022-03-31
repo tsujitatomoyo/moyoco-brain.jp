@@ -497,7 +497,7 @@ html {
 
 .c-follower.is-blend,
 .is-blend.c-pointer {
-  background-color: #B51B1B;
+  background-color: #EB593C;
   mix-blend-mode: exclusion; }
 
 .no-touchdevice .c-follower,
@@ -4396,7 +4396,7 @@ a.btn-border-shadow:hover:before {
     margin-top: 6px; }
   .top_ttl_txt_letter-spacing.__box3 span {
     margin-right: -2px;
-    margin-left: 6px; }
+    margin-left: 6.5px; }
 
 .top_ttl_txt {
   margin: 0;
@@ -4406,15 +4406,15 @@ a.btn-border-shadow:hover:before {
   .top_ttl_txt.__box1 {
     position: absolute;
     top: -68px;
-    left: 142px; }
+    left: 143px; }
   .top_ttl_txt.__box2 {
     position: absolute;
     top: -44px;
-    left: 142px;
+    left: 143px;
     text-orientation: upright; }
   .top_ttl_txt.__box3 {
     position: absolute;
-    top: 54px;
+    top: 51px;
     left: 0; }
 
 /*========= 縦書き ===============*/
@@ -4449,15 +4449,17 @@ a.btn-border-shadow:hover:before {
   transform: translateY(-50%);
   font-size: 1em;
   z-index: 10;
-  list-style: none; }
+  list-style: none;
+  mix-blend-mode: exclusion; }
 
 .pagination a {
   display: block;
   height: 20px;
   margin-bottom: 5px;
-  color: #fff;
+  color: #FFFCEC;
   position: relative;
-  padding: 4px; }
+  padding: 4px;
+  mix-blend-mode: exclusion; }
 
 .pagination a.active:after {
   box-shadow: inset 0 0 0 5px; }

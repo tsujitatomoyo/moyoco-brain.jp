@@ -4,6 +4,7 @@
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.1/TweenMax.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script  src="<?php bloginfo('template_directory'); ?>/js/script.js"></script>
 
 
 	<title>TSUJITA TOMOYO PORTFOLIO</title>

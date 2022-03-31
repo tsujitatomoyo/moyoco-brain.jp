@@ -87,7 +87,7 @@ html {
 }
 .c-follower.is-blend,
 .is-blend.c-pointer {
-	background-color: #B51B1B;
+	background-color: $main-color;
 	//filter: invert(100%)!important;
 	mix-blend-mode: exclusion;
 }
