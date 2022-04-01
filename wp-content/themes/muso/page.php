@@ -1,38 +1,43 @@
-<?php
-/**
- * The template for displaying all single posts
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
- *
- * @package WordPress
- * @subpackage Twenty_Nineteen
- * @since Twenty Nineteen 1.0
- */
+<?php get_header(); ?>
 
-get_header();
+
+<article id="post-<?php the_ID(); ?>" <?php post_class('entry-content'); ?>>
+
+
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+
+
+<?php
+//親階層スラッグ取得
+//get_template_part("pages/第二階層スラッグ/第三階層スラッグ/..../page", 現在のスラッグ);
+$parent_slug = "pages";
+if($post -> post_parent != 0 ){
+	$ancestors = array_reverse(get_post_ancestors( $post->ID ));
+	foreach($ancestors as $ancestor){
+		$parent_slug .= "/";
+		$parent_slug .= get_post($ancestor)->post_name;
+	}
+}
+	
+$parent_slug .= "/page";
+//インクルードファイルがあるかどうかを調べる
+$temp_url = get_template_directory()."/".$parent_slug."-".$post->post_name.".php";
+if (file_exists($temp_url)) {//ある場合はファイルインクルード
+    get_template_part($parent_slug, $post->post_name);
+} else {//ない場合はWPコンテンツ領域読み込み
+    the_content();
+}
 ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
 
-			<?php
+<?php endwhile; ?>
+<?php else : ?>
+<?php endif; ?>
 
-			// Start the Loop.
-			while ( have_posts() ) :
-				the_post();
 
-				get_template_part( 'template-parts/content/content', 'page' );
 
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) {
-					comments_template();
-				}
+</article><!-- #post-## -->
 
-			endwhile; // End the loop.
-			?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-<?php
-get_footer();
+<?php get_footer(); ?>
