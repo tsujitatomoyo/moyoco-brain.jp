@@ -25,9 +25,12 @@
 
 <?php /*?><body <?php body_class(); ?>><?php */?>
 	<body class="no-touchdevice is-chrome" style="">
+<section class="Box-pc">
 <div id="cursor" class="c-follower is-blend"><span>View</span></div>
 <div id="pointer" class="c-pointer"></div>
+</section>
 		
+<section class="Box-sp">
 <div class="openbtn1"><span></span><span></span><span></span></div>
 <nav id="g-nav">
 <div id="g-nav-list"><!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
@@ -40,7 +43,7 @@
 </div>
 </nav>
 <div class="circle-bg"></div>
-		
+</section>
 
 		
 		
@@ -52,7 +55,7 @@
     <div class="header_ttl">
           <p class="MT--0 MB--0 fadeIn">TSUJITA TOMOYO PORTFOLIO</p>
         </div>
-    <div class="header_pc_menu">
+    <div class="header_pc_menu Box-pc">
           <ul class="col__wrap fadeIn gnavi">
         <li class="col--3">
               <p><a href="https://www.google.com/">HOME</a></p>

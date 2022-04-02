@@ -1,7 +1,30 @@
 
 /* ---- header ---- */
 
+.st1{
+fill:none;stroke:#E4007F;stroke-width:8;stroke-miterlimit:10;}
+#rect1 {
 
+stroke-dasharray:1030px;
+	animation:line_move 3s/* infinite*/;
+	stroke-linecap: round;
+}
+@keyframes line_move {
+
+
+0% {
+
+stroke-dashoffset:1030px;
+}
+
+
+100% {
+
+stroke-dashoffset:0px;
+}
+
+
+}
 
 
 .scrolldown4_wrap{
@@ -15,6 +38,9 @@
     /*矢印の動き1秒かけて永遠にループ*/
   animation: arrowmove 1s ease-in-out infinite;
 	z-index: 50;
+	@include media-sp {
+		left: -0.9rem;
+	}
 }
 
 @keyframes arrowmove{
@@ -222,6 +248,12 @@
 
 .header_wrap{
 	    height: 170px;
+		@include media-sp {
+		 height:170px;
+			@media screen and (max-width: 320px) {
+				height:90px;
+			}
+	}
 }
 
 .header_ttl{
@@ -348,7 +380,7 @@ opacity: 1;
 /*========= ボタンのためのCSS ===============*/
 .openbtn1{
   position:fixed;
-  top:10px;
+  //top:10px;
   right: 10px;
   z-index: 9999;/*ボタンを最前面に*/
   cursor: pointer;
@@ -413,12 +445,10 @@ opacity: 1;
 	background-size: contain;
 	background-position: center;
 	//top:-5rem;
-	img{
-		margin: auto;
-		position: relative;
-		z-index: 90;
-		top:2rem;
-		
+	@include media-sp {
+		background-position: top 260px right 0px;
+		    background-size: 55%;
+		padding: 19rem 10rem;
 	}
 }
 
@@ -453,6 +483,11 @@ opacity: 1;
 	position: absolute;
     top: 12rem;
     left: -14rem;
+	@include media-sp {
+		position: absolute;
+    top: 11rem;
+    left: -1rem;
+}
 	
 }
 
@@ -464,6 +499,9 @@ opacity: 1;
 	span{
 			    margin-bottom: -0.8px;
     margin-left: 6px;
+		@include media-sp {
+			margin: 0 10px;
+		}
 		}
 
 	}
@@ -471,6 +509,9 @@ opacity: 1;
 	span{
 			margin-bottom: -4px;
     margin-top: 6px;
+		@include media-sp {
+			margin: 0 10px;
+		}
 		}
 
 	}
@@ -478,6 +519,9 @@ opacity: 1;
     span{
 			margin-right: -2px;
 		    margin-left: 6.5px;
+		@include media-sp {
+			margin: 10 10px;
+		}
 		}
 
 	}
@@ -489,24 +533,41 @@ opacity: 1;
 	overflow: hidden;
 	p{
 		margin: 0;
+		font-size: 1rem;
+		@include media-sp {
+			font-size: 2rem;
+		}
 	}
 	
 	&.__box1{
 		position: absolute;
     top: -68px;
     left: 143px;
+		@include media-sp {
+			left: 0px;
+		}
 	}
 	&.__box2{
 	position: absolute;
     top: -44px;
     left: 143px;
     text-orientation: upright;
+		    writing-mode: vertical-rl;
+		@include media-sp {
+			top: -12px;
+			writing-mode:horizontal-tb;
+			left: 0px;
+		}
 
 	}
 	&.__box3{
     position: absolute;
     top: 51px;
     left: 0;
+		@include media-sp {
+			left: 0px;
+			top: 43px;
+		}
 
 	}
 }
