@@ -4267,7 +4267,7 @@ body {
   background-color: #1A8BAC; }
 
 .header_wrap {
-  height: 170px;
+  height: 100px;
   transition: all 0.5s ease-out;
   /*スマホ 768px以下*/ }
   @media (max-width: 48em) {

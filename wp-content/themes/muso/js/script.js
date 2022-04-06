@@ -91,7 +91,7 @@ $(function() {
     //スクロールが100に達したらボタン表示
 	
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 170) {
+        if ($(this).scrollTop() > 100) {
             if (showFlag == false) {
                 showFlag = true;
                 topBtn.stop().animate({'left' : '0px'}, 200); 

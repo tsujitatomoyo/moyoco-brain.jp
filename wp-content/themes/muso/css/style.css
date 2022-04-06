@@ -4436,7 +4436,7 @@ body {
   background-color: #1A8BAC; }
 
 .header_wrap {
-  height: 170px;
+  height: 100px;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
   /*スマホ 768px以下*/ }
