@@ -1,6 +1,39 @@
 
 
 /**
+ * 横スクロール */
+
+window.addEventListener("load", function(){
+
+  //プラグインを定義
+  gsap.registerPlugin(ScrollTrigger);
+
+  const area  = document.querySelector(".js-area");
+  const wrap  = document.querySelector(".js-wrap");
+  const items = document.querySelectorAll(".js-item");
+  const num   = items.length;
+
+  //横幅を指定
+  gsap.set(wrap,  { width: num * 100 + "%" });
+  gsap.set(items, { width: 100 / num + "%" });
+
+  gsap.to(items, {
+    xPercent: -100 * ( num - 1 ), //x方向に移動させる
+    ease: "none",
+    scrollTrigger: {
+      trigger: area, //トリガー
+      start: "top top", //開始位置
+      end: "+=1000", //終了位置
+      pin: true, //ピン留め
+      scrub: true, //スクロール量に応じて動かす
+    }
+  });
+});
+
+
+
+
+/**
  * 文字シュイーン
  */
 
@@ -47,39 +80,6 @@ function BgFadeAnime(i){
 
 
 /**
- * 横スクロール */
-
-window.addEventListener("load", function(){
-
-  //プラグインを定義
-  gsap.registerPlugin(ScrollTrigger);
-
-  const area  = document.querySelector(".js-area");
-  const wrap  = document.querySelector(".js-wrap");
-  const items = document.querySelectorAll(".js-item");
-  const num   = items.length;
-
-  //横幅を指定
-  gsap.set(wrap,  { width: num * 100 + "%" });
-  gsap.set(items, { width: 100 / num + "%" });
-
-  gsap.to(items, {
-    xPercent: -100 * ( num - 1 ), //x方向に移動させる
-    ease: "none",
-    scrollTrigger: {
-      trigger: area, //トリガー
-      start: "top top", //開始位置
-      end: "+=1000", //終了位置
-      pin: true, //ピン留め
-      scrub: true, //スクロール量に応じて動かす
-    }
-  });
-});
-
-
-
-
-/**
  * サイドバーのTOP非表示、スクロールしたら表示
  */
 
@@ -117,9 +117,9 @@ $(function() {
   //スクロールしてページトップから100に達したらボタンを表示
   $(window).on('load scroll', function(){
     if($(this).scrollTop() > 170) {
-      btn.addClass('active');
+      btn.addClass('header_active');
     }else{
-      btn.removeClass('active');
+      btn.removeClass('header_active');
     }
   });
 
@@ -137,13 +137,13 @@ $(function() {
  */
 
 $(".openbtn1").click(function () {//ボタンがクリックされたら
-  $(this).toggleClass('active');//ボタン自身に activeクラスを付与し
+  $(this).toggleClass('header_active');//ボタン自身に header_activeクラスを付与し
     $("#g-nav").toggleClass('panelactive');
 	$(".li_anime").toggleClass('animated fadeInLeft');//ナビゲーションにpanelactiveクラスを付与
 });
 
 $("#g-nav a").click(function () {//ナビゲーションのリンクがクリックされたら
-    $(".openbtn1").removeClass('active');//ボタンの activeクラスを除去し
+    $(".openbtn1").removeClass('header_active');//ボタンの header_activeクラスを除去し
     $("#g-nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスも除去
 });
 

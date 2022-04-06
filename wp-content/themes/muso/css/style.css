@@ -4128,6 +4128,133 @@ a.btn-border-shadow:hover:before {
   padding: 2rem 0 4rem; }
 
 /* ---- header ---- */
+/* ---- header navi ---- */
+#g-nav {
+  /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
+  position: fixed;
+  z-index: 999;
+  /*ナビのスタート位置と形状*/
+  top: 0;
+  left: -120%;
+  width: 25%;
+  height: 100vh;
+  /*ナビの高さ*/
+  background-color: rgba(235, 89, 60, 0.5);
+  /*動き*/
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+  /*スマホ 768px以下*/ }
+  @media (max-width: 48em) {
+    #g-nav {
+      width: 100%; } }
+
+/*アクティブクラスがついたら位置を0に*/
+#g-nav.panelactive {
+  left: 0; }
+
+/*ナビゲーションの縦スクロール*/
+#g-nav.panelactive #g-nav-list {
+  /*ナビの数が増えた場合縦スクロール*/
+  position: fixed;
+  z-index: 999;
+  width: 25%;
+  height: 100vh;
+  /*表示する高さ*/
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  /*スマホ 768px以下*/ }
+  @media (max-width: 48em) {
+    #g-nav.panelactive #g-nav-list {
+      width: 100%; } }
+
+/*ナビゲーション*/
+#g-nav ul {
+  /*ナビゲーション天地中央揃え*/
+  position: absolute;
+  z-index: 999;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  /*スマホ 768px以下*/ }
+  @media (max-width: 48em) {
+    #g-nav ul {
+      left: 50%; } }
+
+/*リストのレイアウト設定*/
+#g-nav li {
+  list-style: none;
+  text-align: center; }
+
+#g-nav li a {
+  color: #333;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: bold; }
+
+/*========= ボタンのためのCSS ===============*/
+.openbtn1 {
+  z-index: 9998;
+  /*ボタンを最前面に*/
+  top: 0px;
+  left: 0px;
+  cursor: pointer;
+  width: 50px; }
+
+/*×に変化*/
+.openbtn1 span {
+  display: inline-block;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  position: absolute;
+  left: 14px;
+  height: 3px;
+  border-radius: 2px;
+  background-color: #666;
+  width: 45%; }
+
+.openbtn1 span:nth-of-type(1) {
+  top: 15px; }
+
+.openbtn1 span:nth-of-type(2) {
+  top: 23px; }
+
+.openbtn1 span:nth-of-type(3) {
+  top: 31px; }
+
+.openbtn1.header_active span:nth-of-type(1) {
+  top: 18px;
+  left: 18px;
+  -webkit-transform: translateY(6px) rotate(-45deg);
+  -ms-transform: translateY(6px) rotate(-45deg);
+  transform: translateY(6px) rotate(-45deg);
+  width: 30%; }
+
+.openbtn1.header_active span:nth-of-type(2) {
+  opacity: 0; }
+
+.openbtn1.header_active span:nth-of-type(3) {
+  top: 30px;
+  left: 18px;
+  -webkit-transform: translateY(-6px) rotate(45deg);
+  -ms-transform: translateY(-6px) rotate(45deg);
+  transform: translateY(-6px) rotate(45deg);
+  width: 30%; }
+
+.openbtn1 div {
+  position: relative;
+  margin-top: 50vh;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  /*スマホ 768px以下*/ }
+  @media (max-width: 48em) {
+    .openbtn1 div {
+      margin-top: 0; } }
+
 .button {
   position: fixed;
   cursor: pointer;
@@ -4139,7 +4266,7 @@ a.btn-border-shadow:hover:before {
   visibility: hidden; }
 
 /*このクラスが付与されると表示する*/
-.active {
+.header_active {
   opacity: 1;
   visibility: visible; }
 
@@ -4191,9 +4318,7 @@ body {
   align-items: center;
   font-size: 50px;
   font-weight: bold;
-  color: #fff;
-  -webkit-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out; }
+  color: #fff; }
 
 .item01 {
   background-color: rgba(235, 89, 60, 0.5); }
@@ -4461,134 +4586,6 @@ body {
   top: 0; }
   .header_pc_menu p {
     text-align: center; }
-
-/* ---- header navi ---- */
-#g-nav {
-  /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
-  position: fixed;
-  z-index: 999;
-  /*ナビのスタート位置と形状*/
-  top: 0;
-  left: -120%;
-  width: 25%;
-  height: 100vh;
-  /*ナビの高さ*/
-  background-color: rgba(235, 89, 60, 0.5);
-  /*動き*/
-  -webkit-transition: all 0.6s;
-  transition: all 0.6s;
-  /*スマホ 768px以下*/ }
-  @media (max-width: 48em) {
-    #g-nav {
-      width: 100%; } }
-
-/*アクティブクラスがついたら位置を0に*/
-#g-nav.panelactive {
-  left: 0; }
-
-/*ナビゲーションの縦スクロール*/
-#g-nav.panelactive #g-nav-list {
-  /*ナビの数が増えた場合縦スクロール*/
-  position: fixed;
-  z-index: 999;
-  width: 25%;
-  height: 100vh;
-  /*表示する高さ*/
-  overflow: auto;
-  -webkit-overflow-scrolling: touch;
-  /*スマホ 768px以下*/ }
-  @media (max-width: 48em) {
-    #g-nav.panelactive #g-nav-list {
-      width: 100%; } }
-
-/*ナビゲーション*/
-#g-nav ul {
-  /*ナビゲーション天地中央揃え*/
-  position: absolute;
-  z-index: 999;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  /*スマホ 768px以下*/ }
-  @media (max-width: 48em) {
-    #g-nav ul {
-      left: 50%; } }
-
-/*リストのレイアウト設定*/
-#g-nav li {
-  list-style: none;
-  text-align: center; }
-
-#g-nav li a {
-  color: #333;
-  text-decoration: none;
-  padding: 10px;
-  display: block;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-weight: bold; }
-
-/*========= ボタンのためのCSS ===============*/
-/*========= ボタンのためのCSS ===============*/
-.openbtn1 {
-  z-index: 9998;
-  /*ボタンを最前面に*/
-  top: 0px;
-  left: 0px;
-  cursor: pointer;
-  width: 50px; }
-
-/*×に変化*/
-.openbtn1 span {
-  display: inline-block;
-  -webkit-transition: all .4s;
-  transition: all .4s;
-  position: absolute;
-  left: 14px;
-  height: 3px;
-  border-radius: 2px;
-  background-color: #666;
-  width: 45%; }
-
-.openbtn1 span:nth-of-type(1) {
-  top: 15px; }
-
-.openbtn1 span:nth-of-type(2) {
-  top: 23px; }
-
-.openbtn1 span:nth-of-type(3) {
-  top: 31px; }
-
-.openbtn1.active span:nth-of-type(1) {
-  top: 18px;
-  left: 18px;
-  -webkit-transform: translateY(6px) rotate(-45deg);
-  -ms-transform: translateY(6px) rotate(-45deg);
-  transform: translateY(6px) rotate(-45deg);
-  width: 30%; }
-
-.openbtn1.active span:nth-of-type(2) {
-  opacity: 0; }
-
-.openbtn1.active span:nth-of-type(3) {
-  top: 30px;
-  left: 18px;
-  -webkit-transform: translateY(-6px) rotate(45deg);
-  -ms-transform: translateY(-6px) rotate(45deg);
-  transform: translateY(-6px) rotate(45deg);
-  width: 30%; }
-
-.openbtn1 div {
-  position: relative;
-  margin-top: 50vh;
-  -webkit-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
-  /*スマホ 768px以下*/ }
-  @media (max-width: 48em) {
-    .openbtn1 div {
-      margin-top: 0; } }
 
 /* ---- top ---- */
 .top_main_img {
