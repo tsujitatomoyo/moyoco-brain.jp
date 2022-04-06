@@ -4121,12 +4121,15 @@ a.btn-border-shadow:hover:before {
   z-index: 9997;
   /*デフォルトで非表示にする*/
   opacity: 0;
-  visibility: hidden; }
+  visibility: hidden;
+  display: none; }
 
 /*このクラスが付与されると表示する*/
 .header_active {
-  opacity: 1;
-  visibility: visible; }
+  opacity: 1 !important;
+  visibility: visible;
+  display: block !important;
+  transition: all 0.5s ease-out; }
 
 #page-top {
   position: fixed;
@@ -4145,14 +4148,17 @@ a.btn-border-shadow:hover:before {
 .side {
   width: 50px;
   height: 100vh;
-  text-align: center; }
+  text-align: center;
+  opacity: 0; }
 
 .content_base {
   width: 100%;
   height: 100vh; }
 
 body {
-  margin: 0; }
+  margin: 0;
+  background-color: #EB593C;
+  background-image: linear-gradient(to bottom, #EB593C, #EB593C); }
 
 .area {
   overflow: hidden; }
@@ -4909,9 +4915,6 @@ body {
     .wrap, .wrap--100, .entry-content {
       margin-left: auto;
       margin-right: auto; } }
-  @media (max-width: 48em) {
-    .wrap, .wrap--100, .entry-content {
-      padding: 0 2.5%; } }
   .wrap--100 {
     padding: 0; }
 

@@ -7,12 +7,12 @@
 <script  src="<?php bloginfo('template_directory'); ?>/js/script.js"></script>
 		<script  src="<?php bloginfo('template_directory'); ?>/js/scroll/ScrollTrigger.js"></script>
 	
-
+<meta name="theme-color" content="#EB593C">
 
 	<title>TSUJITA TOMOYO PORTFOLIO</title>
-	<meta name="theme-color" content="#EB593C">
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/js/animate.css">
 	<link rel="stylesheet" type="text/css" href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/6-1/css/reset.css">
 	
@@ -88,7 +88,7 @@
 
 		
 
-		<main>
+		<main style="background: #FFF;">
    
 		
 

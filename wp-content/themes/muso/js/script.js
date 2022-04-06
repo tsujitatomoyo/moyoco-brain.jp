@@ -113,13 +113,15 @@ $(function() {
 $(function() {
   // 変数にクラスを入れる
   var btn = $('.button');
-  
+	var hyoji = $('.side');
   //スクロールしてページトップから100に達したらボタンを表示
   $(window).on('load scroll', function(){
     if($(this).scrollTop() > 170) {
       btn.addClass('header_active');
+	hyoji.addClass('header_active');
     }else{
       btn.removeClass('header_active');
+		hyoji.removeClass('header_active');
     }
   });
 
