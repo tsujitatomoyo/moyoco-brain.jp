@@ -1,4 +1,29 @@
+window.addEventListener("load", function(){
 
+  //プラグインを定義
+  gsap.registerPlugin(ScrollTrigger);
+
+  const area  = document.querySelector(".js-area");
+  const wrap  = document.querySelector(".js-wrap");
+  const items = document.querySelectorAll(".js-item");
+  const num   = items.length;
+
+  //横幅を指定
+  gsap.set(wrap,  { width: num * 100 + "%" });
+  gsap.set(items, { width: 100 / num + "%" });
+
+  gsap.to(items, {
+    xPercent: -100 * ( num - 1 ), //x方向に移動させる
+    ease: "none",
+    scrollTrigger: {
+      trigger: area, //トリガー
+      start: "top top", //開始位置
+      end: "+=1000", //終了位置
+      pin: true, //ピン留め
+      scrub: true, //スクロール量に応じて動かす
+    }
+  });
+});
 
 
 /**
@@ -8,16 +33,12 @@
 $(".openbtn1").click(function () {//ボタンがクリックされたら
   $(this).toggleClass('active');//ボタン自身に activeクラスを付与し
     $("#g-nav").toggleClass('panelactive');//ナビゲーションにpanelactiveクラスを付与
-    $(".circle-bg").toggleClass('circleactive');//丸背景にcircleactiveクラスを付与
 });
 
 $("#g-nav a").click(function () {//ナビゲーションのリンクがクリックされたら
     $(".openbtn1").removeClass('active');//ボタンの activeクラスを除去し
-    $("#g-nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスを除去
-    $(".circle-bg").removeClass('circleactive');//丸背景のcircleactiveクラスを除去
+    $("#g-nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスも除去
 });
-
-
 
 
 

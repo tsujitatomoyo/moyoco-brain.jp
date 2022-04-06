@@ -20,7 +20,7 @@
 }
 .wrap {
 	@include media-pc {
-		max-width: $site-width__max;
+		//max-width: $site-width__max;
 		margin-left: auto;
 		margin-right: auto;
 	}

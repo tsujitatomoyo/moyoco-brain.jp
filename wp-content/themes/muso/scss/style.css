@@ -482,7 +482,7 @@ html {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 999;
+  z-index: 9999;
   display: none;
   width: 96px;
   height: 96px;
@@ -3996,6 +3996,42 @@ a.btn-border-shadow:hover:before {
   padding: 2rem 0 4rem; }
 
 /* ---- header ---- */
+body {
+  margin: 0; }
+
+.area {
+  overflow: hidden; }
+
+.wrap, .wrap--100, .entry-content {
+  display: flex; }
+
+.item {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  font-weight: bold;
+  color: #fff; }
+
+.item01 {
+  background: #e94d15; }
+
+.item02 {
+  background: #f18d1d; }
+
+.item03 {
+  background: #f8b633; }
+
+.item04 {
+  background: #8cc561; }
+
+.item05 {
+  background: #56aa59; }
+
+.item06 {
+  background: #3d6b35; }
+
 .st1 {
   fill: none;
   stroke: #E4007F;
@@ -4234,85 +4270,48 @@ a.btn-border-shadow:hover:before {
     text-align: center; }
 
 /* ---- header navi ---- */
-/*アクティブになったエリア*/
-#g-nav.panelactive {
+#g-nav {
   /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
   position: fixed;
   z-index: 999;
+  /*ナビのスタート位置と形状*/
   top: 0;
+  left: -120%;
   width: 100%;
-  height: 100vh; }
-
-/*丸の拡大*/
-.circle-bg {
-  position: fixed;
-  z-index: 3;
-  /*丸の形*/
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
+  height: 100vh;
+  /*ナビの高さ*/
   background: #999;
-  /*丸のスタート位置と形状*/
-  transform: scale(0);
-  /*scaleをはじめは0に*/
-  right: -50px;
-  top: -50px;
-  transition: all .6s;
-  /*0.6秒かけてアニメーション*/ }
+  /*動き*/
+  transition: all 0.6s; }
 
-.circle-bg.circleactive {
-  transform: scale(50);
-  /*クラスが付与されたらscaleを拡大*/ }
+/*アクティブクラスがついたら位置を0に*/
+#g-nav.panelactive {
+  left: 0; }
 
 /*ナビゲーションの縦スクロール*/
-#g-nav-list {
-  display: none;
-  /*はじめは表示なし*/
+#g-nav.panelactive #g-nav-list {
   /*ナビの数が増えた場合縦スクロール*/
   position: fixed;
   z-index: 999;
   width: 100%;
   height: 100vh;
+  /*表示する高さ*/
   overflow: auto;
   -webkit-overflow-scrolling: touch; }
 
-#g-nav.panelactive #g-nav-list {
-  display: block;
-  /*クラスが付与されたら出現*/ }
-
 /*ナビゲーション*/
 #g-nav ul {
-  opacity: 0;
-  /*はじめは透過0*/
-  /*ナビゲーション天地中央揃え※レイアウトによって調整してください。不必要なら削除*/
+  /*ナビゲーション天地中央揃え*/
   position: absolute;
   z-index: 999;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); }
 
-/*背景が出現後にナビゲーションを表示*/
-#g-nav.panelactive ul {
-  opacity: 1; }
-
-/* 背景が出現後にナビゲーション li を表示※レイアウトによって調整してください。不必要なら削除*/
-#g-nav.panelactive ul li {
-  animation-name: gnaviAnime;
-  animation-duration: 1s;
-  animation-delay: .2s;
-  /*0.2 秒遅らせて出現*/
-  animation-fill-mode: forwards;
-  opacity: 0; }
-
-@keyframes gnaviAnime {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
 /*リストのレイアウト設定*/
 #g-nav li {
-  text-align: center;
-  list-style: none; }
+  list-style: none;
+  text-align: center; }
 
 #g-nav li a {
   color: #333;
@@ -4324,11 +4323,13 @@ a.btn-border-shadow:hover:before {
   font-weight: bold; }
 
 /*========= ボタンのためのCSS ===============*/
+/*========= ボタンのためのCSS ===============*/
 .openbtn1 {
   position: fixed;
-  right: 10px;
-  z-index: 9999;
+  z-index: 9998;
   /*ボタンを最前面に*/
+  top: 10px;
+  left: 10px;
   cursor: pointer;
   width: 50px;
   height: 50px; }
@@ -4853,7 +4854,6 @@ a.btn-border-shadow:hover:before {
   /*スマホ 768px以下*/ }
   @media all and (min-width: 48.0625em) {
     .wrap, .wrap--100, .entry-content {
-      max-width: 980px;
       margin-left: auto;
       margin-right: auto; } }
   @media (max-width: 48em) {

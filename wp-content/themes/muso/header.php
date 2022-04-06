@@ -5,6 +5,8 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.1/TweenMax.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script  src="<?php bloginfo('template_directory'); ?>/js/script.js"></script>
+		<script  src="<?php bloginfo('template_directory'); ?>/js/scroll/ScrollTrigger.js"></script>
+	<script  src="<?php bloginfo('template_directory'); ?>/js/scroll/gsap.js"></script>
 
 
 	<title>TSUJITA TOMOYO PORTFOLIO</title>
@@ -30,8 +32,25 @@
 <div id="pointer" class="c-pointer"></div>
 </section>
 		
-<section class="Box-sp">
-<div class="openbtn1"><span></span><span></span><span></span></div>
+		
+<?php /*?>	<div style="">
+<div class="openbtn1" style="
+    background-color: aqua;
+    height: 100vh;
+    width: 50px;
+    position: fixed;
+    z-index: 998;
+    "><p style="
+        margin-top: 50vh;
+	position: relative;
+"><span></span><span></span><span></span></p></div><?php */?>
+		
+		
+<section class="">
+	<div style="">
+<div class="openbtn1" style="background-color:#B63234;height: 100vh;">
+	<div style="position: relative;margin-top: 50vh;"><a><p><span></span><span></span><span></span></p></a></div></div>
+</div>
 <nav id="g-nav">
 <div id="g-nav-list"><!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
 <ul>
@@ -43,6 +62,7 @@
 </div>
 </nav>
 <div class="circle-bg"></div>
+
 </section>
 
 		
@@ -81,12 +101,11 @@
 		<main>
    
 	
-	
-	
-	
+
 		
-		
+
 	
+
 
 
 	
