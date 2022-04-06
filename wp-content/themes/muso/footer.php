@@ -14,6 +14,7 @@
 <script>
 new WOW().init();
 </script>
+<script  src="<?php bloginfo('template_directory'); ?>/js/scroll/gsap.js"></script>
 <script  src="<?php bloginfo('template_directory'); ?>/js/script.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/js/bundle.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/js/webgl.js"></script>

@@ -22,7 +22,8 @@
 				  <div class="top_ttl_txt--wrap">
 					  
             <p class="p_r_wrap">
-				<ul class="delay-show">
+				<ul class="">
+					
 					<li>
               <div class="top_ttl_txt __box1"><p class="bgextend __box1 bgLRextendTrigger_1 top_ttl_txt_letter-spacing __box1">
 				  <span class="bgappearTrigger_1">TSUJITA</span></p></div>
@@ -50,12 +51,25 @@
 	  </div>
         
  </div>
-    <div class="item item04 js-item"><span>4</span></div>
+    <div class="item item04 js-item"><span></span></div>
     <div class="item item05 js-item"><span>5</span></div>
     <div class="item item06 js-item"><span>6</span></div>
     <div class="item item04 js-item"><span>4</span></div>
     <div class="item item05 js-item"><span>5</span></div>
-    <div class="item item06 js-item"><span>6</span></div>
+    <div class="item item06 js-item"><span>6<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<p class="wow fadeInUp">ああああああ</p><br>
+<br>
+</span></div>
   </div>
 </div></div>
 

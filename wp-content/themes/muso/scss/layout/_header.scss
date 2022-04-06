@@ -7,6 +7,7 @@
   //bottom: 0;
   cursor: pointer;
   transition: .5s;
+	    z-index: 9997;
   
   /*デフォルトで非表示にする*/
   opacity: 0;
@@ -29,6 +30,10 @@
     height: 100vh;
 	left: 0px;
     top: 0;
+	transition: all 0.5s ease-out;
+	@include media-sp {
+		height: 50px;
+	}
 }
 
 
@@ -66,6 +71,7 @@ body{
   font-size: 50px;
   font-weight: bold;
   color: #fff;
+	transition: all 0.5s ease-out;
 }
 .item01{ background-color: rgba(235, 89, 60, 0.5); }
 .item02{ background-color: rgba(171, 220, 214,0.5); }
@@ -118,6 +124,9 @@ stroke-dashoffset:0px;
 	@include media-sp {
 		left: -0.9rem;
 	}
+	@media screen and (max-width: 320px) {
+		left: 1.1rem;
+	}
 }
 
 @keyframes arrowmove{
@@ -165,6 +174,9 @@ stroke-dashoffset:0px;
   width:1px;
   height: 200px;
   background:$main-color;
+	@include media-sp {
+		height: 260px;
+	}
 }
 
 
@@ -201,20 +213,6 @@ stroke-dashoffset:0px;
     z-index: -2;
 }
 
-
-.section1{background-color:#E5E5E5;-webkit-transform: skew(0deg, 3deg);}
-.section1 .container{-webkit-transform: skew(0deg, -3deg);}
-.section2{
-	padding: 140px 30px;
-    background-color: #EB593C;
-    width: 100%;
-	bottom: -350px;
-}
-.section2 .container{-webkit-transform: skew(0deg, -3deg);}
-
-
-.section3{background-color:#EB593C;-webkit-transform: skew(0deg, 3deg);}
-.section3 .container{-webkit-transform: skew(0deg, -3deg);}
 
 
 .slant-bg {
@@ -325,10 +323,11 @@ stroke-dashoffset:0px;
 
 .header_wrap{
 	    height: 170px;
+	transition: all 0.5s ease-out;
 		@include media-sp {
-		 height:170px;
+		 height:40px;
 			@media screen and (max-width: 320px) {
-				height:90px;
+				height:40px;
 			}
 	}
 }
@@ -379,6 +378,7 @@ stroke-dashoffset:0px;
 }
 
 
+
 /*ナビゲーションの縦スクロール*/
 #g-nav.panelactive #g-nav-list{
     /*ナビの数が増えた場合縦スクロール*/
@@ -403,7 +403,7 @@ stroke-dashoffset:0px;
     left:50%;
     transform: translate(-50%,-50%);
 	@include media-sp {
-		left:57%;
+		left:50%;
 	}
 }
 
@@ -477,7 +477,14 @@ stroke-dashoffset:0px;
     width: 30%;
 }
 
-
+.openbtn1 div{
+	position: relative;
+	margin-top: 50vh;
+	transition: all 0.5s ease-out;
+	@include media-sp {
+		margin-top: 0;
+	}
+}
 
 
 /* ---- top ---- */
@@ -491,12 +498,18 @@ stroke-dashoffset:0px;
 	padding: 19rem 7rem;
 	background-size: contain;
 	background-position: center;
+	transition: all 0.5s ease-out;
 	//top:-5rem;
 	@include media-sp {
 		background-position: top 260px right 0px;
 		    background-size: 55%;
 		padding: 19rem 10rem;
+		top: -2rem;
 	}
+	@media screen and (max-width: 320px) {
+		background-position: top 258px right 12px;
+    top: -2rem;
+}
 }
 
 .top
@@ -536,6 +549,9 @@ stroke-dashoffset:0px;
     top: 11rem;
     left: -1rem;
 }
+	@media screen and (max-width: 320px) {
+		left: 1rem;
+	}
 	
 }
 
@@ -585,12 +601,15 @@ stroke-dashoffset:0px;
 		@include media-sp {
 			font-size: 2rem;
 		}
+		@media screen and (max-width: 320px)  {
+			font-size: 1.8rem;
+		}
 	}
 	
 	&.__box1{
 		position: absolute;
     top: -68px;
-    left: 143px;
+    left: 147.5px;
 		@include media-sp {
 			left: 0px;
 		}
@@ -598,7 +617,7 @@ stroke-dashoffset:0px;
 	&.__box2{
 	position: absolute;
     top: -44px;
-    left: 143px;
+    left: 147.5px;
     text-orientation: upright;
 		    writing-mode: vertical-rl;
 		@include media-sp {
@@ -759,6 +778,8 @@ stroke-dashoffset:0px;
     opacity:1;  
 }
 }
+
+
 
 /*中の要素*/
 .bgappear{

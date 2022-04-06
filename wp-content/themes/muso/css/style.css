@@ -4133,6 +4133,7 @@ a.btn-border-shadow:hover:before {
   cursor: pointer;
   -webkit-transition: .5s;
   transition: .5s;
+  z-index: 9997;
   /*デフォルトで非表示にする*/
   opacity: 0;
   visibility: hidden; }
@@ -4149,7 +4150,13 @@ a.btn-border-shadow:hover:before {
   background-color: #EB593C;
   height: 100vh;
   left: 0px;
-  top: 0; }
+  top: 0;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  /*スマホ 768px以下*/ }
+  @media (max-width: 48em) {
+    #page-top {
+      height: 50px; } }
 
 .side {
   width: 50px;
@@ -4184,7 +4191,9 @@ body {
   align-items: center;
   font-size: 50px;
   font-weight: bold;
-  color: #fff; }
+  color: #fff;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out; }
 
 .item01 {
   background-color: rgba(235, 89, 60, 0.5); }
@@ -4240,6 +4249,9 @@ body {
   @media (max-width: 48em) {
     .scrolldown4 {
       left: -0.9rem; } }
+  @media screen and (max-width: 320px) {
+    .scrolldown4 {
+      left: 1.1rem; } }
 
 @-webkit-keyframes arrowmove {
   0% {
@@ -4295,7 +4307,11 @@ body {
   /*矢印の形状*/
   width: 1px;
   height: 200px;
-  background: #EB593C; }
+  background: #EB593C;
+  /*スマホ 768px以下*/ }
+  @media (max-width: 48em) {
+    .scrolldown4:after {
+      height: 260px; } }
 
 .slant-bg__header {
   width: 100%;
@@ -4327,29 +4343,6 @@ body {
   right: 0;
   background-color: #FFFCEC;
   z-index: -2; }
-
-.section1 {
-  background-color: #E5E5E5;
-  -webkit-transform: skew(0deg, 3deg); }
-
-.section1 .container {
-  -webkit-transform: skew(0deg, -3deg); }
-
-.section2 {
-  padding: 140px 30px;
-  background-color: #EB593C;
-  width: 100%;
-  bottom: -350px; }
-
-.section2 .container {
-  -webkit-transform: skew(0deg, -3deg); }
-
-.section3 {
-  background-color: #EB593C;
-  -webkit-transform: skew(0deg, 3deg); }
-
-.section3 .container {
-  -webkit-transform: skew(0deg, -3deg); }
 
 .slant-bg {
   width: 100%;
@@ -4444,13 +4437,15 @@ body {
 
 .header_wrap {
   height: 170px;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
   /*スマホ 768px以下*/ }
   @media (max-width: 48em) {
     .header_wrap {
-      height: 170px; } }
+      height: 40px; } }
   @media screen and (max-width: 48em) and (max-width: 320px) {
     .header_wrap {
-      height: 90px; } }
+      height: 40px; } }
 
 .header_ttl {
   font-size: 0.8rem;
@@ -4519,7 +4514,7 @@ body {
   /*スマホ 768px以下*/ }
   @media (max-width: 48em) {
     #g-nav ul {
-      left: 57%; } }
+      left: 50%; } }
 
 /*リストのレイアウト設定*/
 #g-nav li {
@@ -4585,6 +4580,16 @@ body {
   transform: translateY(-6px) rotate(45deg);
   width: 30%; }
 
+.openbtn1 div {
+  position: relative;
+  margin-top: 50vh;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  /*スマホ 768px以下*/ }
+  @media (max-width: 48em) {
+    .openbtn1 div {
+      margin-top: 0; } }
+
 /* ---- top ---- */
 .top_main_img {
   margin: 0rem auto;
@@ -4596,12 +4601,19 @@ body {
   padding: 19rem 7rem;
   background-size: contain;
   background-position: center;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
   /*スマホ 768px以下*/ }
   @media (max-width: 48em) {
     .top_main_img {
       background-position: top 260px right 0px;
       background-size: 55%;
-      padding: 19rem 10rem; } }
+      padding: 19rem 10rem;
+      top: -2rem; } }
+  @media screen and (max-width: 320px) {
+    .top_main_img {
+      background-position: top 258px right 12px;
+      top: -2rem; } }
 
 .top .top_bg_circle {
   position: absolute;
@@ -4636,6 +4648,9 @@ body {
       position: absolute;
       top: 11rem;
       left: -1rem; } }
+  @media screen and (max-width: 320px) {
+    .top_ttl_txt--wrap {
+      left: 1rem; } }
 
 .top_ttl_txt_letter-spacing {
   letter-spacing: 8px;
@@ -4672,10 +4687,13 @@ body {
     @media (max-width: 48em) {
       .top_ttl_txt p {
         font-size: 2rem; } }
+    @media screen and (max-width: 320px) {
+      .top_ttl_txt p {
+        font-size: 1.8rem; } }
   .top_ttl_txt.__box1 {
     position: absolute;
     top: -68px;
-    left: 143px;
+    left: 147.5px;
     /*スマホ 768px以下*/ }
     @media (max-width: 48em) {
       .top_ttl_txt.__box1 {
@@ -4683,7 +4701,7 @@ body {
   .top_ttl_txt.__box2 {
     position: absolute;
     top: -44px;
-    left: 143px;
+    left: 147.5px;
     text-orientation: upright;
     -webkit-writing-mode: vertical-rl;
     -ms-writing-mode: tb-rl;
@@ -5229,12 +5247,6 @@ body {
 /* link
 /////////////////////////////////////////////////////////////////////////////////////// */
 .gnavi {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  /*スマホ表示折り返し用なのでPCのみなら不要*/
   margin: 0 0 50px 0;
   list-style: none; }
 

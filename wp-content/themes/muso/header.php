@@ -6,7 +6,7 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script  src="<?php bloginfo('template_directory'); ?>/js/script.js"></script>
 		<script  src="<?php bloginfo('template_directory'); ?>/js/scroll/ScrollTrigger.js"></script>
-	<script  src="<?php bloginfo('template_directory'); ?>/js/scroll/gsap.js"></script>
+	
 
 
 	<title>TSUJITA TOMOYO PORTFOLIO</title>
@@ -26,7 +26,7 @@
 	
 
 <?php /*?><body <?php body_class(); ?>><?php */?>
-	<body class="no-touchdevice is-chrome" style="">
+	<body class="no-touchdevice is-chrome">
 <section class="Box-pc">
 <div id="cursor" class="c-follower is-blend"><span>View</span></div>
 <div id="pointer" class="c-pointer"></div>
@@ -39,17 +39,17 @@
 
 
 <div class="openbtn1">
-	<div style="position: relative;margin-top: 50vh;"><a><p class="MT--0 MB--0" style="padding: 1rem;"><span></span><span></span><span></span></p></a></div></div>
+	<div><a><p class="MT--0 MB--0" style="padding: 2rem;"><span></span><span></span><span></span></p></a></div></div>
 </section>
 
 <section class="button">
 <nav id="g-nav">
 <div id="g-nav-list"><!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
-<ul>
-<li><a href="#">Top</a></li>	
-<li><a href="#">About</a></li>	
-<li><a href="#">Service</a></li>	
-<li><a href="#">Contact</a></li>	
+<ul class="gnavi">
+<li class="li_anime" style="animation-delay: 0.1s;"><a href="#">HOME</a></li>	
+<li class="li_anime" style="animation-delay: 0.3s;"><a href="#">WORKS</a></li>	
+<li class="li_anime" style="animation-delay: 0.5s;"><a href="#">SKILL</a></li>	
+<li class="li_anime" style="animation-delay: 0.7s;"><a href="#">ABOUT</a></li>	
 </ul>
 </div>
 </nav>
@@ -63,21 +63,21 @@
 		   
 <header class="header_wrap  bg__main p_r_wrap">
     <div class="header_ttl">
-          <p class="MT--0 MB--0 fadeIn">TSUJITA TOMOYO PORTFOLIO</p>
+          <p class="MT--0 MB--0 animated fadeInUp">TSUJITA TOMOYO PORTFOLIO</p>
         </div>
     <div class="header_pc_menu Box-pc">
           <ul class="col__wrap fadeIn gnavi">
         <li class="col--3">
-              <p><a href="https://www.google.com/">HOME</a></p>
+              <p><a href="#">HOME</a></p>
             </li>
         <li class="col--3">
-              <p><a href="https://www.google.com/">WORKS</a></p>
+              <p><a href="#">WORKS</a></p>
             </li>
         <li class="col--3">
-              <p><a href="https://www.google.com/">SKILL</a></p>
+              <p><a href="#">SKILL</a></p>
             </li>
         <li class="col--3">
-              <p><a href="https://www.google.com/">ABOUT</a></p>
+              <p><a href="#">ABOUT</a></p>
             </li>
       </ul>
         </div>
@@ -90,8 +90,6 @@
 
 		<main>
    
-	
-
 		
 
 	
