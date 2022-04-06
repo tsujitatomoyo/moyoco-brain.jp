@@ -1,16 +1,22 @@
 <?php get_header(); ?>
-	
+ <canvas class="top_wave" id="waveCanvas" height="100px"></canvas>
+
+
 		<div class="pin-spacer" ><div class="area js-area">
   <div class="wrap js-wrap">
-    <div class="item js-item">      <div class=" ">
-        <div class="p_r_wrap">
-          <div class=" fadeIn">
-            <div id="wrapper">
-              <div class="top_wave">
-                <canvas id="waveCanvas" height="100px"></canvas>
-              </div>
-              <!--/wrapper--> 
-            </div>
+    <div class="item js-item">   
+		<div class="p_r_wrap">
+		
+               
+         
+		
+		
+        <div class="">
+
+			
+			
+			
+			
 			  <div class="top_main_img">
 				
 				  <div class="top_ttl_txt--wrap">
@@ -38,10 +44,13 @@
 		</div>
 				  
             </div>
-          </div>
+          
         </div>
+	  
+	  </div>
         
-      </div></div>
+ </div>
+    <div class="item item04 js-item"><span>4</span></div>
     <div class="item item05 js-item"><span>5</span></div>
     <div class="item item06 js-item"><span>6</span></div>
     <div class="item item04 js-item"><span>4</span></div>

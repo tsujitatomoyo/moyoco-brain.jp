@@ -13,7 +13,7 @@
 	<meta name="theme-color" content="#EB593C">
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	
+	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/js/animate.css">
 	<link rel="stylesheet" type="text/css" href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/6-1/css/reset.css">
 	
 <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/js/style.css">
@@ -31,26 +31,18 @@
 <div id="cursor" class="c-follower is-blend"><span>View</span></div>
 <div id="pointer" class="c-pointer"></div>
 </section>
+	
+	<section style="display: flex;">
 		
 		
-<?php /*?>	<div style="">
-<div class="openbtn1" style="
-    background-color: aqua;
-    height: 100vh;
-    width: 50px;
-    position: fixed;
-    z-index: 998;
-    "><p style="
-        margin-top: 50vh;
-	position: relative;
-"><span></span><span></span><span></span></p></div><?php */?>
-		
-		
-<section class="">
-	<div style="">
-<div class="openbtn1" style="background-color:#B63234;height: 100vh;">
-	<div style="position: relative;margin-top: 50vh;"><a><p><span></span><span></span><span></span></p></a></div></div>
-</div>
+		<section class="side" id="page-top">
+
+
+<div class="openbtn1">
+	<div style="position: relative;margin-top: 50vh;"><a><p class="MT--0 MB--0" style="padding: 1rem;"><span></span><span></span><span></span></p></a></div></div>
+</section>
+
+<section class="button">
 <nav id="g-nav">
 <div id="g-nav-list"><!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
 <ul>
@@ -62,15 +54,13 @@
 </div>
 </nav>
 <div class="circle-bg"></div>
-
 </section>
 
-		
-		
+	 
+<section class="content_base">
 
-	 	   
-	
-			   
+
+		   
 <header class="header_wrap  bg__main p_r_wrap">
     <div class="header_ttl">
           <p class="MT--0 MB--0 fadeIn">TSUJITA TOMOYO PORTFOLIO</p>

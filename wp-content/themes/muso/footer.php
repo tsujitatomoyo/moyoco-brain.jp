@@ -3,11 +3,17 @@
 	
 
 
+
+<p class="copyright wow fadeInUp" style="
+    position: relative;
+">© TSUJIT TOMOYO PORTFOLIO.</p>
 <?php wp_footer(); ?>
-<p class="copyright">© TSUJIT TOMOYO PORTFOLIO.</p>
 </footer>
 
-
+<script src="<?php bloginfo('template_directory'); ?>/js/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>
 <script  src="<?php bloginfo('template_directory'); ?>/js/script.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/js/bundle.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/js/webgl.js"></script>
@@ -16,5 +22,7 @@
 <script src="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/6-1/js/6-1.js"></script>
 
 <?php /*?><script src="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/8-12/js/8-12.js"></script><?php */?>
+</section>
+</section>
 </body>
 </html>

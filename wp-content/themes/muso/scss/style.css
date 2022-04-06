@@ -3996,6 +3996,37 @@ a.btn-border-shadow:hover:before {
   padding: 2rem 0 4rem; }
 
 /* ---- header ---- */
+.button {
+  position: fixed;
+  cursor: pointer;
+  transition: .5s;
+  /*デフォルトで非表示にする*/
+  opacity: 0;
+  visibility: hidden; }
+
+/*このクラスが付与されると表示する*/
+.active {
+  opacity: 1;
+  visibility: visible; }
+
+#page-top {
+  position: fixed;
+  font-size: 77%;
+  z-index: 9998;
+  background-color: #EB593C;
+  height: 100vh;
+  left: 0px;
+  top: 0; }
+
+.side {
+  width: 50px;
+  height: 100vh;
+  text-align: center; }
+
+.content_base {
+  width: 100%;
+  height: 100vh; }
+
 body {
   margin: 0; }
 
@@ -4015,22 +4046,22 @@ body {
   color: #fff; }
 
 .item01 {
-  background: #e94d15; }
+  background-color: rgba(235, 89, 60, 0.5); }
 
 .item02 {
-  background: #f18d1d; }
+  background-color: rgba(171, 220, 214, 0.5); }
 
 .item03 {
-  background: #f8b633; }
+  background-color: rgba(235, 89, 60, 0.5); }
 
 .item04 {
-  background: #8cc561; }
+  background-color: rgba(171, 220, 214, 0.5); }
 
 .item05 {
-  background: #56aa59; }
+  background-color: rgba(235, 89, 60, 0.5); }
 
 .item06 {
-  background: #3d6b35; }
+  background-color: rgba(171, 220, 214, 0.5); }
 
 .st1 {
   fill: none;
@@ -4277,12 +4308,16 @@ body {
   /*ナビのスタート位置と形状*/
   top: 0;
   left: -120%;
-  width: 100%;
+  width: 25%;
   height: 100vh;
   /*ナビの高さ*/
-  background: #999;
+  background-color: rgba(235, 89, 60, 0.5);
   /*動き*/
-  transition: all 0.6s; }
+  transition: all 0.6s;
+  /*スマホ 768px以下*/ }
+  @media (max-width: 48em) {
+    #g-nav {
+      width: 100%; } }
 
 /*アクティブクラスがついたら位置を0に*/
 #g-nav.panelactive {
@@ -4293,11 +4328,15 @@ body {
   /*ナビの数が増えた場合縦スクロール*/
   position: fixed;
   z-index: 999;
-  width: 100%;
+  width: 25%;
   height: 100vh;
   /*表示する高さ*/
   overflow: auto;
-  -webkit-overflow-scrolling: touch; }
+  -webkit-overflow-scrolling: touch;
+  /*スマホ 768px以下*/ }
+  @media (max-width: 48em) {
+    #g-nav.panelactive #g-nav-list {
+      width: 100%; } }
 
 /*ナビゲーション*/
 #g-nav ul {
@@ -4306,7 +4345,11 @@ body {
   z-index: 999;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);
+  /*スマホ 768px以下*/ }
+  @media (max-width: 48em) {
+    #g-nav ul {
+      left: 57%; } }
 
 /*リストのレイアウト設定*/
 #g-nav li {
@@ -4325,14 +4368,12 @@ body {
 /*========= ボタンのためのCSS ===============*/
 /*========= ボタンのためのCSS ===============*/
 .openbtn1 {
-  position: fixed;
   z-index: 9998;
   /*ボタンを最前面に*/
-  top: 10px;
-  left: 10px;
+  top: 0px;
+  left: 0px;
   cursor: pointer;
-  width: 50px;
-  height: 50px; }
+  width: 50px; }
 
 /*×に変化*/
 .openbtn1 span {
@@ -4397,7 +4438,8 @@ body {
   margin: -3rem 0; }
 
 .top_wave {
-  position: relative;
+  position: fixed;
+  top: 35rem;
   width: 100%; }
 
 .top_wave canvas {
@@ -4496,10 +4538,10 @@ body {
   position: relative; }
 
 #box3 {
-  background: #666; }
+  background-color: rgba(235, 89, 70, 0.5); }
 
 #box4 {
-  background: #000; }
+  background-color: rgba(235, 89, 60, 0.5); }
 
 #footer {
   background: #333;

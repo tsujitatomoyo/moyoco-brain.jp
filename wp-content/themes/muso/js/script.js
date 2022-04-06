@@ -26,6 +26,61 @@ window.addEventListener("load", function(){
 });
 
 
+
+
+/**
+ * サイドバーのTOP非表示、スクロールしたら表示
+ */
+
+$(function() {
+    var showFlag = false;
+    var topBtn = $('#page-top');    
+    topBtn.css('left', '-100px');
+    var showFlag = false;
+    //スクロールが100に達したらボタン表示
+	
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 170) {
+            if (showFlag == false) {
+                showFlag = true;
+                topBtn.stop().animate({'left' : '0px'}, 200); 
+            }
+        } else {
+            if (showFlag) {
+                showFlag = false;
+                topBtn.stop().animate({'left' : '-100px'}, 200); 
+            }
+        }
+    });
+
+});
+
+
+/**
+ * サイドバー内メニューのTOP時非表示
+ */
+$(function() {
+  // 変数にクラスを入れる
+  var btn = $('.button');
+  
+  //スクロールしてページトップから100に達したらボタンを表示
+  $(window).on('load scroll', function(){
+    if($(this).scrollTop() > 170) {
+      btn.addClass('active');
+    }else{
+      btn.removeClass('active');
+    }
+  });
+
+  //スクロールしてトップへ戻る
+  btn.on('click',function () {
+    $('body,html').animate({
+      scrollTop: 0
+    });
+  });
+});
+
+
 /**
  * スマホヘッダーナビ
  */
@@ -240,7 +295,4 @@ $.scrollify({
     }
 
   });
-
-
-
 

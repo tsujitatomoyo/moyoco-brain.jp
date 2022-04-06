@@ -1,5 +1,54 @@
 
 /* ---- header ---- */
+
+.button{
+  position: fixed;
+  //right: 0;
+  //bottom: 0;
+  cursor: pointer;
+  transition: .5s;
+  
+  /*デフォルトで非表示にする*/
+  opacity: 0;
+  visibility: hidden;
+}
+
+/*このクラスが付与されると表示する*/
+.active{
+  opacity: 1;
+  visibility: visible;
+}
+
+
+#page-top {
+        position: fixed;
+    //left: 70px;
+    font-size: 77%;
+    z-index: 9998;
+	background-color: $main-color;
+    height: 100vh;
+	left: 0px;
+    top: 0;
+}
+
+
+
+
+
+.side {
+  //background-color:#ff838b;
+  width:50px;
+  height:100vh;
+  text-align:center;
+} 
+
+.content_base{
+	width:100%;
+	height:100vh;
+	//margin-left:10%;
+}
+
+
 body{
   margin: 0;
 }
@@ -18,12 +67,12 @@ body{
   font-weight: bold;
   color: #fff;
 }
-.item01{ background: #e94d15; }
-.item02{ background: #f18d1d; }
-.item03{ background: #f8b633; }
-.item04{ background: #8cc561; }
-.item05{ background: #56aa59; }
-.item06{ background: #3d6b35; }
+.item01{ background-color: rgba(235, 89, 60, 0.5); }
+.item02{ background-color: rgba(171, 220, 214,0.5); }
+.item03{ background-color: rgba(235, 89, 60, 0.5); }
+.item04{ background-color: rgba(171, 220, 214,0.5); }
+.item05{ background-color: rgba(235, 89, 60, 0.5);; }
+.item06{ background-color: rgba(171, 220, 214,0.5); }
 
 
 
@@ -314,11 +363,14 @@ stroke-dashoffset:0px;
     /*ナビのスタート位置と形状*/
   top:0;
     left: -120%;
-  width:100%;
+  width:25%;
     height: 100vh;/*ナビの高さ*/
-  background:#999;
+  background-color: rgba(235, 89, 60, 0.5);
     /*動き*/
   transition: all 0.6s;
+@include media-sp {
+		width:100%;
+	}
 }
 
 /*アクティブクラスがついたら位置を0に*/
@@ -332,10 +384,14 @@ stroke-dashoffset:0px;
     /*ナビの数が増えた場合縦スクロール*/
     position: fixed;
     z-index: 999; 
-    width:100%;
+    width:25%;
     height: 100vh;/*表示する高さ*/
     overflow: auto;
     -webkit-overflow-scrolling: touch;
+@include media-sp {
+		width:100%;
+	}
+
 }
 
 /*ナビゲーション*/
@@ -346,6 +402,9 @@ stroke-dashoffset:0px;
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
+	@include media-sp {
+		left:57%;
+	}
 }
 
 /*リストのレイアウト設定*/
@@ -368,13 +427,12 @@ stroke-dashoffset:0px;
 /*========= ボタンのためのCSS ===============*/
 /*========= ボタンのためのCSS ===============*/
 .openbtn1{
-  position:fixed;
+  //position:fixed;
     z-index: 9998;/*ボタンを最前面に*/
-  top:10px;
-  left: 10px;
+  top:0px;
+  left: 0px;
   cursor: pointer;
     width: 50px;
-    height:50px;
 }
   
 /*×に変化*/  
@@ -455,7 +513,8 @@ stroke-dashoffset:0px;
 }
 
 .top_wave {
-  position: relative;
+      position: fixed;
+    top: 35rem;
 	width: 100%;
 }
 
@@ -593,10 +652,10 @@ stroke-dashoffset:0px;
     
 }
 #box3{
-    background: #666;
+    background-color: rgba(235, 89, 70, 0.5);
 }
 #box4{
-    background: #000;
+    background-color: rgba(235, 89, 60, 0.5);
 }
 
 #footer{
