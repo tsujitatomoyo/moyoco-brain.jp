@@ -4468,6 +4468,7 @@ body {
   background-size: contain;
   background-position: center;
   transition: all 0.5s ease-out;
+  top: -3rem;
   /*スマホ 768px以下*/ }
   @media (max-width: 48em) {
     .top_main_img {

@@ -4656,6 +4656,7 @@ body {
   background-position: center;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
+  top: -3rem;
   /*スマホ 768px以下*/ }
   @media (max-width: 48em) {
     .top_main_img {
