@@ -5305,7 +5305,7 @@ body {
   display: block;
   padding: 10px 30px;
   text-decoration: none;
-  color: #333; }
+  color: #3a3a3a; }
 
 .gnavi li {
   margin-bottom: 20px; }
@@ -5319,7 +5319,7 @@ body {
 
 .gnavi li.current a,
 .gnavi li a:hover {
-  color: #0481A2; }
+  color: #1A8BAC; }
 
 .gnavi li a::after {
   content: '';
@@ -5330,7 +5330,7 @@ body {
   /*線の形状*/
   width: 80%;
   height: 2px;
-  background: #0481A2;
+  background: #1A8BAC;
   /*アニメーションの指定*/
   -webkit-transition: all .3s;
   transition: all .3s;
