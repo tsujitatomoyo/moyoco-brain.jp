@@ -51,6 +51,66 @@
             <div class="works_box"> <a href="<?php echo esc_url(home_url('')); ?>/"><img src="<?php echo get_template_directory_uri(); ?>/img/works/sample.jpg" alt=""></a> </div>
           </div>
         </li>
+        <li class="target test1 col--pc-3 col--sp-4" data-category="cat-a cat-b">
+          <div class="backon_wrap">
+            <div class="backon"></div>
+            <div class="works_box"> <a href="<?php echo esc_url(home_url('')); ?>/"><img src="<?php echo get_template_directory_uri(); ?>/img/works/sample.jpg" alt=""></a> </div>
+          </div>
+        </li>
+        <li class="target test1 col--pc-3 col--sp-4" data-category="cat-c">
+          <div class="backon_wrap">
+            <div class="backon"></div>
+            <div class="works_box"> <a href="<?php echo esc_url(home_url('')); ?>/"><img src="<?php echo get_template_directory_uri(); ?>/img/works/sample.jpg" alt=""></a> </div>
+          </div>
+        </li>
+        <li class="target test1 col--pc-3 col--sp-4" data-category="cat-b">
+          <div class="backon_wrap">
+            <div class="backon"></div>
+            <div class="works_box"> <a href="<?php echo esc_url(home_url('')); ?>/"><img src="<?php echo get_template_directory_uri(); ?>/img/works/sample.jpg" alt=""></a> </div>
+          </div>
+        </li>
+        <li class="target test1 col--pc-3 col--sp-4" data-category="cat-a">
+          <div class="backon_wrap">
+            <div class="backon"></div>
+            <div class="works_box"> <a href="<?php echo esc_url(home_url('')); ?>/"><img src="<?php echo get_template_directory_uri(); ?>/img/works/sample.jpg" alt=""></a> </div>
+          </div>
+        </li>
+        <li class="target test1 col--pc-3 col--sp-4" data-category="cat-c">
+          <div class="backon_wrap">
+            <div class="backon"></div>
+            <div class="works_box"> <a href="<?php echo esc_url(home_url('')); ?>/"><img src="<?php echo get_template_directory_uri(); ?>/img/works/sample.jpg" alt=""></a> </div>
+          </div>
+        </li>
+        <li class="target test1 col--pc-3 col--sp-4" data-category="cat-a cat-b">
+          <div class="backon_wrap">
+            <div class="backon"></div>
+            <div class="works_box"> <a href="<?php echo esc_url(home_url('')); ?>/"><img src="<?php echo get_template_directory_uri(); ?>/img/works/sample.jpg" alt=""></a> </div>
+          </div>
+        </li>
+        <li class="target test1 col--pc-3 col--sp-4" data-category="cat-c">
+          <div class="backon_wrap">
+            <div class="backon"></div>
+            <div class="works_box"> <a href="<?php echo esc_url(home_url('')); ?>/"><img src="<?php echo get_template_directory_uri(); ?>/img/works/sample.jpg" alt=""></a> </div>
+          </div>
+        </li>
+        <li class="target test1 col--pc-3 col--sp-4" data-category="cat-b">
+          <div class="backon_wrap">
+            <div class="backon"></div>
+            <div class="works_box"> <a href="<?php echo esc_url(home_url('')); ?>/"><img src="<?php echo get_template_directory_uri(); ?>/img/works/sample.jpg" alt=""></a> </div>
+          </div>
+        </li>
+        <li class="target test1 col--pc-3 col--sp-4" data-category="cat-a">
+          <div class="backon_wrap">
+            <div class="backon"></div>
+            <div class="works_box"> <a href="<?php echo esc_url(home_url('')); ?>/"><img src="<?php echo get_template_directory_uri(); ?>/img/works/sample.jpg" alt=""></a> </div>
+          </div>
+        </li>
+        <li class="target test1 col--pc-3 col--sp-4" data-category="cat-c">
+          <div class="backon_wrap">
+            <div class="backon"></div>
+            <div class="works_box"> <a href="<?php echo esc_url(home_url('')); ?>/"><img src="<?php echo get_template_directory_uri(); ?>/img/works/sample.jpg" alt=""></a> </div>
+          </div>
+        </li>
       </ul>
   </div>
 </section>
