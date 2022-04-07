@@ -4,9 +4,9 @@
 	<section class="gallery works_input_btn_design">
 <group class="inline-radio">
 	<div><a><input type="radio" id="All" name="categories" value="All" checked=""><label>All</label></a></div>
-    <div><a><input type="radio" id="cat-a" name="categories" value="cat-a"><label>カテゴリA</label></a></div>
-    <div><a><input type="radio" id="cat-b" name="categories" value="cat-b"><label>カテゴリB</label></a></div>
-    <div><a><input type="radio" id="cat-c" name="categories" value="cat-c"><label>カテゴリC</label></a></div>
+    <div><a><input type="radio" id="cat-a" name="categories" value="cat-a"><label>HP</label></a></div>
+    <div><a><input type="radio" id="cat-b" name="categories" value="cat-b"><label>BANNER</label></a></div>
+    <div><a><input type="radio" id="cat-c" name="categories" value="cat-c"><label>OTHERS</label></a></div>
     <?php /*?><div><input type="radio" id="cat-d" name="categories" value="cat-d"><label>カテゴリD</label></div>
     <div><input type="radio" id="cat-e" name="categories" value="cat-e"><label>カテゴリE</label></div>
     <div><input type="radio" id="cat-f" name="categories" value="cat-f"><label>カテゴリF</label></div><?php */?>
