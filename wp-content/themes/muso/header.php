@@ -46,10 +46,11 @@
 <nav id="g-nav">
 <div id="g-nav-list"><!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
 <ul class="gnavi">
-<li class="li_anime" style="animation-delay: 0.1s;"><a href="#">HOME</a></li>	
-<li class="li_anime" style="animation-delay: 0.3s;"><a href="#">WORKS</a></li>	
-<li class="li_anime" style="animation-delay: 0.5s;"><a href="#">SKILL</a></li>	
-<li class="li_anime" style="animation-delay: 0.7s;"><a href="#">ABOUT</a></li>	
+<li class="li_anime_icon" style="animation-delay: 0.4s;animation-duration:1s; "><div class="g-nav_icon"></div></li>
+<li class="li_anime" style="animation-delay: 0.3s;"><a href="#">HOME</a></li>	
+<li class="li_anime" style="animation-delay: 0.5s;"><a href="#">WORKS</a></li>	
+<li class="li_anime" style="animation-delay: 0.7s;"><a href="#">SKILL</a></li>	
+<li class="li_anime" style="animation-delay: 0.9s;"><a href="#">ABOUT</a></li>	
 </ul>
 </div>
 </nav>

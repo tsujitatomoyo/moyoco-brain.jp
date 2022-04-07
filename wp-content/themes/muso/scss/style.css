@@ -3964,6 +3964,9 @@ a.btn-border-shadow:hover:before {
   left: 0;
   padding: 0; }
 
+footer {
+  background-color: #EB593C; }
+
 .footer_link {
   text-align: center;
   margin: 1rem 0 2rem;
@@ -4061,6 +4064,13 @@ a.btn-border-shadow:hover:before {
   letter-spacing: 0.1em;
   font-weight: bold; }
 
+.g-nav_icon {
+  background-image: url(/wp-content/themes/muso/img/common/brain.svg);
+  padding: 3rem;
+  background-size: auto;
+  background-position: center;
+  background-repeat: no-repeat; }
+
 /*========= ボタンのためのCSS ===============*/
 .openbtn1 {
   z-index: 9998;
@@ -4068,7 +4078,19 @@ a.btn-border-shadow:hover:before {
   top: 0px;
   left: 0px;
   cursor: pointer;
-  width: 50px; }
+  width: 50px;
+  transition: all 0.5s ease-out;
+  /*スマホ 768px以下*/ }
+  @media (max-width: 48em) {
+    .openbtn1 {
+      top: -50px;
+      left: -50px;
+      position: absolute;
+      transform: rotate(-45deg); } }
+  @media screen and (max-width: 320px) {
+    .openbtn1 {
+      top: -45px;
+      left: -45px; } }
 
 /*×に変化*/
 .openbtn1 span {
@@ -4094,7 +4116,11 @@ a.btn-border-shadow:hover:before {
   top: 18px;
   left: 18px;
   transform: translateY(6px) rotate(-45deg);
-  width: 30%; }
+  width: 30%;
+  /*スマホ 768px以下*/ }
+  @media (max-width: 48em) {
+    .openbtn1.header_active span:nth-of-type(1) {
+      transform: translateY(6px) rotate(0deg); } }
 
 .openbtn1.header_active span:nth-of-type(2) {
   opacity: 0; }
@@ -4103,7 +4129,11 @@ a.btn-border-shadow:hover:before {
   top: 30px;
   left: 18px;
   transform: translateY(-6px) rotate(45deg);
-  width: 30%; }
+  width: 30%;
+  /*スマホ 768px以下*/ }
+  @media (max-width: 48em) {
+    .openbtn1.header_active span:nth-of-type(3) {
+      transform: translateY(-6px) rotate(85deg); } }
 
 .openbtn1 div {
   position: relative;
@@ -4143,7 +4173,18 @@ a.btn-border-shadow:hover:before {
   /*スマホ 768px以下*/ }
   @media (max-width: 48em) {
     #page-top {
-      height: 50px; } }
+      background-color: transparent;
+      height: 50px;
+      border-left: 60px solid #EB593C;
+      border-top: 60px solid #EB593C;
+      border-right: 60px solid transparent;
+      border-bottom: 60px solid transparent; } }
+  @media screen and (max-width: 320px) {
+    #page-top {
+      border-left: 50px solid #EB593C;
+      border-top: 50px solid #EB593C;
+      border-right: 50px solid transparent;
+      border-bottom: 50px solid transparent; } }
 
 .side {
   width: 50px;
@@ -4433,7 +4474,7 @@ body {
       background-position: top 260px right 0px;
       background-size: 55%;
       padding: 19rem 10rem;
-      top: -2rem; } }
+      top: -5rem; } }
   @media screen and (max-width: 320px) {
     .top_main_img {
       background-position: top 258px right 12px;

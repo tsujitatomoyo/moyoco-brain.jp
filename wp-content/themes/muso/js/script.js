@@ -141,7 +141,8 @@ $(function() {
 $(".openbtn1").click(function () {//ボタンがクリックされたら
   $(this).toggleClass('header_active');//ボタン自身に header_activeクラスを付与し
     $("#g-nav").toggleClass('panelactive');
-	$(".li_anime").toggleClass('animated fadeInLeft');//ナビゲーションにpanelactiveクラスを付与
+	$(".li_anime").toggleClass('animated fadeInLeft');
+	$(".li_anime_icon").toggleClass('animated rollIn');//ナビゲーションにpanelactiveクラスを付与
 });
 
 $("#g-nav a").click(function () {//ナビゲーションのリンクがクリックされたら
