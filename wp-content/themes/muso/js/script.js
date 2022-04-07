@@ -1,5 +1,4 @@
 
-
 /**
  * 横スクロール */
 
@@ -30,6 +29,61 @@ window.addEventListener("load", function(){
   });
 });
 
+
+/**
+ * works 絞り込み
+ */
+window.addEventListener('DOMContentLoaded', function(){
+  const input_categories = document.querySelectorAll("input[name=categories]");
+  const targets = document.querySelectorAll(".target");
+  for(let input_category of input_categories) {
+    input_category.addEventListener('change',function(){  
+      for(let target of targets) {
+        target.style.setProperty('display', 'block');
+        //全ての要素からアニメーションのクラスを削除
+        //target.classList.remove('checked_animation');
+		target.classList.add('test2');
+      }
+      if( this.checked ) {
+        if(this.value !== 'All') {
+          const not_checked_categories = document.querySelectorAll('.target:not([data-category~=' + '"' + this.value + '"])');
+          for(let not_checked_category of not_checked_categories) {
+            //not_checked_category.style.setProperty('display', 'none');
+			  
+          }
+          //data-category に選択されたラジオボタンの value 属性の値が含まれる .target の要素にアニメーションのクラスを追加 
+          const checked_categories = document.querySelectorAll('.target[data-category~=' + '"' + this.value + '"]');
+          for(let checked_category of checked_categories) {
+            //checked_category.classList.add('checked_animation');
+			checked_category.classList.remove('test2');
+          }
+        }else{
+          //選択されたラジオボタンの value 属性の値が All の場合は全ての .target の要素にアニメーションのクラスを追加 
+          for(let target of targets) {
+            //target.classList.add('checked_animation');
+			target.classList.remove('test2');
+          }
+        }
+      }
+    });
+  }     
+});
+
+
+/**
+ * 要素　ランダム表示
+ */
+
+//  function shuffleContent(container) {
+//    var content = container.find("> *");
+//    var total = content.length;
+//    content.each(function () {
+//      content.eq(Math.floor(Math.random() * total)).prependTo(container);
+//    });
+//  }
+//  $(function () {
+//    shuffleContent($(".works_random_wrap"));
+//  });
 
 
 
@@ -112,7 +166,7 @@ $(function() {
  */
 $(function() {
   // 変数にクラスを入れる
-  var btn = $('.button');
+  var btn = $('.g-nav_button');
 	var hyoji = $('.side');
   //スクロールしてページトップから100に達したらボタンを表示
   $(window).on('load scroll', function(){
@@ -302,4 +356,6 @@ $.scrollify({
     }
 
   });
+
+
 

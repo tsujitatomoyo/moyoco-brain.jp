@@ -163,7 +163,7 @@
 
 
 
-.button{
+.g-nav_button{
   position: fixed;
   //right: 0;
   //bottom: 0;
@@ -420,9 +420,7 @@ stroke-dashoffset:0px;
     transform: skewY(-7deg);
     z-index: -1;
 }
-.content {
-  overflow: hidden; /* はみ出た部分は表示しない */
-}
+
 
 .content01{
   position: relative;

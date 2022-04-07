@@ -1,0 +1,68 @@
+/*
+Error: Undefined mixin 'media'.
+        on line 28 of /Applications/MAMP/htdocs/moyoco-brain.jp/wp-content/themes/twentytwentyone/assets/sass/03-generic/vertical-margins.scss, in `media'
+        from line 28 of /Applications/MAMP/htdocs/moyoco-brain.jp/wp-content/themes/twentytwentyone/assets/sass/03-generic/vertical-margins.scss
+
+23: 
+24: .site-header {
+25: 	padding-top: calc(0.75 * var(--global--spacing-vertical));
+26: 	padding-bottom: calc(2 * var(--global--spacing-vertical));
+27: 
+28: 	@include media(mobile) {
+29: 		padding-bottom: calc(3 * var(--global--spacing-vertical));
+30: 	}
+31: }
+32: 
+33: /**
+
+Backtrace:
+/Applications/MAMP/htdocs/moyoco-brain.jp/wp-content/themes/twentytwentyone/assets/sass/03-generic/vertical-margins.scss:28:in `media'
+/Applications/MAMP/htdocs/moyoco-brain.jp/wp-content/themes/twentytwentyone/assets/sass/03-generic/vertical-margins.scss:28
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:348:in `block in visit_mixin'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/stack.rb:98:in `block in with_mixin'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/stack.rb:98:in `with_mixin'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:346:in `visit_mixin'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block (2 levels) in visit_rule'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `map'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block in visit_rule'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/root_node.rb:20:in `render'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/engine.rb:290:in `render'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:396:in `run'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/bin/sass:13:in `<top (required)>'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/bin/sass:34:in `load'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/bin/sass:34:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'media'.\A         on line 28 of /Applications/MAMP/htdocs/moyoco-brain.jp/wp-content/themes/twentytwentyone/assets/sass/03-generic/vertical-margins.scss, in `media'\A         from line 28 of /Applications/MAMP/htdocs/moyoco-brain.jp/wp-content/themes/twentytwentyone/assets/sass/03-generic/vertical-margins.scss\A \A 23: \A 24: .site-header {\A 25: 	padding-top: calc(0.75 * var(--global--spacing-vertical));\A 26: 	padding-bottom: calc(2 * var(--global--spacing-vertical));\A 27: \A 28: 	@include media(mobile) {\A 29: 		padding-bottom: calc(3 * var(--global--spacing-vertical));\A 30: 	}\A 31: }\A 32: \A 33: /**"; }

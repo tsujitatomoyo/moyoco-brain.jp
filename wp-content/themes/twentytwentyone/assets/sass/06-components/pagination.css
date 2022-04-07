@@ -1,0 +1,79 @@
+/*
+Error: Undefined mixin 'media'.
+        on line 43 of /Applications/MAMP/htdocs/moyoco-brain.jp/wp-content/themes/twentytwentyone/assets/sass/06-components/pagination.scss, in `media'
+        from line 43 of /Applications/MAMP/htdocs/moyoco-brain.jp/wp-content/themes/twentytwentyone/assets/sass/06-components/pagination.scss
+
+38: 
+39: 		.dots {
+40: 			text-align: center;
+41: 		}
+42: 
+43: 		@include media(tablet) {
+44: 			display: flex;
+45: 			justify-content: center;
+46: 			flex-wrap: wrap;
+47: 
+48: 			.nav-next,
+
+Backtrace:
+/Applications/MAMP/htdocs/moyoco-brain.jp/wp-content/themes/twentytwentyone/assets/sass/06-components/pagination.scss:43:in `media'
+/Applications/MAMP/htdocs/moyoco-brain.jp/wp-content/themes/twentytwentyone/assets/sass/06-components/pagination.scss:43
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:348:in `block in visit_mixin'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/stack.rb:98:in `block in with_mixin'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/stack.rb:98:in `with_mixin'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:346:in `visit_mixin'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block (2 levels) in visit_rule'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `map'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block in visit_rule'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block (2 levels) in visit_rule'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `map'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block in visit_rule'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/tree/root_node.rb:20:in `render'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/engine.rb:290:in `render'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:396:in `run'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/rubygems/gems/sass-3.7.4/bin/sass:13:in `<top (required)>'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/bin/sass:34:in `load'
+/Applications/Adobe Dreamweaver 2021/Adobe Dreamweaver 2021.app/Contents/Resources/gems/bin/sass:34:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'media'.\A         on line 43 of /Applications/MAMP/htdocs/moyoco-brain.jp/wp-content/themes/twentytwentyone/assets/sass/06-components/pagination.scss, in `media'\A         from line 43 of /Applications/MAMP/htdocs/moyoco-brain.jp/wp-content/themes/twentytwentyone/assets/sass/06-components/pagination.scss\A \A 38: \A 39: 		.dots {\A 40: 			text-align: center;\A 41: 		}\A 42: \A 43: 		@include media(tablet) {\A 44: 			display: flex;\A 45: 			justify-content: center;\A 46: 			flex-wrap: wrap;\A 47: \A 48: 			.nav-next,"; }

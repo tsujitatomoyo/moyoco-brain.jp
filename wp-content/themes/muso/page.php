@@ -1,11 +1,26 @@
-<?php get_header(); ?>
+<?php
+/*固定ページ：1カラム全画面用のテンプレート
+
+Template Name: 1カラムワイド
+
+*/
+ get_header(); ?>
+<section class="content-tmp">
+<div class="breadcrumb">
+    <?php
+    if(function_exists('bcn_display'))
+    {
+    bcn_display();
+    }
+    ?>
+</div><!--/ breadcrumb -->
 
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('entry-content'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('entry-content--wide'); ?>>
 
 
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-
+<?php $slug = $post->post_name; ?>
 
 
 <?php
@@ -38,6 +53,5 @@ if (file_exists($temp_url)) {//ある場合はファイルインクルード
 
 
 </article><!-- #post-## -->
-
-
+</section>
 <?php get_footer(); ?>

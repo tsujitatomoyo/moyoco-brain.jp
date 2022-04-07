@@ -1,0 +1,278 @@
+/* works
+/////////////////////////////////////////////////////////////////////////////////////// */
+.works_box_wrap{
+	position: relative;
+	text-align: center;
+	margin: auto;
+}
+
+.works_box{
+ width:90%; // サイズがサンプルなので適時変更してください。
+ margin:0 auto; //サンプルで中央に寄せたいので書かせていただいております。
+ overflow:hidden; //これを記述することではみ出た部分を非表示にします。
+	text-align: center;
+}
+.works_box img{
+ transition:1s all;
+    object-fit: cover;
+    width: 100%;
+    height: 220px;
+}
+.works_box img:hover{
+  transform:scale(1.2,1.2);
+  transition:1s all;
+}
+
+.works_box_none{
+	opacity: 0;
+	//width: 100%;
+    position: absolute;
+    z-index: 20;
+    background: #000;
+    /* padding: 100%; */
+    object-fit: cover;
+    width: 90%;
+    height: 220px;
+    margin: auto;
+	transition: all 0.5s ease-out;
+	position: absolute;
+	z-index: -10;
+}
+
+
+.works_box_on{
+	opacity: 0.5!important;
+	//width: 100%;
+    position: absolute;
+    z-index: 20;
+    background: #000;
+    /* padding: 100%; */
+    object-fit: cover;
+    width: 90%;
+    height: 220px;
+    margin: auto;
+	transition: all 0.5s ease-out;
+}
+
+
+.works_hp_design_btn{
+  border: 0;
+  box-shadow: none;
+  cursor: pointer;
+	transition: all 0.5s ease-out;
+}
+
+
+
+
+
+.filters {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.filters * {
+  display: inline-block;
+}
+.filters label {
+  text-align: center;
+  padding: 0.25rem 0.5rem;
+  margin-bottom: 0.25rem;
+  min-width: 50px;
+  line-height: normal;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: #999;
+}
+.filters label:hover {
+  background: #994B8A;
+  color: #fff;
+}
+
+.targets .target-title {
+  font-size: 1.2rem;
+  margin: 1rem 0 1rem 0.25rem;
+  color: #999;
+}
+.backon_wrap{
+	position: relative;
+}
+.targets .target-title:hover {
+  text-decoration: underline;
+}
+.targets figcaption {
+  padding: 0.5rem;
+  font-size: 0.75rem;
+}
+.targets .target-categories {
+  margin-bottom: 0.75rem;
+  font-size: 0.75rem;
+}
+.targets .target-categories * {
+  display: inline-block;
+}
+.targets .target-categories li {
+  margin-bottom: 0.2rem;
+}
+.targets .target-categories a {
+  padding: 0.2rem 0.5rem;
+  transition: all 0.1s;
+  color: #994B8A;
+	transition: all 0.5s ease-out;
+}
+.targets .target-categories a:hover {
+  background: #994B8A;
+  color: #fff;
+	transition: all 0.5s ease-out;
+}
+
+[value="All"]:checked ~ .filters [for="All"],
+[value="cat-a"]:checked ~ .filters [for="cat-a"],
+[value="cat-b"]:checked ~ .filters [for="cat-b"], 
+[value="cat-c"]:checked ~ .filters [for="cat-c"], 
+[value="cat-d"]:checked ~ .filters [for="cat-d"], 
+[value="cat-e"]:checked ~ .filters [for="cat-e"], 
+[value="cat-f"]:checked ~ .filters [for="cat-f"] {
+  background: #994B8A;
+  color: #fff;
+}
+/* メディアクエリ */
+@media screen and (max-width: 900px) {
+  .targets {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 650px) {
+  html {
+    font-size: 14px;
+  }
+  .targets {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.gallery {
+  margin: 50px 0;
+}
+
+
+	.test1 div.backon{
+    opacity: 0;
+    position: absolute;
+    z-index: 20;
+    background: #000;
+    padding: 1rem;
+    object-fit: cover;
+    width: 90%;
+    height: 220px;
+    margin: auto;
+    transition: all 0.5s ease-out;
+		left: 0;
+    right: 0;
+    margin: auto;
+		z-index: -10;
+	}
+
+	
+	.test2 div.backon{
+    opacity: 0.6!important;
+    position: absolute;
+    z-index: 20;
+    background: #000;
+    padding: 1rem;
+    object-fit: cover;
+    width: 90%;
+    height: 220px;
+    margin: auto;
+    transition: all 0.5s ease-out;
+		left: 0;
+    right: 0;
+    margin: auto;
+		z-index: 30;
+	}
+
+
+
+
+
+
+.works_input_wrap{
+input[type="radio"] {
+  position: absolute;
+  left: -9999px;
+	opacity: 0;
+}}
+
+
+
+*, *::before, *::after {
+ 
+   box-sizing: border-box;
+}
+
+
+
+.works_input_btn_design {
+   box-sizing: border-box;
+  //background: #fff;
+  width: 100%;
+  margin: auto;
+  //padding: 30px;
+  min-width: 320px;
+  max-width: 540px;
+  //box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  border-radius: 3px;
+}
+
+h1 {
+  color: #fff;
+}
+
+group + group {
+  margin-top: 20px;
+}
+
+.inline-radio {
+	display: flex;
+  border-radius: 3px;
+	overflow: hidden;
+  border: 3px solid $base-color2;
+	transition: all 0.5s ease-out;
+
+
+	div {
+		position: relative;
+		flex: 1;
+	}
+
+	input {
+    width: 100%;
+		height: 60px;
+    opacity: 0;
+	}
+
+	label {
+		position: absolute;
+		top: 0; left: 0;
+		color: $base-color2;
+		width: 100%;
+		height: 100%;
+		background: #fff;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		pointer-events: none;
+		border-right: 3px solid $base-color2;
+		transition: all 0.5s ease-out;
+	}
+
+	div:last-child label {
+		border-right: 0;
+	}
+
+	input:checked + label {
+		background: $main-color;
+    font-weight: 500;
+		color: #fff;
+		transition: all 0.5s ease-out;
+	}
+}

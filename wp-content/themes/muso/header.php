@@ -42,7 +42,7 @@
 	<div><a><p class="MT--0 MB--0" style="padding: 2rem;"><span></span><span></span><span></span></p></a></div></div>
 </section>
 
-<section class="button">
+<section class="g-nav_button">
 <nav id="g-nav">
 <div id="g-nav-list"><!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
 <ul class="gnavi">

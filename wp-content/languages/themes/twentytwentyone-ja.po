@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Themes - Twenty Twenty-One package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-03-11 02:03:13+0000\n"
+"PO-Revision-Date: 2022-01-26 09:31:30+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -39,7 +39,7 @@ msgid "Dark Mode is a device setting. If a visitor to your site requests it, you
 msgstr "ダークモードは端末設定です。サイトへの訪問者が要求した場合、サイトを暗い背景と明るいテキストで表示します。<a href=\"%s\">ダークモードについての詳細はこちら</a>をご覧ください。"
 
 #: classes/class-twenty-twenty-one-dark-mode.php:181
-msgid "Dark Mode can also be turned on and off with a button that you can find in the bottom right corner of the page."
+msgid "Dark Mode can also be turned on and off with a button that you can find in the bottom corner of the page."
 msgstr "ダークモードはページの右下にあるボタンからも有効化・無効化できます。"
 
 #: classes/class-twenty-twenty-one-dark-mode.php:380
@@ -116,15 +116,10 @@ msgid "Background color"
 msgstr "背景色"
 
 #. translators: %s: WordPress Version.
-#. translators: %s: WordPress Version.
-#. translators: %s: WordPress Version.
 #: inc/back-compat.php:42 inc/back-compat.php:61 inc/back-compat.php:86
 msgid "This theme requires WordPress 5.3 or newer. You are running version %s. Please upgrade."
 msgstr "このテーマは WordPress 5.3 より新しいバージョンが必要です。現在のバージョンは %s です。アップグレードしてください。"
 
-#. translators: %: Page number.
-#. translators: %: Page number.
-#. translators: %: Page number.
 #. translators: %: Page number.
 #: image.php:48 template-parts/content/content-page.php:36
 #: template-parts/content/content-single.php:30
@@ -167,18 +162,18 @@ msgctxt "Font size"
 msgid "XS"
 msgstr "XS"
 
-#: comments.php:87
+#: comments.php:85
 msgid "Leave a comment"
 msgstr "コメントする"
 
 #. translators: %s: Comment count number.
-#: comments.php:40
+#: comments.php:39
 msgctxt "Comments title"
 msgid "%s comment"
 msgid_plural "%s comments"
 msgstr[0] "%s件のコメント"
 
-#: comments.php:35
+#: comments.php:34
 msgid "1 comment"
 msgstr "1件のコメント"
 
@@ -360,7 +355,6 @@ msgid "View all of %s's posts."
 msgstr "%sのすべての投稿を表示。"
 
 #. translators: %s: Author name.
-#. translators: %s: Author name.
 #: inc/template-tags.php:49 template-parts/post/author-bio.php:19
 msgid "By %s"
 msgstr "作成者: %s"
@@ -407,36 +401,26 @@ msgid_plural "We found %d results for your search."
 msgstr[0] "検索結果が%d件見つかりました。"
 
 #. translators: %s: Search term.
-#. translators: %s: Search term.
 #: search.php:21 template-parts/content/content-none.php:22
 msgid "Results for \"%s\""
 msgstr "「%s」の検索結果"
 
-#. translators: %s: List of tags.
 #. translators: %s: List of tags.
 #: inc/template-tags.php:118 inc/template-tags.php:162
 msgid "Tagged %s"
 msgstr "タグ: %s"
 
 #. translators: %s: List of categories.
-#. translators: %s: List of categories.
 #: inc/template-tags.php:108 inc/template-tags.php:152
 msgid "Categorized as %s"
 msgstr "カテゴリー: %s"
 
-#. translators: Used between list items, there is a space after the comma.
-#. translators: Used between list items, there is a space after the comma.
-#. translators: Used between list items, there is a space after the comma.
 #. translators: Used between list items, there is a space after the comma.
 #: inc/template-tags.php:104 inc/template-tags.php:114
 #: inc/template-tags.php:148 inc/template-tags.php:158
 msgid ", "
 msgstr "、"
 
-#. translators: %s: Name of current post. Only visible to screen readers.
-#. translators: %s: Name of current post. Only visible to screen readers.
-#. translators: %s: Name of current post. Only visible to screen readers.
-#. translators: %s: Name of current post. Only visible to screen readers.
 #. translators: %s: Name of current post. Only visible to screen readers.
 #: image.php:70 image.php:95 inc/template-tags.php:92 inc/template-tags.php:135
 #: template-parts/content/content-page.php:48
@@ -566,7 +550,7 @@ msgstr "フルサイズ"
 msgid "Published %s"
 msgstr "投稿日: %s"
 
-#: comments.php:62 image.php:45 inc/template-tags.php:228
+#: comments.php:61 image.php:45 inc/template-tags.php:228
 #: template-parts/content/content-page.php:33
 #: template-parts/content/content-single.php:27
 #: template-parts/content/content.php:33
@@ -590,11 +574,11 @@ msgstr "メインメニュー"
 msgid "Skip to content"
 msgstr "コンテンツへスキップ"
 
-#: functions.php:360
+#: functions.php:363
 msgid "Add widgets here to appear in your footer."
 msgstr "フッターに表示させるにはここにウィジェットを追加してください。"
 
-#: functions.php:358
+#: functions.php:361
 msgid "Footer"
 msgstr "フッター"
 
@@ -699,7 +683,7 @@ msgid "Extra small"
 msgstr "極小"
 
 #. translators: %s: WordPress.
-#: footer.php:60
+#: footer.php:67
 msgid "Proudly powered by %s."
 msgstr "Proudly powered by %s."
 
@@ -707,15 +691,15 @@ msgstr "Proudly powered by %s."
 msgid "Secondary menu"
 msgstr "サブメニュー"
 
-#: comments.php:79
+#: comments.php:78
 msgid "Comments are closed."
 msgstr "コメントは受け付けていません。"
 
-#: comments.php:71
+#: comments.php:70
 msgid "Newer comments"
 msgstr "新しいコメント"
 
-#: comments.php:67
+#: comments.php:66
 msgid "Older comments"
 msgstr "過去のコメント"
 
@@ -736,7 +720,7 @@ msgid "Nothing here"
 msgstr "ここには何もありません"
 
 #. Author URI of the theme
-#: footer.php:61
+#: footer.php:68
 msgid "https://wordpress.org/"
 msgstr "https://ja.wordpress.org/"
 

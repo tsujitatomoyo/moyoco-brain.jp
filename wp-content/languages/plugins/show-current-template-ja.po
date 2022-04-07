@@ -1,0 +1,56 @@
+# Translation of Plugins - Show Current Template - Stable (latest release) in Japanese
+# This file is distributed under the same license as the Plugins - Show Current Template - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2021-02-07 07:37:41+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"Language: ja_JP\n"
+"Project-Id-Version: Plugins - Show Current Template - Stable (latest release)\n"
+
+#. Description of the plugin
+msgid "Show the current template file name in the tool bar. <a href=\"https://wp.tekapo.com/is-my-plugin-useful/\">Is this useful for you?</a>"
+msgstr "ツールバーに現在のテンプレートファイル名を表示します。 <a href=\"https://wp.tekapo.com/is-my-plugin-useful/\">お役に立てましたか？</a>"
+
+#. Author URI of the plugin
+msgid "https://tekapo.com/"
+msgstr "https://tekapo.com/"
+
+#. Author of the plugin
+msgid "JOTAKI Taisuke"
+msgstr "上滝 太祐"
+
+#. Plugin URI of the plugin
+msgid "https://wp.tekapo.com/"
+msgstr "https://wp.tekapo.com/"
+
+#. Plugin Name of the plugin
+msgid "Show Current Template"
+msgstr "Show Current Template"
+
+#: show-current-template.php:137
+msgid "Also, below template files are included:"
+msgstr "また、次のテンプレートファイルもインクルードされています:"
+
+#: show-current-template.php:120
+msgid "Template relative path:"
+msgstr "テンプレート相対パス: "
+
+#: show-current-template.php:110
+msgid "Template:"
+msgstr "テンプレート: "
+
+#: show-current-template.php:75
+msgid "NOT a child theme"
+msgstr "子テーマではありません"
+
+#: show-current-template.php:71
+msgid "'s child"
+msgstr " の子テーマです"
+
+#: show-current-template.php:67 show-current-template.php:74
+msgid "Theme name: "
+msgstr "テーマ名: "
