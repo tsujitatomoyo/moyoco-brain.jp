@@ -1,5 +1,9 @@
 /* works
 /////////////////////////////////////////////////////////////////////////////////////// */
+
+input{
+	cursor: none!important;
+}
 .works_box_wrap{
 	position: relative;
 	text-align: center;
@@ -64,7 +68,7 @@
 .works_hp_design_btn{
   border: 0;
   box-shadow: none;
-  cursor: pointer;
+  cursor: none!important;
 	transition: all 0.5s ease-out;
 }
 
@@ -85,7 +89,7 @@
   margin-bottom: 0.25rem;
   min-width: 50px;
   line-height: normal;
-  cursor: pointer;
+  cursor: none!important;
   transition: all 0.2s;
   color: #999;
 }
@@ -291,6 +295,9 @@ group + group {
 		pointer-events: none;
 		border-right: 3px solid $base-color2;
 		transition: all 0.5s ease-out;
+	}
+	.works_btn_pointer{
+		pointer-events: none;
 	}
 
 	div:last-child label {

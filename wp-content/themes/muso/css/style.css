@@ -5385,6 +5385,9 @@ body {
 
 /* works
 /////////////////////////////////////////////////////////////////////////////////////// */
+input {
+  cursor: none !important; }
+
 .works_box_wrap {
   position: relative;
   text-align: center;
@@ -5448,7 +5451,7 @@ body {
 .works_hp_design_btn {
   border: 0;
   box-shadow: none;
-  cursor: pointer;
+  cursor: none !important;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out; }
 
@@ -5465,7 +5468,7 @@ body {
   margin-bottom: 0.25rem;
   min-width: 50px;
   line-height: normal;
-  cursor: pointer;
+  cursor: none !important;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   color: #999; }
@@ -5662,6 +5665,8 @@ group + group {
     border-right: 3px solid #3a3a3a;
     -webkit-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out; }
+  .inline-radio .works_btn_pointer {
+    pointer-events: none; }
   .inline-radio div:last-child label {
     border-right: 0; }
   .inline-radio input:checked + label {
