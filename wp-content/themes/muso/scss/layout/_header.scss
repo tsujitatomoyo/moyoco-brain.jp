@@ -13,11 +13,12 @@
     left: -120%;
   width:25%;
     height: 100vh;/*ナビの高さ*/
-  background-color: rgba(235, 89, 60, 0.5);
+  background-color: rgba(235, 89, 60, 0.8);
     /*動き*/
   transition: all 0.6s;
 @include media-sp {
 		width:100%;
+	background-color: rgba(235, 89, 60, 1);
 	}
 }
 
@@ -64,7 +65,7 @@
 }
 
 #g-nav li a{
-  color: #333;
+  color: #FFF;
   text-decoration: none;
   padding:10px;
   display: block;
@@ -74,7 +75,7 @@
 }
 
 .g-nav_icon{
-	background-image: url(#{$img_path}/common/brain.svg);
+	background-image: url(#{$img_path}/common/brain_navi.svg);
 	padding: 3rem;
     background-size: auto;
     background-position: center;
@@ -84,6 +85,9 @@
 
 
 /*========= ボタンのためのCSS ===============*/
+
+
+
 .openbtn1{
   //position:fixed;
     z-index: 9998;/*ボタンを最前面に*/
@@ -103,7 +107,7 @@
     left: -45px;
 	}
 }
-  
+ 
 /*×に変化*/  
 .openbtn1 span{
     display: inline-block;
@@ -112,7 +116,7 @@
     left: 14px;
     height: 3px;
     border-radius: 2px;
-  background-color: #666;
+  background-color: #FFF;
     width: 45%;
   }
 

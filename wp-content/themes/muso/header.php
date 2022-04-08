@@ -34,10 +34,7 @@
 	
 	<section style="display: flex;">
 		
-		
 		<section class="side" id="page-top">
-
-
 <div class="openbtn1">
 	<div><a><p class="MT--0 MB--0" style="padding: 2rem;"><span></span><span></span><span></span></p></a></div></div>
 </section>
@@ -47,8 +44,8 @@
 <div id="g-nav-list"><!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
 <ul class="gnavi">
 <li class="li_anime_icon" style="animation-delay: 0.4s;animation-duration:1s; "><div class="g-nav_icon"></div></li>
-<li class="li_anime" style="animation-delay: 0.3s;"><a href="#">HOME</a></li>	
-<li class="li_anime" style="animation-delay: 0.5s;"><a href="#">WORKS</a></li>	
+<li class="li_anime" style="animation-delay: 0.3s;"><a href="<?php echo esc_url(home_url('')); ?>">HOME</a></li>	
+<li class="li_anime" style="animation-delay: 0.5s;"><a href="<?php echo esc_url(home_url('')); ?>/works">WORKS</a></li>	
 <li class="li_anime" style="animation-delay: 0.7s;"><a href="#">SKILL</a></li>	
 <li class="li_anime" style="animation-delay: 0.9s;"><a href="#">ABOUT</a></li>	
 </ul>
@@ -66,13 +63,21 @@
     <div class="header_ttl">
           <p class="MT--0 MB--0 animated fadeInUp">TSUJITA TOMOYO PORTFOLIO</p>
         </div>
+	
+	
+	<section class="g-nav_button">
+<div class="circle-bg"></div>
+</section>
+	
+	
+	
     <div class="header_pc_menu Box-pc">
           <ul class="col__wrap fadeIn gnavi">
         <li class="col--3">
-              <p><a href="#">HOME</a></p>
+              <p><a href="<?php echo esc_url(home_url('')); ?>">HOME</a></p>
             </li>
         <li class="col--3">
-              <p><a href="#">WORKS</a></p>
+              <p><a href="<?php echo esc_url(home_url('')); ?>/works">WORKS</a></p>
             </li>
         <li class="col--3">
               <p><a href="#">SKILL</a></p>

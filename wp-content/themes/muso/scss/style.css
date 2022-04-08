@@ -441,8 +441,11 @@ body {
   font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
   font-weight: 500;
   margin: 0;
-  cursor: none;
-  background-color: #FFF; }
+  background-color: #FFF;
+  /*pc769px以上*/ }
+  @media all and (min-width: 48.0625em) {
+    body {
+      cursor: none; } }
 
 body, button, input, select, textarea {
   line-height: 1.5; }
@@ -4020,13 +4023,14 @@ footer {
   width: 25%;
   height: 100vh;
   /*ナビの高さ*/
-  background-color: rgba(235, 89, 60, 0.5);
+  background-color: rgba(235, 89, 60, 0.8);
   /*動き*/
   transition: all 0.6s;
   /*スマホ 768px以下*/ }
   @media (max-width: 48em) {
     #g-nav {
-      width: 100%; } }
+      width: 100%;
+      background-color: #eb593c; } }
 
 /*アクティブクラスがついたら位置を0に*/
 #g-nav.panelactive {
@@ -4066,7 +4070,7 @@ footer {
   text-align: center; }
 
 #g-nav li a {
-  color: #333;
+  color: #FFF;
   text-decoration: none;
   padding: 10px;
   display: block;
@@ -4075,7 +4079,7 @@ footer {
   font-weight: bold; }
 
 .g-nav_icon {
-  background-image: url(/wp-content/themes/muso/img/common/brain.svg);
+  background-image: url(/wp-content/themes/muso/img/common/brain_navi.svg);
   padding: 3rem;
   background-size: auto;
   background-position: center;
@@ -4110,7 +4114,7 @@ footer {
   left: 14px;
   height: 3px;
   border-radius: 2px;
-  background-color: #666;
+  background-color: #FFF;
   width: 45%; }
 
 .openbtn1 span:nth-of-type(1) {
@@ -5060,7 +5064,8 @@ body {
   /*スマホ 768px以下*/ }
   @media (max-width: 48em) {
     .content-tmp {
-      width: 100%; } }
+      width: 95%;
+      margin: auto; } }
 
 .content-1000wrap {
   width: 1000px;
@@ -5068,7 +5073,8 @@ body {
   /*スマホ 768px以下*/ }
   @media (max-width: 48em) {
     .content-1000wrap {
-      width: 100%; } }
+      width: 95%;
+      margin: auto; } }
 
 /* works
 /////////////////////////////////////////////////////////////////////////////////////// */
@@ -5087,7 +5093,14 @@ body {
   transition: 1s all;
   object-fit: cover;
   width: 100%;
-  height: 220px; }
+  height: 220px;
+  /*スマホ 768px以下*/ }
+  @media (max-width: 48em) {
+    .works_box img {
+      height: 110px; } }
+  @media screen and (max-width: 320px) {
+    .works_box img {
+      height: 80px; } }
 
 .works_box img:hover {
   transform: scale(1.2, 1.2);
@@ -5152,7 +5165,11 @@ body {
   color: #999; }
 
 .backon_wrap {
-  position: relative; }
+  position: relative;
+  /*スマホ 768px以下*/ }
+  @media (max-width: 48em) {
+    .backon_wrap {
+      margin-bottom: 0.5rem; } }
 
 .targets .target-title:hover {
   text-decoration: underline; }
@@ -5219,7 +5236,14 @@ body {
   left: 0;
   right: 0;
   margin: auto;
-  z-index: -10; }
+  z-index: -10;
+  /*スマホ 768px以下*/ }
+  @media (max-width: 48em) {
+    .test1 div.backon {
+      height: 110px; } }
+  @media screen and (max-width: 320px) {
+    .test1 div.backon {
+      height: 80px; } }
 
 .test2 div.backon {
   opacity: 0.6 !important;
@@ -5235,7 +5259,14 @@ body {
   left: 0;
   right: 0;
   margin: auto;
-  z-index: 30; }
+  z-index: 30;
+  /*スマホ 768px以下*/ }
+  @media (max-width: 48em) {
+    .test2 div.backon {
+      height: 110px; } }
+  @media screen and (max-width: 320px) {
+    .test2 div.backon {
+      height: 80px; } }
 
 .works_input_wrap input[type="radio"] {
   position: absolute;
@@ -5251,7 +5282,15 @@ body {
   margin: auto;
   min-width: 320px;
   max-width: 540px;
-  border-radius: 3px; }
+  border-radius: 3px;
+  font-size: 0.9rem;
+  /*スマホ 768px以下*/ }
+  @media (max-width: 48em) {
+    .works_input_btn_design {
+      margin: 5rem auto 0; } }
+  @media screen and (max-width: 320px) {
+    .works_input_btn_design {
+      min-width: 280px; } }
 
 h1 {
   color: #fff; }

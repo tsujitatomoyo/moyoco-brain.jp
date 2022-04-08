@@ -17,6 +17,12 @@
     object-fit: cover;
     width: 100%;
     height: 220px;
+	@include media-sp {
+		height: 110px;
+	}
+	@media screen and (max-width: 320px) {
+		height: 80px;
+	}
 }
 .works_box img:hover{
   transform:scale(1.2,1.2);
@@ -95,6 +101,9 @@
 }
 .backon_wrap{
 	position: relative;
+	@include media-sp {
+		margin-bottom: 0.5rem;
+	}
 }
 .targets .target-title:hover {
   text-decoration: underline;
@@ -170,6 +179,12 @@
     right: 0;
     margin: auto;
 		z-index: -10;
+		@include media-sp {
+			height: 110px;
+		}
+		@media screen and (max-width: 320px) {
+			height: 80px;
+		}
 	}
 
 	
@@ -188,6 +203,12 @@
     right: 0;
     margin: auto;
 		z-index: 30;
+		@include media-sp {
+			height: 110px;
+		}
+		@media screen and (max-width: 320px) {
+			height: 80px;
+		}
 	}
 
 
@@ -221,6 +242,13 @@ input[type="radio"] {
   max-width: 540px;
   //box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
   border-radius: 3px;
+font-size: 0.9rem;
+	@include media-sp {
+		margin:5rem auto 0;
+	}
+	@media screen and (max-width: 320px) {
+		min-width: 280px;
+	}
 }
 
 h1 {

@@ -170,7 +170,7 @@ $(function() {
 	var hyoji = $('.side');
   //スクロールしてページトップから100に達したらボタンを表示
   $(window).on('load scroll', function(){
-    if($(this).scrollTop() > 170) {
+    if($(this).scrollTop() > 100) {
       btn.addClass('header_active');
 	hyoji.addClass('header_active');
     }else{
@@ -179,12 +179,6 @@ $(function() {
     }
   });
 
-  //スクロールしてトップへ戻る
-  btn.on('click',function () {
-    $('body,html').animate({
-      scrollTop: 0
-    });
-  });
 });
 
 
@@ -203,11 +197,6 @@ $("#g-nav a").click(function () {//ナビゲーションのリンクがクリッ
     $(".openbtn1").removeClass('header_active');//ボタンの header_activeクラスを除去し
     $("#g-nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスも除去
 });
-
-
-
-
-
 
 
 
