@@ -72,6 +72,11 @@
   font-weight: bold;
 }
 
+#g-nav li :hover{
+	color: $point-color;
+	transition: all 0.3s ease-out;
+}
+
 .g-nav_icon{
 	background-image: url(#{$img_path}/common/brain_navi.svg);
 	padding: 3rem;
@@ -314,12 +319,14 @@
 	@include media-pc {
 		flex-direction: row-reverse;
 		display: flex;
+		transition: all 0.5s ease-out;
 	}
 }
 .main_content{
 	display: flex;
 	@include media-pc {
 		justify-content: end;
+		transition: all 0.5s ease-out;
 	}
 }
 
@@ -341,8 +348,8 @@
 
 body{
   margin: 0;
-	background-color: $main-color;
-    background-image: linear-gradient(to bottom, $main-color, $main-color);
+	//background-color: $main-color;
+    //background-image: linear-gradient(to bottom, $main-color, $main-color);
 }
 .area{
   overflow: hidden;

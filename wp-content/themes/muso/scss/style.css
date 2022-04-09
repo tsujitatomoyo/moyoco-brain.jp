@@ -4078,6 +4078,10 @@ footer {
   letter-spacing: 0.1em;
   font-weight: bold; }
 
+#g-nav li :hover {
+  color: #1A8BAC;
+  transition: all 0.3s ease-out; }
+
 .g-nav_icon {
   background-image: url(/wp-content/themes/muso/img/common/brain_navi.svg);
   padding: 3rem;
@@ -4343,14 +4347,16 @@ footer {
   @media all and (min-width: 48.0625em) {
     .main_content_wrap {
       flex-direction: row-reverse;
-      display: flex; } }
+      display: flex;
+      transition: all 0.5s ease-out; } }
 
 .main_content {
   display: flex;
   /*pc769px以上*/ }
   @media all and (min-width: 48.0625em) {
     .main_content {
-      justify-content: end; } }
+      justify-content: end;
+      transition: all 0.5s ease-out; } }
 
 .content_base_top {
   transition: all 0.5s ease-out;
@@ -4366,9 +4372,7 @@ footer {
   height: 100vh; }
 
 body {
-  margin: 0;
-  background-color: #EB593C;
-  background-image: linear-gradient(to bottom, #EB593C, #EB593C); }
+  margin: 0; }
 
 .area {
   overflow: hidden; }

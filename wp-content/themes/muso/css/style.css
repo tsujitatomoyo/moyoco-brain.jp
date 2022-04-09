@@ -4213,6 +4213,11 @@ footer {
   letter-spacing: 0.1em;
   font-weight: bold; }
 
+#g-nav li :hover {
+  color: #1A8BAC;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out; }
+
 .g-nav_icon {
   background-image: url(/wp-content/themes/muso/img/common/brain_navi.svg);
   padding: 3rem;
@@ -4526,7 +4531,9 @@ footer {
       flex-direction: row-reverse;
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex; } }
+      display: flex;
+      -webkit-transition: all 0.5s ease-out;
+      transition: all 0.5s ease-out; } }
 
 .main_content {
   display: -webkit-box;
@@ -4537,7 +4544,9 @@ footer {
     .main_content {
       -webkit-box-pack: end;
       -ms-flex-pack: end;
-      justify-content: end; } }
+      justify-content: end;
+      -webkit-transition: all 0.5s ease-out;
+      transition: all 0.5s ease-out; } }
 
 .content_base_top {
   -webkit-transition: all 0.5s ease-out;
@@ -4555,10 +4564,7 @@ footer {
   height: 100vh; }
 
 body {
-  margin: 0;
-  background-color: #EB593C;
-  background-image: -webkit-linear-gradient(top, #EB593C, #EB593C);
-  background-image: linear-gradient(to bottom, #EB593C, #EB593C); }
+  margin: 0; }
 
 .area {
   overflow: hidden; }
