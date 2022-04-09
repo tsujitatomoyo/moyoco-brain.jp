@@ -13,7 +13,7 @@
     left: -120%;
   width:25%;
     height: 100vh;/*ナビの高さ*/
-  background-color: rgba(235, 89, 60, 0.8);
+  background-color: rgba(235, 89, 60, 0.9);
     /*動き*/
   transition: all 0.6s;
 @include media-sp {
@@ -88,6 +88,85 @@
 
 
 
+:root {
+    --bar-thickness: 5px;
+}
+
+
+.hamburger_posi{
+	@include media-sp {
+	position: relative;
+	top: -35px;
+		left: -40px;
+	}
+	@media screen and (max-width: 320px) {
+		position: relative;
+		top: -31px;
+		left: -37px;
+	}
+}
+
+
+.hamburger {
+        width: 30px;
+    height: 25px;
+        position: absolute;
+    transition: transform .5s;
+	transform: rotate(45deg);
+	top: 50vh;
+	left: 0;
+	right: 0;
+	    margin: auto;
+	@include media-sp {
+		top: 0;
+		left: 0px;
+		right: auto;
+	}
+}
+
+.hamburger:hover {@include media-pc {transform: rotate(-45deg);
+	margin: auto;left: 0;right: 0;}}
+
+.hamburger div {
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #FFF;
+    border-radius: 3px;
+    transform-origin: 50% 50%;
+    transition: .5s .25s;
+}
+
+.hamburger div:nth-child(1){top: 0;    width: 22px;
+    left: 4px;}
+.hamburger div:nth-child(2){top: calc(50% - var(--bar-thickness) / 2);margin: auto;left: 0;right: 0;}
+.hamburger div:nth-child(3){top: calc(100% - var(--bar-thickness));    width: 22px;
+    left: 4px;}
+
+.hamburger:hover div{@include media-pc {top: calc(50% - var(--bar-thickness) / 2);}}
+.hamburger:hover div:nth-child(1){@include media-pc {transform: scale(1, 0);
+  transform-origin: 50% 50%;margin: auto;left: 0;right: 0;}}
+.hamburger:hover div:nth-child(2){@include media-pc {top: calc(50% - var(--bar-thickness) / 2);width: 30px;margin: auto;left: 0;right: 0;}}
+.hamburger:hover div:nth-child(3){@include media-pc {transform: scale(1, 0);
+	transform-origin: 50% 50%;}}
+
+
+.hamburger.header_active{
+	transform: rotate(-45deg);
+	    margin: auto;
+}
+.hamburger.header_active div{top: calc(50% - var(--bar-thickness) / 2);margin: auto;left: 0;right: 0;}
+.hamburger.header_active div:nth-child(1){transform: rotate(45deg);width: 31px;transform: rotate(90deg);background-color: $point-color;transition: .5s .25s;margin: auto;left: 0;right: 0;}
+.hamburger.header_active div:nth-child(2){top: calc(50% - var(--bar-thickness) / 2);width: 30px;margin: auto;left: 0;right: 0;}
+.hamburger.header_active div:nth-child(3){opacity: 0;}
+
+
+
+
+
+
+
+
 .openbtn1{
   //position:fixed;
     z-index: 9998;/*ボタンを最前面に*/
@@ -122,6 +201,9 @@
 
 .openbtn1 span:nth-of-type(1) {
   top:15px; 
+	&:hover {
+      transform: rotate(-50deg) scale(1, 1) translate(-5px, -32px);
+	}
 }
 
 .openbtn1 span:nth-of-type(2) {
@@ -912,3 +994,12 @@ stroke-dashoffset:0px;
 	position: inherit;
 	z-index: 5;
 }
+
+
+
+
+
+
+
+
+

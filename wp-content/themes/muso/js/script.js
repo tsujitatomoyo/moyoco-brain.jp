@@ -186,7 +186,7 @@ $(function() {
  * スマホヘッダーナビ
  */
 
-$(".openbtn1").click(function () {//ボタンがクリックされたら
+$(".hamburger").click(function () {//ボタンがクリックされたら
   $(this).toggleClass('header_active');//ボタン自身に header_activeクラスを付与し
     $("#g-nav").toggleClass('panelactive');
 	$(".li_anime").toggleClass('animated fadeInLeft');
@@ -194,7 +194,7 @@ $(".openbtn1").click(function () {//ボタンがクリックされたら
 });
 
 $("#g-nav a").click(function () {//ナビゲーションのリンクがクリックされたら
-    $(".openbtn1").removeClass('header_active');//ボタンの header_activeクラスを除去し
+    $(".hamburger").removeClass('header_active');//ボタンの header_activeクラスを除去し
     $("#g-nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスも除去
 });
 

@@ -4155,7 +4155,7 @@ footer {
   width: 25%;
   height: 100vh;
   /*ナビの高さ*/
-  background-color: rgba(235, 89, 60, 0.8);
+  background-color: rgba(235, 89, 60, 0.9);
   /*動き*/
   -webkit-transition: all 0.6s;
   transition: all 0.6s;
@@ -4221,6 +4221,161 @@ footer {
   background-repeat: no-repeat; }
 
 /*========= ボタンのためのCSS ===============*/
+:root {
+  --bar-thickness: 5px; }
+
+.hamburger_posi {
+  /*スマホ 768px以下*/ }
+  @media (max-width: 48em) {
+    .hamburger_posi {
+      position: relative;
+      top: -35px;
+      left: -40px; } }
+  @media screen and (max-width: 320px) {
+    .hamburger_posi {
+      position: relative;
+      top: -31px;
+      left: -37px; } }
+
+.hamburger {
+  width: 30px;
+  height: 25px;
+  position: absolute;
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 50vh;
+  left: 0;
+  right: 0;
+  margin: auto;
+  /*スマホ 768px以下*/ }
+  @media (max-width: 48em) {
+    .hamburger {
+      top: 0;
+      left: 0px;
+      right: auto; } }
+
+.hamburger:hover {
+  /*pc769px以上*/ }
+  @media all and (min-width: 48.0625em) {
+    .hamburger:hover {
+      -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      margin: auto;
+      left: 0;
+      right: 0; } }
+
+.hamburger div {
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: #FFF;
+  border-radius: 3px;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-transition: .5s .25s;
+  transition: .5s .25s; }
+
+.hamburger div:nth-child(1) {
+  top: 0;
+  width: 22px;
+  left: 4px; }
+
+.hamburger div:nth-child(2) {
+  top: calc(50% - var(--bar-thickness) / 2);
+  margin: auto;
+  left: 0;
+  right: 0; }
+
+.hamburger div:nth-child(3) {
+  top: calc(100% - var(--bar-thickness));
+  width: 22px;
+  left: 4px; }
+
+.hamburger:hover div {
+  /*pc769px以上*/ }
+  @media all and (min-width: 48.0625em) {
+    .hamburger:hover div {
+      top: calc(50% - var(--bar-thickness) / 2); } }
+
+.hamburger:hover div:nth-child(1) {
+  /*pc769px以上*/ }
+  @media all and (min-width: 48.0625em) {
+    .hamburger:hover div:nth-child(1) {
+      -webkit-transform: scale(1, 0);
+      -ms-transform: scale(1, 0);
+      transform: scale(1, 0);
+      -webkit-transform-origin: 50% 50%;
+      -ms-transform-origin: 50% 50%;
+      transform-origin: 50% 50%;
+      margin: auto;
+      left: 0;
+      right: 0; } }
+
+.hamburger:hover div:nth-child(2) {
+  /*pc769px以上*/ }
+  @media all and (min-width: 48.0625em) {
+    .hamburger:hover div:nth-child(2) {
+      top: calc(50% - var(--bar-thickness) / 2);
+      width: 30px;
+      margin: auto;
+      left: 0;
+      right: 0; } }
+
+.hamburger:hover div:nth-child(3) {
+  /*pc769px以上*/ }
+  @media all and (min-width: 48.0625em) {
+    .hamburger:hover div:nth-child(3) {
+      -webkit-transform: scale(1, 0);
+      -ms-transform: scale(1, 0);
+      transform: scale(1, 0);
+      -webkit-transform-origin: 50% 50%;
+      -ms-transform-origin: 50% 50%;
+      transform-origin: 50% 50%; } }
+
+.hamburger.header_active {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  margin: auto; }
+
+.hamburger.header_active div {
+  top: calc(50% - var(--bar-thickness) / 2);
+  margin: auto;
+  left: 0;
+  right: 0; }
+
+.hamburger.header_active div:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  width: 31px;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  background-color: #1A8BAC;
+  -webkit-transition: .5s .25s;
+  transition: .5s .25s;
+  margin: auto;
+  left: 0;
+  right: 0; }
+
+.hamburger.header_active div:nth-child(2) {
+  top: calc(50% - var(--bar-thickness) / 2);
+  width: 30px;
+  margin: auto;
+  left: 0;
+  right: 0; }
+
+.hamburger.header_active div:nth-child(3) {
+  opacity: 0; }
+
 .openbtn1 {
   z-index: 9998;
   /*ボタンを最前面に*/
@@ -4258,6 +4413,10 @@ footer {
 
 .openbtn1 span:nth-of-type(1) {
   top: 15px; }
+  .openbtn1 span:nth-of-type(1):hover {
+    -webkit-transform: rotate(-50deg) scale(1, 1) translate(-5px, -32px);
+    -ms-transform: rotate(-50deg) scale(1, 1) translate(-5px, -32px);
+    transform: rotate(-50deg) scale(1, 1) translate(-5px, -32px); }
 
 .openbtn1 span:nth-of-type(2) {
   top: 23px; }

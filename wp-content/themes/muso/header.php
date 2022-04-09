@@ -35,9 +35,16 @@
 	<section style="display: flex;">
 		
 		<section class="side" id="page-top">
-<div class="openbtn1">
-	<div><a><p class="MT--0 MB--0" style="padding: 2rem;"><span></span><span></span><span></span></p></a></div></div>
+			<a>
+				<div class="hamburger_posi">
+<div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+					</div></a>
 </section>
+			
 
 <section class="g-nav_button">
 <nav id="g-nav">
