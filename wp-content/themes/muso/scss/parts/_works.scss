@@ -11,10 +11,9 @@ input{
 }
 
 .works_box{
- width:90%; // サイズがサンプルなので適時変更してください。
- margin:0 auto; //サンプルで中央に寄せたいので書かせていただいております。
- overflow:hidden; //これを記述することではみ出た部分を非表示にします。
-	text-align: center;
+ width:90%;
+ margin:0 auto;
+ overflow:hidden; //はみ出た部分を非表示
 }
 .works_box img{
  transition:1s all;

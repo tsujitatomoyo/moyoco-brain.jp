@@ -5396,8 +5396,7 @@ input {
 .works_box {
   width: 90%;
   margin: 0 auto;
-  overflow: hidden;
-  text-align: center; }
+  overflow: hidden; }
 
 .works_box img {
   -webkit-transition: 1s all;
