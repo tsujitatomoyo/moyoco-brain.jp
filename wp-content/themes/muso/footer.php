@@ -23,7 +23,7 @@ new WOW().init();
 <script src="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/6-1/js/6-1.js"></script>
 
 <?php /*?><script src="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/8-12/js/8-12.js"></script><?php */?>
-</section>
-</section>
+</section><!--content_base-->
+</section><!--main_content-->
 </body>
 </html>

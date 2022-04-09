@@ -139,6 +139,8 @@ function BgFadeAnime(i){
 
 $(function() {
     var showFlag = false;
+	var main_content = $('.main_content');
+	var content_base = $('.content_base');
     var topBtn = $('#page-top');    
     topBtn.css('left', '-100px');
     var showFlag = false;
@@ -147,18 +149,25 @@ $(function() {
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
             if (showFlag == false) {
+				$(".main_content").toggleClass('test333');
                 showFlag = true;
                 topBtn.stop().animate({'left' : '0px'}, 200); 
+				main_content.addClass('main_content_wrap');
+				content_base.addClass('content_base_top');
             }
         } else {
             if (showFlag) {
                 showFlag = false;
                 topBtn.stop().animate({'left' : '-100px'}, 200); 
+				main_content.removeClass('main_content_wrap');
+				content_base.removeClass('content_base_top');
             }
         }
     });
 
 });
+
+
 
 
 /**

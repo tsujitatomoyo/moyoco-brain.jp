@@ -32,7 +32,7 @@
 <div id="pointer" class="c-pointer"></div>
 </section>
 	
-	<section style="display: flex;">
+	<section class="main_content">
 		
 		<section class="side" id="page-top">
 			<a>
@@ -68,7 +68,7 @@
 		   
 <header class="header_wrap  bg__main p_r_wrap">
     <div class="header_ttl">
-          <p class="MT--0 MB--0 animated fadeInUp">TSUJITA TOMOYO PORTFOLIO</p>
+         <a href="<?php echo esc_url(home_url('')); ?>"><p class="MT--0 MB--0 animated fadeInUp">TSUJITA TOMOYO PORTFOLIO</p></a>
         </div>
 	
 	
