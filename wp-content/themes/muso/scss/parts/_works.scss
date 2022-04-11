@@ -310,3 +310,37 @@ group + group {
 		transition: all 0.5s ease-out;
 	}
 }
+
+
+
+/* works / hp
+/////////////////////////////////////////////////////////////////////////////////////// */
+.works_hp_main_img{
+	    margin: auto;
+    width: 880px;
+    max-width: 1200px;
+	@include media-sp {
+		width: 100%;
+	}
+	
+}
+
+.works_hp_ttl{
+	text-align: center;
+    font-size: 1.5rem;
+    margin: 3rem 0 0;
+}
+.works_hp_ttl_sb{
+	text-align: center;
+    font-size: 0.8rem;
+    margin: 0 0 3rem;
+}
+
+.works_hp_wrap{
+	width: 632px;
+    max-width: 1200px;
+	margin: auto;
+	@include media-sp {
+		width: 100%;
+	}
+}

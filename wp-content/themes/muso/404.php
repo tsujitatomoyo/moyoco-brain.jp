@@ -1,33 +1,29 @@
-<?php
-/**
- * The template for displaying 404 pages (not found)
- *
- * @link https://codex.wordpress.org/Creating_an_Error_404_Page
- *
- * @package WordPress
- * @subpackage Twenty_Nineteen
- * @since Twenty Nineteen 1.0
- */
+<?php get_header(); ?>
 
-get_header();
-?>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+<div class="content-1000wrap">
 
-			<div class="error-404 not-found">
-				<header class="page-header">
-					<h1 class="page-title"><?php _e( 'Oops! That page can&rsquo;t be found.', 'twentynineteen' ); ?></h1>
-				</header><!-- .page-header -->
+<div class="breadcrumb">
+    <?php
+    if(function_exists('bcn_display'))
+    {
+    bcn_display();
+    }
+    ?>
+</div><!--/ breadcrumb -->
 
-				<div class="page-content">
-					<p><?php _e( 'It looks like nothing was found at this location. Maybe try a search?', 'twentynineteen' ); ?></p>
-					<?php get_search_form(); ?>
-				</div><!-- .page-content -->
-			</div><!-- .error-404 -->
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+<h1 class="entry-title">お探しのページは見つかりませんでした</h1>
 
-<?php
-get_footer();
+<p>誠に申し訳ありませんが、お探しのページにアクセスできませんでした。<br>
+お探しのページは、移動または削除された可能性がございます。<br>
+<a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?>トップページ</a>からお探しの情報をお求めください。</p>
+
+<?php get_template_part( 'template-parts/snsbutton' ); ?>
+
+</div>
+</article><!-- #post-## -->
+
+
+<?php get_footer(); ?>

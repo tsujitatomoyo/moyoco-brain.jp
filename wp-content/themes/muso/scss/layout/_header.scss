@@ -347,8 +347,10 @@
 
 
 body{
+	color: $font-color__defo;
   margin: 0;
-	//background-color: $main-color;
+	background-color: $main-color;
+	//transition: all 0.1s ease-out;
     //background-image: linear-gradient(to bottom, $main-color, $main-color);
 }
 .area{

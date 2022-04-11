@@ -4372,7 +4372,9 @@ footer {
   height: 100vh; }
 
 body {
-  margin: 0; }
+  color: #333333;
+  margin: 0;
+  background-color: #EB593C; }
 
 .area {
   overflow: hidden; }
@@ -5498,3 +5500,33 @@ group + group {
     font-weight: 500;
     color: #fff;
     transition: all 0.5s ease-out; }
+
+/* works / hp
+/////////////////////////////////////////////////////////////////////////////////////// */
+.works_hp_main_img {
+  margin: auto;
+  width: 880px;
+  max-width: 1200px;
+  /*スマホ 768px以下*/ }
+  @media (max-width: 48em) {
+    .works_hp_main_img {
+      width: 100%; } }
+
+.works_hp_ttl {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 3rem 0 0; }
+
+.works_hp_ttl_sb {
+  text-align: center;
+  font-size: 0.8rem;
+  margin: 0 0 3rem; }
+
+.works_hp_wrap {
+  width: 632px;
+  max-width: 1200px;
+  margin: auto;
+  /*スマホ 768px以下*/ }
+  @media (max-width: 48em) {
+    .works_hp_wrap {
+      width: 100%; } }
