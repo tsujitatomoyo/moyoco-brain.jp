@@ -432,6 +432,8 @@ position: fixed;
 	}
 	@include media-sp {
 		width: 90%;
+		top: 60px;
+		height: 70vh;
 	}
 }
 

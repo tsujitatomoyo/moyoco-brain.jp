@@ -6043,7 +6043,9 @@ group + group {
     border: solid 0.5px #333333; }
   @media (max-width: 48em) {
     .modal__content {
-      width: 90%; } }
+      width: 90%;
+      top: 60px;
+      height: 70vh; } }
 
 .modal__batu {
   text-align: right;
