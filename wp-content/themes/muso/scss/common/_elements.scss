@@ -19,7 +19,9 @@ body {
   font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
   font-weight: 500;
   margin: 0;
-	background-color: #FFF;
+	color: $font-color__defo;
+  margin: 0;
+	background-color: $main-color;
 	@include media-pc {
 		cursor: none;
 	}
@@ -148,6 +150,11 @@ html {
 
 /* テキストドラッグカラー */
 /* HTMLタグに適用 */
+::selection {
+  color: #fff;
+  background-color: $point-color;
+}
+
 p::selection {
   color: #fff;
   background-color: $point-color;

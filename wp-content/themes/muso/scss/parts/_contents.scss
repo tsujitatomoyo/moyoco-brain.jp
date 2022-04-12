@@ -21,3 +21,8 @@
 	}
 }
 
+.content-sp{
+	@include media-sp {
+	width: 90%;
+		margin: auto;
+}}

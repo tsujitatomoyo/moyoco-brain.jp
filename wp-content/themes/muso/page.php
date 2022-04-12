@@ -1,7 +1,7 @@
 <?php
-/*固定ページ：1カラム全画面用のテンプレート
+/*固定ページ：デフォルト
 
-Template Name: 1カラムワイド
+Template Name: デフォルト
 
 */
  get_header(); ?>

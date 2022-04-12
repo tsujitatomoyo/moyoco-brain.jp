@@ -18,10 +18,13 @@
 	
 <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/js/style.css">
 	
+<script src="https://kit.fontawesome.com/154ec6d8d9.js" crossorigin="anonymous"></script>
 	<!--ファビコン-->
 <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/img/common/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/style.css"/>
 	<?php wp_head(); ?>
+	
+
 </head>
 	
 
@@ -63,7 +66,6 @@
 
 	 
 <section class="content_base">
-
 
 		   
 <header class="header_wrap  bg__main p_r_wrap">

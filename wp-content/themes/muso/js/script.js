@@ -1,4 +1,5 @@
 
+
 /**
  * 横スクロール */
 
@@ -28,6 +29,11 @@ window.addEventListener("load", function(){
     }
   });
 });
+
+
+
+
+
 
 
 /**
@@ -168,6 +174,36 @@ $(function() {
 });
 
 
+// ----------------------------------------
+// 二重スクロールバー防止
+// ----------------------------------------
+
+
+
+
+$(function(){
+    var winScrollTop;
+	//var modal_body = $('.modal_body');
+    $('.js-modal-open').each(function(){
+        $(this).on('click',function(){
+            //スクロール位置を取得
+            winScrollTop = $(window).scrollTop();
+			//modal_body.addClass('modal_bg_body');
+            var target = $(this).data('target');
+            var modal = document.getElementById(target);
+            $(modal).fadeIn();
+            return false;
+        });
+    });
+    $('.js-modal-close').on('click',function(){
+        $('.js-modal').fadeOut();
+        $('body,html').stop().animate({scrollTop:winScrollTop}, 100);
+		//modal_body.removeClass('modal_bg_body');
+        return false;
+    }); 
+});
+
+
 
 
 /**
@@ -206,6 +242,7 @@ $("#g-nav a").click(function () {//ナビゲーションのリンクがクリッ
     $(".hamburger").removeClass('header_active');//ボタンの header_activeクラスを除去し
     $("#g-nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスも除去
 });
+
 
 
 
@@ -354,6 +391,7 @@ $.scrollify({
     }
 
   });
+
 
 
 

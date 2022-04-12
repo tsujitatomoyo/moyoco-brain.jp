@@ -317,10 +317,11 @@ group + group {
 /////////////////////////////////////////////////////////////////////////////////////// */
 .works_hp_main_img{
 	    margin: auto;
-    width: 880px;
+    width: 780px;
     max-width: 1200px;
 	@include media-sp {
 		width: 100%;
+		padding-top: 2rem;
 	}
 	
 }
@@ -329,6 +330,9 @@ group + group {
 	text-align: center;
     font-size: 1.5rem;
     margin: 3rem 0 0;
+	@include media-sp {
+		font-size: 1.3rem;
+	}
 }
 .works_hp_ttl_sb{
 	text-align: center;
@@ -336,11 +340,176 @@ group + group {
     margin: 0 0 3rem;
 }
 
+.works_hp_h{
+	    font-size: 1rem;
+    line-height: 1.5;
+    margin: 1.5em 0 0.3em 0;
+}
+
+.works_p{
+	font-size: 1rem;
+	margin: 0em 0 1em 0;
+}
+
 .works_hp_wrap{
-	width: 632px;
+	width: 550px;
     max-width: 1200px;
 	margin: auto;
 	@include media-sp {
 		width: 100%;
 	}
+}
+
+
+body{
+	//position: sticky;
+}
+
+
+
+
+.modal_bg_body{
+position: fixed;
+	width: 100%;
+}
+
+
+
+
+
+
+.works_modal_wrap{
+	position: absolute;
+}
+
+
+/* ここからモーダル用CSS */
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.content{
+	 text-align: center;
+    margin: 0 auto;
+    padding: 40px;
+}
+.box{
+    background: #eee;
+    height: 200px;
+    margin-bottom: 100px;
+}
+.modal{
+    display: none;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.modal__bg{
+    background: rgba(0,0,0,0.8);
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+}
+.modal__content{
+	border-radius: 5px;
+    background: #FFF;
+    position: absolute;
+    top: 1vh;
+    transform: translate(0%, 0%);
+    overflow: scroll;
+    margin: 50px auto 20px;
+    padding: 25px;
+    width: 500px;
+    height: 80vh;
+	right: 0;
+    left: 0;
+	img{
+		border: solid 0.5px $font-color__defo;
+	}
+	@include media-sp {
+		width: 90%;
+	}
+}
+
+.modal__batu{
+	text-align: right;
+    font-size: 1rem;
+    margin: 0 0 1rem;
+	a{
+		color: #FFF;
+    background-color: $main-color;
+    padding: 0.5rem 0.7rem;
+    border-radius: 50%;
+	}
+}
+
+
+a.btn-flat {
+  overflow: hidden;
+  padding: 1.5rem 6rem;
+  color: $main-color;
+  border-radius: 0;
+  background: #FFF;
+	border: solid 1px $main-color;
+	width: 100%;
+	@include media-sp {
+		padding: 1.5rem 1rem;
+	}
+}
+
+a.btn-flat span {
+  position: relative;
+}
+
+a.btn-flat:before {
+  position: absolute;
+   top: -50px;
+   left: 40px;
+  width: 150%;
+  height: 500%;
+  content: '';
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transform: translateX(-98%) translateY(-70%) rotate(135deg);
+  transform: translateX(-98%) translateY(-70%) rotate(135deg);
+  background: $main-color;
+}
+
+a.btn-flat:hover:before {
+  -webkit-transform: translateX(-9%) translateY(-25%) rotate(135deg);
+  transform: translateX(-9%) translateY(-25%) rotate(135deg);
+}
+
+a.btn-flat:hover{
+	color: $font-color__defo;
+}
+
+.btn--orange,
+a.btn--orange {
+	    margin: 1rem auto;
+	font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  border-radius: 0.5rem;
+  color: #fff;
+  background-color: $main-color;
+}
+.btn--orange:hover,
+a.btn--orange:hover {
+  color: #fff;
+  opacity: 0.8;
 }
