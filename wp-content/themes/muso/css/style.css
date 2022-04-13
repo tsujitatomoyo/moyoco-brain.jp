@@ -6041,6 +6041,9 @@ group + group {
   /*スマホ 768px以下*/ }
   .modal__content img {
     border: solid 0.5px #333333; }
+  .modal__content video {
+    border: solid 0.5px #333333;
+    padding-bottom: 1px; }
   @media (max-width: 48em) {
     .modal__content {
       width: 90%;
@@ -6069,6 +6072,11 @@ a.btn-flat {
   @media (max-width: 48em) {
     a.btn-flat {
       padding: 1.5rem 1rem; } }
+  a.btn-flat.__pd {
+    font-size: 1.2rem;
+    padding: 1.5rem 1rem; }
+  a.btn-flat.__pd:before {
+    top: -110px !important; }
 
 a.btn-flat span {
   position: relative; }

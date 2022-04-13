@@ -430,6 +430,10 @@ position: fixed;
 	img{
 		border: solid 0.5px $font-color__defo;
 	}
+	video{
+		border: solid 0.5px $font-color__defo;
+		padding-bottom: 1px;
+	}
 	@include media-sp {
 		width: 90%;
 		top: 60px;
@@ -451,6 +455,7 @@ position: fixed;
 
 
 a.btn-flat {
+	//font-size: 1.2rem;
   overflow: hidden;
   padding: 1.5rem 6rem;
   color: $main-color;
@@ -460,6 +465,14 @@ a.btn-flat {
 	width: 100%;
 	@include media-sp {
 		padding: 1.5rem 1rem;
+	}
+	
+	&.__pd{
+		font-size: 1.2rem;
+		padding: 1.5rem 1rem;
+	}
+	&.__pd:before{
+		 top: -110px!important;
 	}
 }
 

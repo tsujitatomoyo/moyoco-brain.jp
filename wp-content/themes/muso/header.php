@@ -1,11 +1,16 @@
 
 <html <?php language_attributes(); ?>>
 <head>
-
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.1/TweenMax.min.js"></script>
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script  src="<?php bloginfo('template_directory'); ?>/js/script.js"></script>
 		<script  src="<?php bloginfo('template_directory'); ?>/js/scroll/ScrollTrigger.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js"></script>
+	<script>
+		$(function() {
+			$('.js-matchHeight').matchHeight();
+		});
+	</script>
 	
 <meta name="theme-color" content="#EB593C">
 

@@ -5683,6 +5683,9 @@ a.btn-flat {
   @media (max-width: 48em) {
     a.btn-flat {
       padding: 1.5rem 1rem; } }
+  a.btn-flat.__pd {
+    font-size: 1.2rem;
+    padding: 1.5rem 1rem; }
 
 a.btn-flat span {
   position: relative; }
