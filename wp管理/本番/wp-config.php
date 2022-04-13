@@ -26,10 +26,10 @@
 
 // ** MySQL 設定 - この情報はホスティング先から入手してください。 ** //
 /** WordPress のためのデータベース名 */
-define( 'DB_NAME', 'global1step_moyocobrain' );
+define( 'DB_NAME', 'global1step_tomoyodesign' );
 
 /** MySQL データベースのユーザー名 */
-define( 'DB_USER', 'global1step_moyocobrain' );
+define( 'DB_USER', 'global1step_tomoyodesign' );
 
 /** MySQL データベースのパスワード */
 define( 'DB_PASSWORD', 'ZNhkK9byyVpp' );
