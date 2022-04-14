@@ -55,7 +55,7 @@
         <div class="modal__bg js-modal-close"></div>
         <div class="modal__content">
 			<p class="modal__batu"><a class="js-modal-close" href=""><i class="fas fa-times"></i></a></p>
-            <img src="<?php echo get_template_directory_uri(); ?>/img/works/hp/hp_001_pc.jpg">
+            <img class="w--100" src="<?php echo get_template_directory_uri(); ?>/img/works/hp/hp_001_pc.jpg">
             <p class="Text-Center"><a class="js-modal-close btn--orange" href="">閉じる</a></p>
         </div><!--modal__inner-->
     </div><!--modal-->
@@ -65,7 +65,7 @@
         <div class="modal__bg js-modal-close"></div>
         <div class="modal__content">
 			<p class="modal__batu"><a class="js-modal-close" href=""><i class="fas fa-times"></i></a></p>
-            <img src="<?php echo get_template_directory_uri(); ?>/img/works/hp/hp_001_sp.jpg">
+            <img class="w--100" src="<?php echo get_template_directory_uri(); ?>/img/works/hp/hp_001_sp.jpg">
             <p class="Text-Center"><a class="js-modal-close btn--orange" href="">閉じる</a></p>
         </div><!--modal__inner-->
     </div><!--modal-->

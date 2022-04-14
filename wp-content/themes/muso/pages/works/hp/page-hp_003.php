@@ -2,7 +2,7 @@
 	
 <div class="content-sp">
 <div class="works_hp_main_img"><img src="<?php echo get_template_directory_uri(); ?>/img/works/hp/hp_003_main.jpg" alt=""></div>
-<h2 class="works_hp_ttl">北海道ハイテクノロジー専門学校 <br class="Box-sp">附属鍼灸院・接骨院様　WEBサイト</h2>
+<h2 class="works_hp_ttl">北海道ハイテクノロジー専門学校様 <br class="Box-sp">附属鍼灸院・接骨院様　WEBサイト</h2>
 <p class="works_hp_ttl_sb">デザイン/コーディング</p>
 
 <div class="works_hp_wrap">
@@ -18,11 +18,15 @@
 		</tr>
 		<tr>
 			<td><p class="works_p">利用：</p></td>
-			<td><p class="works_p">Illustrator/Photoshop</p></td>
+			<td><p class="works_p">Illustrator/Photoshop/Dreamweaver</p></td>
 		</tr>
 		<tr>
 			<td><p class="works_p">期間：</p></td>
 			<td><p class="works_p">1ヶ月</p></td>
+		</tr>
+		<tr>
+			<td><p class="works_p">URL：</p></td>
+			<td><p class="works_p"><a target="_blank" href="http://www.hht-chiryoin.com/">http://www.hht-chiryoin.com/</a></p></td>
 		</tr>
 	</tbody>
 </table>

@@ -1,8 +1,8 @@
 <section class="PB--30">
 	
 <div class="content-sp">
-<div class="works_hp_main_img"><img src="<?php echo get_template_directory_uri(); ?>/img/works/hp/hp_002_main.jpg" alt=""></div>
-<h2 class="works_hp_ttl">東京ベルエポック美容専門学校様　<br class="Box-sp">ベルダンシページ</h2>
+<div class="works_hp_main_img"><img src="<?php echo get_template_directory_uri(); ?>/img/works/hp/hp_005_main.jpg" alt=""></div>
+<h2 class="works_hp_ttl">ベルエポック美容専門学校様 <br class="Box-sp">トップページリニューアル</h2>
 <p class="works_hp_ttl_sb">デザイン/コーディング</p>
 
 <div class="works_hp_wrap">
@@ -22,19 +22,17 @@
 		</tr>
 		<tr>
 			<td><p class="works_p">期間：</p></td>
-			<td><p class="works_p">3週間</p></td>
+			<td><p class="works_p">3ヶ月</p></td>
 		</tr>
 		<tr>
 			<td><p class="works_p">URL：</p></td>
-			<td><p class="works_p"><a target="_blank" href="https://www.tbe.ac.jp/campuslife/snap_men">https://www.tbe.ac.jp/campuslife/snap_men</a></p></td>
+			<td><p class="works_p"><a target="_blank" href="https://www.belle.ac.jp/">https://www.belle.ac.jp/</a></p></td>
 		</tr>
 	</tbody>
 </table>
 	
 <h3 class="works_hp_h">概要</h3>
-<p class="works_p">学生主体のファッションパンフレット企画をホームページに展開</p>
-<h3 class="works_hp_h">目的</h3>
-<p class="works_p">新規コンテンツからの集客</p>
+<p class="works_p">新年度につきトップページのリニューアル</p>
 
 
 </div>
@@ -58,7 +56,7 @@
         <div class="modal__bg js-modal-close"></div>
         <div class="modal__content">
 			<p class="modal__batu"><a class="js-modal-close" href=""><i class="fas fa-times"></i></a></p>
-            <img class="w--100" src="<?php echo get_template_directory_uri(); ?>/img/works/hp/hp_002_pc.jpg">
+            <img class="w--100" src="<?php echo get_template_directory_uri(); ?>/img/works/hp/hp_005_pc.jpg">
             <p class="Text-Center"><a class="js-modal-close btn--orange" href="">閉じる</a></p>
         </div><!--modal__inner-->
     </div><!--modal-->
@@ -68,7 +66,7 @@
         <div class="modal__bg js-modal-close"></div>
         <div class="modal__content">
 			<p class="modal__batu"><a class="js-modal-close" href=""><i class="fas fa-times"></i></a></p>
-            <img class="w--100" src="<?php echo get_template_directory_uri(); ?>/img/works/hp/hp_002_sp.jpg">
+            <img class="w--100" src="<?php echo get_template_directory_uri(); ?>/img/works/hp/hp_005_sp.jpg">
             <p class="Text-Center"><a class="js-modal-close btn--orange" href="">閉じる</a></p>
         </div><!--modal__inner-->
     </div><!--modal-->
