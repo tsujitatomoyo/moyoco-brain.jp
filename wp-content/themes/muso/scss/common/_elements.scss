@@ -48,6 +48,7 @@ img {
 
 a{
 	cursor:none;
+	color: $font-color__defo;
 }
 
 
@@ -198,7 +199,7 @@ p {
 }
 
 a {
-  color: $font-color__link;
+  color: $font-color__defo;
   &:hover {
     @extend a;
     text-decoration: none;

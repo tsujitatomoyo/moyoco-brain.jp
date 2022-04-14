@@ -534,7 +534,8 @@ img {
   max-width: 100%; }
 
 a, a:hover, a:visited {
-  cursor: none; }
+  cursor: none;
+  color: #333333; }
 
 /*!
  * ress.css • v1.1.2
@@ -670,7 +671,7 @@ p {
   margin: 1.5em 0; }
 
 a, a:hover, a:visited {
-  color: #000; }
+  color: #333333; }
   a:hover {
     text-decoration: none; }
 
@@ -5652,6 +5653,61 @@ footer {
 
 /* works
 /////////////////////////////////////////////////////////////////////////////////////// */
+.works_link_box {
+  width: 100%;
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  /*スマホ 768px以下*/ }
+  @media (max-width: 48em) {
+    .works_link_box {
+      height: 60px; } }
+  @media screen and (max-width: 320px) {
+    .works_link_box {
+      height: 50px; } }
+
+.works_link_box img {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: .4s;
+  transition: .4s;
+  object-fit: cover; }
+
+.works_link_box::after {
+  content: 'Read More';
+  font-size: 16px;
+  letter-spacing: .2em;
+  text-align: center;
+  padding-top: 40px;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: rgba(0, 0, 0, 0.4);
+  -webkit-transition: .8s;
+  transition: .8s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  /*スマホ 768px以下*/ }
+  @media (max-width: 48em) {
+    .works_link_box::after {
+      font-size: 10px;
+      padding-top: 26px; } }
+  @media screen and (max-width: 320px) {
+    .works_link_box::after {
+      padding-top: 11px; } }
+
+a:hover .works_link_box::after {
+  opacity: 1; }
+
+a:hover .works_link_box img {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1); }
+
 input {
   cursor: none !important; }
 
@@ -5661,7 +5717,7 @@ input {
   margin: auto; }
 
 .works_box {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   overflow: hidden; }
 
@@ -5670,7 +5726,6 @@ input {
   transition: 1s all;
   object-fit: cover;
   width: 100%;
-  height: 220px;
   /*スマホ 768px以下*/ }
   @media (max-width: 48em) {
     .works_box img {
@@ -5679,7 +5734,7 @@ input {
     .works_box img {
       height: 80px; } }
 
-.works_box img:hover {
+.works_box :hover img {
   -webkit-transform: scale(1.2, 1.2);
   -ms-transform: scale(1.2, 1.2);
   transform: scale(1.2, 1.2);
@@ -5751,9 +5806,25 @@ input {
 .backon_wrap {
   position: relative;
   /*スマホ 768px以下*/ }
+  .backon_wrap p {
+    font-size: 0.8rem;
+    margin-bottom: 0; }
+  .backon_wrap span {
+    font-weight: bold; }
   @media (max-width: 48em) {
     .backon_wrap {
       margin-bottom: 0.5rem; } }
+  .backon_wrap a {
+    background-color: #f6efed;
+    border: solid 3px #333333;
+    border-radius: 3px;
+    text-decoration: none;
+    display: block;
+    padding: 1rem;
+    /*スマホ 768px以下*/ }
+    @media (max-width: 48em) {
+      .backon_wrap a {
+        padding: 0.5rem; } }
 
 .targets .target-title:hover {
   text-decoration: underline; }
@@ -5812,7 +5883,7 @@ input {
 .gallery {
   margin: 50px 0; }
 
-.test1 div.backon {
+.works_link_wrap div.backon {
   opacity: 0;
   position: absolute;
   z-index: 20;
@@ -5830,21 +5901,22 @@ input {
   z-index: -10;
   /*スマホ 768px以下*/ }
   @media (max-width: 48em) {
-    .test1 div.backon {
+    .works_link_wrap div.backon {
       height: 110px; } }
   @media screen and (max-width: 320px) {
-    .test1 div.backon {
+    .works_link_wrap div.backon {
       height: 80px; } }
 
-.test2 div.backon {
-  opacity: 0.6 !important;
+.works_link_black_inner div.backon {
+  border-radius: 3px;
+  opacity: 0.7 !important;
   position: absolute;
   z-index: 20;
-  background: #000;
+  background: #333333;
   padding: 1rem;
   object-fit: cover;
-  width: 90%;
-  height: 220px;
+  width: 100%;
+  height: 100%;
   margin: auto;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
@@ -5854,10 +5926,10 @@ input {
   z-index: 30;
   /*スマホ 768px以下*/ }
   @media (max-width: 48em) {
-    .test2 div.backon {
+    .works_link_black_inner div.backon {
       height: 110px; } }
   @media screen and (max-width: 320px) {
-    .test2 div.backon {
+    .works_link_black_inner div.backon {
       height: 80px; } }
 
 .works_input_wrap input[type="radio"] {
@@ -6131,5 +6203,96 @@ a.btn--orange {
 a.btn--orange:hover {
   color: #fff;
   opacity: 0.8; }
+
+/* banner 
+-------------------------*/
+.works_bn_main_img {
+  width: 100%; }
+
+/* アコーディオン */
+/*アコーディオン全体*/
+.accordion-area {
+  list-style: none;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto; }
+
+.accordion-area li {
+  margin: 10px 0; }
+
+.accordion-area {
+  border: 1px solid #ccc; }
+
+/*アコーディオンタイトル*/
+.bn_accordion {
+  position: relative;
+  /*+マークの位置基準とするためrelative指定*/
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: normal;
+  padding: 1% 1% 1% 50px;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  margin: 0; }
+
+/*アイコンの＋と×*/
+.bn_accordion::before,
+.bn_accordion::after {
+  position: absolute;
+  content: '';
+  width: 15px;
+  height: 2px;
+  background-color: #333; }
+
+.bn_accordion::before {
+  top: 48%;
+  left: 15px;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s; }
+
+.bn_accordion::after {
+  top: 48%;
+  left: 15px;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s; }
+
+/*　closeというクラスがついたら形状変化　*/
+.bn_accordion.close::before {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s; }
+
+.bn_accordion.close::after {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s; }
+
+/*アコーディオンで現れるエリア*/
+.bn_accordion_box {
+  display: none;
+  /*はじめは非表示*/
+  background: #f3f3f3;
+  margin: 0 3% 3% 3%;
+  padding: 3%; }
+
+.works_bn_wrap {
+  width: 632px;
+  max-width: 1200px;
+  margin: auto;
+  /*スマホ 768px以下*/ }
+  @media (max-width: 48em) {
+    .works_bn_wrap {
+      width: 90%;
+      margin: auto; } }
 
 /*# sourceMappingURL=maps/style.css.map */

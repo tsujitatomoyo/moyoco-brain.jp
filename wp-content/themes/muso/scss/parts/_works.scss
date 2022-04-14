@@ -1,6 +1,65 @@
 /* works
 /////////////////////////////////////////////////////////////////////////////////////// */
 
+
+.works_link_box {
+      width: 100%;
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+	@include media-sp {
+		height: 60px;
+	}
+	@media screen and (max-width: 320px) {
+		height: 50px;
+	}
+}
+
+.works_link_box img {
+  width: 100%;
+  height: 100%;
+  transition: .4s;
+	object-fit: cover;
+}
+
+.works_link_box::after {
+  content: 'Read More';
+  font-size: 16px;
+  letter-spacing: .2em;
+  text-align: center;
+  padding-top: 40px;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: rgba(0,0,0,.4);
+  transition: .8s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+	@include media-sp {
+		font-size: 10px;
+		padding-top: 26px;
+	}
+	@media screen and (max-width: 320px) {
+		padding-top: 11px;
+	}
+}
+
+a:hover .works_link_box::after {
+  opacity: 1;
+}
+
+a:hover .works_link_box img {
+    transform: scale(1.1);
+}
+
+
+
+
+
 input{
 	cursor: none!important;
 }
@@ -11,7 +70,7 @@ input{
 }
 
 .works_box{
- width:90%;
+ width:100%;
  margin:0 auto;
  overflow:hidden; //はみ出た部分を非表示
 }
@@ -19,7 +78,7 @@ input{
  transition:1s all;
     object-fit: cover;
     width: 100%;
-    height: 220px;
+    //height: 220px;
 	@include media-sp {
 		height: 110px;
 	}
@@ -27,9 +86,12 @@ input{
 		height: 80px;
 	}
 }
-.works_box img:hover{
+.works_box :hover{
+	img{
   transform:scale(1.2,1.2);
   transition:1s all;
+	}
+		
 }
 
 .works_box_none{
@@ -103,9 +165,27 @@ input{
   color: #999;
 }
 .backon_wrap{
+	p{
+		font-size: 0.8rem;
+		margin-bottom: 0;
+	}
+	span{
+		font-weight: bold;
+	}
 	position: relative;
 	@include media-sp {
 		margin-bottom: 0.5rem;
+	}
+	a{
+    background-color: #f6efed;
+    border: solid 3px $font-color__defo;
+		    border-radius: 3px;
+		text-decoration: none;
+		    display: block;
+    padding: 1rem;
+		@include media-sp {
+		 padding: 0.5rem;
+	}
 	}
 }
 .targets .target-title:hover {
@@ -167,7 +247,7 @@ input{
 }
 
 
-	.test1 div.backon{
+	.works_link_wrap div.backon{
     opacity: 0;
     position: absolute;
     z-index: 20;
@@ -191,15 +271,16 @@ input{
 	}
 
 	
-	.test2 div.backon{
-    opacity: 0.6!important;
+	.works_link_black_inner div.backon{
+		border-radius: 3px;
+    opacity: 0.7!important;
     position: absolute;
     z-index: 20;
-    background: #000;
+    background: $font-color__defo;
     padding: 1rem;
     object-fit: cover;
-    width: 90%;
-    height: 220px;
+    width: 100%;
+    height: 100%;
     margin: auto;
     transition: all 0.5s ease-out;
 		left: 0;
@@ -527,4 +608,98 @@ a.btn--orange {
 a.btn--orange:hover {
   color: #fff;
   opacity: 0.8;
+}
+
+
+
+
+
+/* banner 
+-------------------------*/
+.works_bn_main_img{
+	width: 100%;
+}
+
+
+/* アコーディオン */
+/*アコーディオン全体*/
+.accordion-area{
+    list-style: none;
+    width: 100%;
+    max-width: 900px;
+    margin:0 auto;
+}
+
+.accordion-area li{
+    margin: 10px 0;
+}
+
+.accordion-area {
+  border: 1px solid #ccc;
+}
+
+/*アコーディオンタイトル*/
+.bn_accordion {
+    position: relative;/*+マークの位置基準とするためrelative指定*/
+    cursor: pointer;
+    font-size:1rem;
+    font-weight: normal;
+    padding: 1% 1% 1% 50px;
+    transition: all .5s ease;
+	    margin: 0;
+}
+
+/*アイコンの＋と×*/
+.bn_accordion::before,
+.bn_accordion::after{
+    position: absolute;
+    content:'';
+    width: 15px;
+    height: 2px;
+    background-color: #333;
+    
+}
+.bn_accordion::before{
+    top:48%;
+    left: 15px;
+    transform: rotate(0deg);
+	transition: all 0.5s;
+    
+}
+.bn_accordion::after{    
+    top:48%;
+    left: 15px;
+    transform: rotate(90deg);
+	transition: all 0.5s;
+
+}
+/*　closeというクラスがついたら形状変化　*/
+.bn_accordion.close::before{
+  transform: rotate(45deg);
+	transition: all 0.5s;
+}
+
+.bn_accordion.close::after{
+  transform: rotate(-45deg);
+	transition: all 0.5s;
+}
+
+/*アコーディオンで現れるエリア*/
+.bn_accordion_box {
+    display: none;/*はじめは非表示*/
+    background: #f3f3f3;
+  margin:0 3% 3% 3%;
+    padding: 3%;
+}
+
+
+
+.works_bn_wrap{
+	    width: 632px;
+    max-width: 1200px;
+	margin: auto;
+	@include media-sp {
+	width: 90%;
+		margin: auto;
+}
 }

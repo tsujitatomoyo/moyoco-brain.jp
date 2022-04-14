@@ -17,106 +17,68 @@
 </group>
 </section>
 	
+
 	
 	
-<section class="gallery <?php /*?>works_input_wrap<?php */?>">
+<section class="gallery">
   <div class="container">
 	  
 
 	  
-    <ul class="targets col__wrap--margin">
-        <li class="target test1 col--pc-3 col--sp-4" data-category="cat-a cat-b">
+    <ul class="targets col__wrap--margin <?php /*?>works_random_wrap<?php */?>">
+        <li class="target works_link_wrap col--pc-3 col--sp-4" data-category="cat-a">
           <div class="backon_wrap">
             <div class="backon"></div>
-            <div class="works_box"> <a href="<?php echo esc_url(home_url('')); ?>/"><img src="<?php echo get_template_directory_uri(); ?>/img/works/sample.jpg" alt=""></a> 
-			  <p>ああああ</p>
-			  </div>
-          </div>
-			
+            <a href="<?php echo esc_url(home_url('')); ?>/works/hp/hp_001/" class="js-matchHeight">
+            <div class="works_link_box"><img src="<?php echo get_template_directory_uri(); ?>/img/works/hp/hp_001_main.png" alt=""></div>
+            <p>ベルエポック美容専門学校様<br>
+				<span>トップページ/デザイン</span></p>
+            </a> </div>
         </li>
-        <li class="target test1 col--pc-3 col--sp-4" data-category="cat-c">
+        <li class="target works_link_wrap col--pc-3 col--sp-4" data-category="cat-a">
           <div class="backon_wrap">
             <div class="backon"></div>
-            <div class="works_box"> <a href="<?php echo esc_url(home_url('')); ?>/"><img src="<?php echo get_template_directory_uri(); ?>/img/works/sample.jpg" alt=""></a> </div>
-          </div>
+            <a href="<?php echo esc_url(home_url('')); ?>/works/hp/hp_002/" class="js-matchHeight">
+            <div class="works_link_box"><img src="<?php echo get_template_directory_uri(); ?>/img/works/hp/hp_002_main.png" alt=""></div>
+            <p>東京ベルエポック美容専門学校様<br>
+				<span>コンテンツページ/デザイン/コーディング</span></p>
+            </a> </div>
         </li>
-        <li class="target test1 col--pc-3 col--sp-4" data-category="cat-b">
+        <li class="target works_link_wrap col--pc-3 col--sp-4" data-category="cat-a">
           <div class="backon_wrap">
             <div class="backon"></div>
-            <div class="works_box"> <a href="<?php echo esc_url(home_url('')); ?>/"><img src="<?php echo get_template_directory_uri(); ?>/img/works/sample.jpg" alt=""></a> </div>
-          </div>
+            <a href="<?php echo esc_url(home_url('')); ?>/works/hp/hp_003/" class="js-matchHeight">
+            <div class="works_link_box"><img src="<?php echo get_template_directory_uri(); ?>/img/works/hp/hp_003_main.png" alt=""></div>
+            <p>北海道ハイテクノロジー専門学校様<br>
+				<span>WEBサイト/デザイン/コーディング</span></p>
+            </a> </div>
         </li>
-        <li class="target test1 col--pc-3 col--sp-4" data-category="cat-a">
+        <li class="target works_link_wrap col--pc-3 col--sp-4" data-category="cat-a">
           <div class="backon_wrap">
             <div class="backon"></div>
-            <div class="works_box"> <a href="<?php echo esc_url(home_url('')); ?>/"><img src="<?php echo get_template_directory_uri(); ?>/img/works/sample.jpg" alt=""></a> </div>
-          </div>
+            <a href="<?php echo esc_url(home_url('')); ?>/works/hp/hp_004/" class="js-matchHeight">
+            <div class="works_link_box"><img src="<?php echo get_template_directory_uri(); ?>/img/works/hp/hp_004_main.png" alt=""></div>
+            <p>大阪医療看護専門学校様<br>
+				<span>コンテンツページ/デザイン/コーディング</span></p>
+            </a> </div>
         </li>
-        <li class="target test1 col--pc-3 col--sp-4" data-category="cat-c">
+        <li class="target works_link_wrap col--pc-3 col--sp-4" data-category="cat-a">
           <div class="backon_wrap">
             <div class="backon"></div>
-            <div class="works_box"> <a href="<?php echo esc_url(home_url('')); ?>/"><img src="<?php echo get_template_directory_uri(); ?>/img/works/sample.jpg" alt=""></a> </div>
-          </div>
+            <a href="<?php echo esc_url(home_url('')); ?>/works/hp/hp_005/" class="js-matchHeight">
+            <div class="works_link_box"><img src="<?php echo get_template_directory_uri(); ?>/img/works/hp/hp_005_main.png" alt=""></div>
+            <p>ベルエポック美容専門学校様<br>
+				<span>トップページ/デザイン/コーディング</span></p>
+            </a> </div>
         </li>
-        <li class="target test1 col--pc-3 col--sp-4" data-category="cat-a cat-b">
+        <li class="target works_link_wrap col--pc-3 col--sp-4" data-category="cat-a">
           <div class="backon_wrap">
             <div class="backon"></div>
-            <div class="works_box"> <a href="<?php echo esc_url(home_url('')); ?>/"><img src="<?php echo get_template_directory_uri(); ?>/img/works/sample.jpg" alt=""></a> </div>
-          </div>
-        </li>
-        <li class="target test1 col--pc-3 col--sp-4" data-category="cat-c">
-          <div class="backon_wrap">
-            <div class="backon"></div>
-            <div class="works_box"> <a href="<?php echo esc_url(home_url('')); ?>/"><img src="<?php echo get_template_directory_uri(); ?>/img/works/sample.jpg" alt=""></a> </div>
-          </div>
-        </li>
-        <li class="target test1 col--pc-3 col--sp-4" data-category="cat-b">
-          <div class="backon_wrap">
-            <div class="backon"></div>
-            <div class="works_box"> <a href="<?php echo esc_url(home_url('')); ?>/"><img src="<?php echo get_template_directory_uri(); ?>/img/works/sample.jpg" alt=""></a> </div>
-          </div>
-        </li>
-        <li class="target test1 col--pc-3 col--sp-4" data-category="cat-a">
-          <div class="backon_wrap">
-            <div class="backon"></div>
-            <div class="works_box"> <a href="<?php echo esc_url(home_url('')); ?>/"><img src="<?php echo get_template_directory_uri(); ?>/img/works/sample.jpg" alt=""></a> </div>
-          </div>
-        </li>
-        <li class="target test1 col--pc-3 col--sp-4" data-category="cat-c">
-          <div class="backon_wrap">
-            <div class="backon"></div>
-            <div class="works_box"> <a href="<?php echo esc_url(home_url('')); ?>/"><img src="<?php echo get_template_directory_uri(); ?>/img/works/sample.jpg" alt=""></a> </div>
-          </div>
-        </li>
-        <li class="target test1 col--pc-3 col--sp-4" data-category="cat-a cat-b">
-          <div class="backon_wrap">
-            <div class="backon"></div>
-            <div class="works_box"> <a href="<?php echo esc_url(home_url('')); ?>/"><img src="<?php echo get_template_directory_uri(); ?>/img/works/sample.jpg" alt=""></a> </div>
-          </div>
-        </li>
-        <li class="target test1 col--pc-3 col--sp-4" data-category="cat-c">
-          <div class="backon_wrap">
-            <div class="backon"></div>
-            <div class="works_box"> <a href="<?php echo esc_url(home_url('')); ?>/"><img src="<?php echo get_template_directory_uri(); ?>/img/works/sample.jpg" alt=""></a> </div>
-          </div>
-        </li>
-        <li class="target test1 col--pc-3 col--sp-4" data-category="cat-b">
-          <div class="backon_wrap">
-            <div class="backon"></div>
-            <div class="works_box"> <a href="<?php echo esc_url(home_url('')); ?>/"><img src="<?php echo get_template_directory_uri(); ?>/img/works/sample.jpg" alt=""></a> </div>
-          </div>
-        </li>
-        <li class="target test1 col--pc-3 col--sp-4" data-category="cat-a">
-          <div class="backon_wrap">
-            <div class="backon"></div>
-            <div class="works_box"> <a href="<?php echo esc_url(home_url('')); ?>/"><img src="<?php echo get_template_directory_uri(); ?>/img/works/sample.jpg" alt=""></a> </div>
-          </div>
-        </li>
-        <li class="target test1 col--pc-3 col--sp-4" data-category="cat-c">
-          <div class="backon_wrap">
-            <div class="backon"></div>
-            <div class="works_box"> <a href="<?php echo esc_url(home_url('')); ?>/"><img src="<?php echo get_template_directory_uri(); ?>/img/works/sample.jpg" alt=""></a> </div>
-          </div>
+            <a href="<?php echo esc_url(home_url('')); ?>/works/hp/hp_006/" class="js-matchHeight">
+            <div class="works_link_box"><img src="<?php echo get_template_directory_uri(); ?>/img/works/hp/hp_006_main.png" alt=""></div>
+            <p>札幌ベルエポック製菓調理ウェディング様<br>
+				<span>トップページ/デザイン/コーディング</span></p>
+            </a> </div>
         </li>
       </ul>
   </div>

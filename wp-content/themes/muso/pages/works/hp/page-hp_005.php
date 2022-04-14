@@ -1,7 +1,7 @@
 <section class="PB--30">
 	
 <div class="content-sp">
-<div class="works_hp_main_img"><img src="<?php echo get_template_directory_uri(); ?>/img/works/hp/hp_005_main.jpg" alt=""></div>
+<div class="works_hp_main_img"><img src="<?php echo get_template_directory_uri(); ?>/img/works/hp/hp_005_main.png" alt=""></div>
 <h2 class="works_hp_ttl">ベルエポック美容専門学校様 <br class="Box-sp">トップページリニューアル</h2>
 <p class="works_hp_ttl_sb">デザイン/コーディング</p>
 

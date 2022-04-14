@@ -1,3 +1,18 @@
+/**
+ * アコーディオン
+ */
+
+//アコーディオンをクリックした時の動作
+$('.bn_accordion').on('click', function() {//タイトル要素をクリックしたら
+  var findElm = $(this).next(".bn_accordion_box");//直後のアコーディオンを行うエリアを取得し
+  $(findElm).slideToggle();//アコーディオンの上下動作
+    
+  if($(this).hasClass('close')){//タイトル要素にクラス名closeがあれば
+    $(this).removeClass('close');//クラス名を除去し
+  }else{//それ以外は
+    $(this).addClass('close');//クラス名closeを付与
+  }
+});
 
 
 /**
@@ -33,9 +48,6 @@ window.addEventListener("load", function(){
 
 
 
-
-
-
 /**
  * works 絞り込み
  */
@@ -48,7 +60,7 @@ window.addEventListener('DOMContentLoaded', function(){
         target.style.setProperty('display', 'block');
         //全ての要素からアニメーションのクラスを削除
         //target.classList.remove('checked_animation');
-		target.classList.add('test2');
+		target.classList.add('works_link_black_inner');
       }
       if( this.checked ) {
         if(this.value !== 'All') {
@@ -61,13 +73,13 @@ window.addEventListener('DOMContentLoaded', function(){
           const checked_categories = document.querySelectorAll('.target[data-category~=' + '"' + this.value + '"]');
           for(let checked_category of checked_categories) {
             //checked_category.classList.add('checked_animation');
-			checked_category.classList.remove('test2');
+			checked_category.classList.remove('works_link_black_inner');
           }
         }else{
           //選択されたラジオボタンの value 属性の値が All の場合は全ての .target の要素にアニメーションのクラスを追加 
           for(let target of targets) {
             //target.classList.add('checked_animation');
-			target.classList.remove('test2');
+			target.classList.remove('works_link_black_inner');
           }
         }
       }
@@ -80,16 +92,16 @@ window.addEventListener('DOMContentLoaded', function(){
  * 要素　ランダム表示
  */
 
-//  function shuffleContent(container) {
-//    var content = container.find("> *");
-//    var total = content.length;
-//    content.each(function () {
-//      content.eq(Math.floor(Math.random() * total)).prependTo(container);
-//    });
-//  }
-//  $(function () {
-//    shuffleContent($(".works_random_wrap"));
-//  });
+  function shuffleContent(container) {
+    var content = container.find("> *");
+    var total = content.length;
+    content.each(function () {
+      content.eq(Math.floor(Math.random() * total)).prependTo(container);
+    });
+  }
+  $(function () {
+    shuffleContent($(".works_random_wrap"));
+  });
 
 
 
