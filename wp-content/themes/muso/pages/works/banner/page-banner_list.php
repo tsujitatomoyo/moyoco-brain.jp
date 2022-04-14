@@ -2,7 +2,7 @@
 	
 
 
-<div class="works_bn_wrap">
+<div class="works_bn_wrap works_random_wrap">
 
   <section id="bn_44">
       <div class="works_bn_main_img"><img src="<?php echo get_template_directory_uri(); ?>/img/banner/bn_44.jpg" alt=""></div>
