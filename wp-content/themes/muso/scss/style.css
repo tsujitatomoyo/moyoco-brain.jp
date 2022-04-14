@@ -5811,7 +5811,18 @@ a.btn--orange:hover {
 /* banner 
 -------------------------*/
 .works_bn_main_img {
-  width: 100%; }
+  width: 100%;
+  margin: 4rem auto auto;
+  text-align: center;
+  background-color: #f6efed;
+  padding: 3rem 5rem;
+  border-radius: 3px; }
+
+.works_bn_h {
+  font-weight: bold;
+  font-size: 1rem; }
+  .works_bn_h span {
+    font-size: 0.8rem; }
 
 /* アコーディオン */
 /*アコーディオン全体*/
@@ -5821,29 +5832,32 @@ a.btn--orange:hover {
   max-width: 900px;
   margin: 0 auto; }
 
-.accordion-area li {
-  margin: 10px 0; }
-
 .accordion-area {
   border: 1px solid #ccc; }
 
 /*アコーディオンタイトル*/
+.bn_accordion_ttl {
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin: 0; }
+
 .bn_accordion {
   position: relative;
   /*+マークの位置基準とするためrelative指定*/
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: normal;
   padding: 1% 1% 1% 50px;
   transition: all .5s ease;
-  margin: 0; }
+  margin: 0;
+  font-weight: bold; }
 
 /*アイコンの＋と×*/
 .bn_accordion::before,
 .bn_accordion::after {
   position: absolute;
   content: '';
-  width: 15px;
+  width: 13px;
   height: 2px;
   background-color: #333; }
 

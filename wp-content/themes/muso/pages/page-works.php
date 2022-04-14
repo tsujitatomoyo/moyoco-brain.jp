@@ -80,6 +80,24 @@
 				<span>トップページ/デザイン/コーディング</span></p>
             </a> </div>
         </li>
+        <li class="target works_link_wrap col--pc-3 col--sp-4" data-category="cat-b">
+          <div class="backon_wrap">
+            <div class="backon"></div>
+            <a href="<?php echo esc_url(home_url('')); ?>/works/banner/banner_list/#bn_44" class="js-matchHeight">
+            <div class="works_link_box"><img src="<?php echo get_template_directory_uri(); ?>/img/banner/bn_44.jpg" alt=""></div>
+				<p>ベルエポック美容専門学校様</span><br>
+				<span>広告バナー/デザイン</span></p>
+            </a> </div>
+        </li>
+        <li class="target works_link_wrap col--pc-3 col--sp-4" data-category="cat-b">
+          <div class="backon_wrap">
+            <div class="backon"></div>
+            <a href="<?php echo esc_url(home_url('')); ?>/works/banner/banner_list/#bn_4" class="js-matchHeight">
+            <div class="works_link_box"><img src="<?php echo get_template_directory_uri(); ?>/img/banner/bn_4.jpg" alt=""></div>
+				<p>札幌ベルエポック製菓調理ウェディング専門学校様</span><br>
+				<span>広告バナー/デザイン</span></p>
+            </a> </div>
+        </li>
       </ul>
   </div>
 </section>
