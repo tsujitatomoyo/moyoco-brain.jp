@@ -623,6 +623,9 @@ a.btn--orange:hover {
     background-color: $base-color3;
     padding: 3rem 5rem;
     border-radius: 3px;
+	img{
+		border: solid 0.5px #c3c2c2;
+	}
 }
 .works_bn_h{
 	font-weight: bold;
