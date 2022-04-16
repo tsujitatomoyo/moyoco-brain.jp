@@ -61,19 +61,25 @@ window.addEventListener('DOMContentLoaded', function(){
         //全ての要素からアニメーションのクラスを削除
         //target.classList.remove('checked_animation');
 		target.classList.add('works_link_black_inner');
+		   //絞り込み消したいときは以下を追加
+		//target.classList.remove('wow');
+		//target.classList.remove('fadeIn');
       }
       if( this.checked ) {
         if(this.value !== 'All') {
           const not_checked_categories = document.querySelectorAll('.target:not([data-category~=' + '"' + this.value + '"])');
           for(let not_checked_category of not_checked_categories) {
+			  //絞り込み消したいときは以下を追加
             //not_checked_category.style.setProperty('display', 'none');
 			  
           }
           //data-category に選択されたラジオボタンの value 属性の値が含まれる .target の要素にアニメーションのクラスを追加 
           const checked_categories = document.querySelectorAll('.target[data-category~=' + '"' + this.value + '"]');
           for(let checked_category of checked_categories) {
-            //checked_category.classList.add('checked_animation');
 			checked_category.classList.remove('works_link_black_inner');
+			  //絞り込み消したいときは以下を追加
+			//checked_category.classList.add('wow');
+			//checked_category.classList.add('fadeIn');
           }
         }else{
           //選択されたラジオボタンの value 属性の値が All の場合は全ての .target の要素にアニメーションのクラスを追加 
@@ -102,6 +108,15 @@ window.addEventListener('DOMContentLoaded', function(){
   $(function () {
     shuffleContent($(".works_random_wrap"));
   });
+
+
+/**
+ * 要素　高さ自動調節
+ */
+
+$(function() {
+			$('.js-matchHeight').matchHeight();
+		});
 
 
 
@@ -254,8 +269,6 @@ $("#g-nav a").click(function () {//ナビゲーションのリンクがクリッ
     $(".hamburger").removeClass('header_active');//ボタンの header_activeクラスを除去し
     $("#g-nav").removeClass('panelactive');//ナビゲーションのpanelactiveクラスも除去
 });
-
-
 
 
 

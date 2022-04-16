@@ -543,7 +543,7 @@
       <div class="works_bn_main_img"><img src="<?php echo get_template_directory_uri(); ?>/img/banner/bn_15.jpg" alt="">
 	  </div>
       <h3 class="works_bn_h"><span>札幌ベルエポック製菓調理ウェディング専門学校様</span><br>
-        ハロウィンと企業のコラボレーションのイベント 広告バナー</h3>
+        ハロウィンと企業とのコラボレーションのイベント 広告バナー</h3>
       <ul class="accordion-area">
         <li>
           <div class="bn_accordion"><a>
@@ -696,9 +696,6 @@
         <div class="M--auto w--pc-50 w--sp-100"><img src="<?php echo get_template_directory_uri(); ?>/img/banner/bn_35.jpg" alt=""></div>
         </ul>
       </div>
-	  
-	  
-      
       <h3 class="works_bn_h"><span>美作市スポーツ医療看護専門学校</span><br>
         コンテンツ 広告バナー</h3>
       <ul class="accordion-area">
