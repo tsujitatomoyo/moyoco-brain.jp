@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html <?php language_attributes(); ?>>
 <head>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -57,8 +57,8 @@
 <li class="li_anime_icon" style="animation-delay: 0.4s;animation-duration:1s; "><div class="g-nav_icon"></div></li>
 <li class="li_anime" style="animation-delay: 0.3s;"><a href="<?php echo esc_url(home_url('')); ?>">HOME</a></li>	
 <li class="li_anime" style="animation-delay: 0.5s;"><a href="<?php echo esc_url(home_url('')); ?>/works">WORKS</a></li>	
-<li class="li_anime" style="animation-delay: 0.7s;"><a href="<?php echo esc_url(home_url('')); ?>/about#skill">SKILL</a></li>	
-<li class="li_anime" style="animation-delay: 0.9s;"><a href="<?php echo esc_url(home_url('')); ?>/about">ABOUT</a></li>	
+<li class="li_anime" style="animation-delay: 0.7s;"><a href="#">SKILL</a></li>	
+<li class="li_anime" style="animation-delay: 0.9s;"><a href="#">ABOUT</a></li>	
 </ul>
 </div>
 </nav>
@@ -90,10 +90,10 @@
               <p><a href="<?php echo esc_url(home_url('')); ?>/works">WORKS</a></p>
             </li>
         <li class="col--3">
-              <p><a href="<?php echo esc_url(home_url('')); ?>/about#skill">SKILL</a></p>
+              <p><a href="#">SKILL</a></p>
             </li>
         <li class="col--3">
-              <p><a href="<?php echo esc_url(home_url('')); ?>/about">ABOUT</a></p>
+              <p><a href="#">ABOUT</a></p>
             </li>
       </ul>
         </div>
