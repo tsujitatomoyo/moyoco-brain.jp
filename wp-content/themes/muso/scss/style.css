@@ -5280,7 +5280,7 @@ footer {
   /*スマホ 768px以下*/ }
   @media (max-width: 48em) {
     .content-tmp {
-      width: 95%;
+      width: 90%;
       margin: auto; } }
 
 .content-1000wrap {
@@ -5289,7 +5289,7 @@ footer {
   /*スマホ 768px以下*/ }
   @media (max-width: 48em) {
     .content-1000wrap {
-      width: 95%;
+      width: 90%;
       margin: auto; } }
 
 .content-sp {
@@ -5816,9 +5816,13 @@ a.btn--orange:hover {
   text-align: center;
   background-color: #f6efed;
   padding: 3rem 5rem;
-  border-radius: 3px; }
+  border-radius: 3px;
+  /*スマホ 768px以下*/ }
   .works_bn_main_img img {
     border: solid 0.5px #c3c2c2; }
+  @media (max-width: 48em) {
+    .works_bn_main_img {
+      padding: 2rem 3rem; } }
 
 .works_bn_h {
   font-weight: bold;
@@ -5899,5 +5903,6 @@ a.btn--orange:hover {
   /*スマホ 768px以下*/ }
   @media (max-width: 48em) {
     .works_bn_wrap {
-      width: 90%;
+      width: 100%;
+      max-width: 100%;
       margin: auto; } }

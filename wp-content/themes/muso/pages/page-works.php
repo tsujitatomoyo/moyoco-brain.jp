@@ -86,7 +86,7 @@
             <a href="<?php echo esc_url(home_url('')); ?>/works/banner/banner_list/#bn_44" class="js-matchHeight">
             <div class="works_link_box"><img src="<?php echo get_template_directory_uri(); ?>/img/banner/bn_44.jpg" alt=""></div>
 				<p>ベルエポック美容専門学校様</span><br>
-				<span>広告バナー/デザイン</span></p>
+				<span>オープンキャンパス特別ゲスト来校/Youtube広告バナー</span></p>
             </a> </div>
         </li>
         <li class="target works_link_wrap col--pc-3 col--sp-4" data-category="cat-b">
@@ -95,11 +95,44 @@
             <a href="<?php echo esc_url(home_url('')); ?>/works/banner/banner_list/#bn_4" class="js-matchHeight">
             <div class="works_link_box"><img src="<?php echo get_template_directory_uri(); ?>/img/banner/bn_4.jpg" alt=""></div>
 				<p>札幌ベルエポック製菓調理ウェディング専門学校様</span><br>
-				<span>広告バナー/デザイン</span></p>
+				<span>11月のオープンキャンパス/広告バナー</span></p>
             </a> </div>
         </li>
-      </ul>
-  </div>
+        <li class="target works_link_wrap col--pc-3 col--sp-4" data-category="cat-b">
+          <div class="backon_wrap">
+            <div class="backon"></div>
+            <a href="<?php echo esc_url(home_url('')); ?>/works/banner/banner_list/#bn_46" class="js-matchHeight">
+            <div class="works_link_box"><img src="<?php echo get_template_directory_uri(); ?>/img/banner/bn_46.jpg" alt=""></div>
+				<p>ベルエポック美容専門学校様</span><br>
+				<span>オープンキャンパス特別ゲスト来校/Youtube広告バナー</span></p>
+            </a> </div>
+        </li>
+        <li class="target works_link_wrap col--pc-3 col--sp-4" data-category="cat-b">
+          <div class="backon_wrap">
+            <div class="backon"></div>
+            <a href="<?php echo esc_url(home_url('')); ?>/works/banner/banner_list/#bn_46" class="js-matchHeight">
+            <div class="works_link_box"><img src="<?php echo get_template_directory_uri(); ?>/img/banner/bn_40.jpg" alt=""></div>
+				<p>ベルエポック美容専門学校様</span><br>
+				<span>資料請求　Instagram ストーリーズ広告バナー</span></p>
+            </a> </div>
+        </li>      </ul>
+        <li class="target works_link_wrap col--pc-3 col--sp-4" data-category="cat-a">
+          <div class="backon_wrap">
+            <div class="backon"></div>
+            <a href="<?php echo esc_url(home_url('')); ?>/works/banner/banner_list/#bn_46" class="js-matchHeight">
+            <div class="works_link_box"><img src="<?php echo get_template_directory_uri(); ?>/img/banner/bn_17.jpg" alt=""></div>
+            <p>福岡ベルエポック美容専門学校様<br>
+				<span>出張オープンキャンパス 広告バナー</span></p>
+            </a> </div>
+        </li>        <li class="target works_link_wrap col--pc-3 col--sp-4" data-category="cat-b">
+          <div class="backon_wrap">
+            <div class="backon"></div>
+            <a href="<?php echo esc_url(home_url('')); ?>/works/banner/banner_list/#bn_46" class="js-matchHeight">
+            <div class="works_link_box"><img src="<?php echo get_template_directory_uri(); ?>/img/banner/bn_40.jpg" alt=""></div>
+				<p>福岡ベルエポック美容専門学校様</span><br>
+				<span>出張オープンキャンパス 広告バナー</span></p>
+            </a> </div>
+        </li>  </div>
 </section>
 
 </section>

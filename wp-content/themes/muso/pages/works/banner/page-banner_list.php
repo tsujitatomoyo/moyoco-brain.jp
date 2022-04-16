@@ -1,8 +1,8 @@
-<section class="PB--30 content-1000wrap">
+<section class="PB--30">
 	
 
 
-<div class="works_bn_wrap <?php /*?>works_random_wrap<?php */?>">
+<div class="works_bn_wrap<?php /*?> works_random_wrap<?php */?>">
 
   <section class="fadeIn wow" id="bn_44">
       <div class="works_bn_main_img"><img src="<?php echo get_template_directory_uri(); ?>/img/banner/bn_44.jpg" alt=""></div>
@@ -39,6 +39,37 @@
       <div class="works_bn_main_img"><img src="<?php echo get_template_directory_uri(); ?>/img/banner/bn_46.jpg" alt=""></div>
       <h3 class="works_bn_h"><span>ベルエポック美容専門学校様</span><br>
         オープンキャンパス特別ゲスト来校　Youtube広告バナー</h3>
+      <ul class="accordion-area">
+        <li>
+          <div class="bn_accordion"><a>
+            <h3 class="bn_accordion_ttl">詳細を見る</h3>
+            </a></div>
+          <div class="bn_accordion_box">
+            <h3 class="works_hp_h">目的</h3>
+            <p class="works_p">オープンキャンパスへの集客</p>
+            <h3 class="works_hp_h">ターゲット層</h3>
+            <p class="works_p">○性別・年齢<br>
+				女性　17〜18才<br>
+				○ペルソナ<br>
+				流行やおしゃれに敏感でSNSが好きな女子高生</p>
+            <h3 class="works_hp_h">制作ポイント</h3>
+            <p class="works_p">5秒という短い広告を想定していましたので、<br>
+・ゲストの存在、・オンラインでも来校でも参加可能という２点を大きく配置しました。</p>
+            <h3 class="works_hp_h">ツール</h3>
+            <p class="works_p">Illustrator / Photoshop</p>
+            <h3 class="works_hp_h">制作時間</h3>
+            <p class="works_p">1:30〜2:00</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+	
+	
+
+  <section class="fadeIn wow" id="bn_40">
+      <div class="works_bn_main_img"><div class="w--pc-40 w--sp-50 M--auto"><img src="<?php echo get_template_directory_uri(); ?>/img/banner/bn_40.jpg" alt=""></div></div>
+      <h3 class="works_bn_h"><span>ベルエポック美容専門学校様</span><br>
+        資料請求　Instagram ストーリーズ広告バナー</h3>
       <ul class="accordion-area">
         <li>
           <div class="bn_accordion"><a>
@@ -356,6 +387,69 @@
       </ul>
     </section>
 	
+	
+	
+  <section class="fadeIn wow" id="bn_42">
+      <div class="works_bn_main_img"><img src="<?php echo get_template_directory_uri(); ?>/img/banner/bn_42.jpg" alt=""></div>
+      <h3 class="works_bn_h"><span>札幌ベルエポック製菓調理ウェディング専門学校様</span><br>
+        ブランディング 広告バナー</h3>
+      <ul class="accordion-area">
+        <li>
+          <div class="bn_accordion"><a>
+            <h3 class="bn_accordion_ttl">詳細を見る</h3>
+            </a></div>
+          <div class="bn_accordion_box">
+            <h3 class="works_hp_h">目的</h3>
+            <p class="works_p">HPへの集客</p>
+            <h3 class="works_hp_h">ターゲット層</h3>
+            <p class="works_p">○性別・年齢<br>
+				男女　17〜18才<br>
+				○ペルソナ<br>
+				飲食に興味のある高校生</p>
+            <h3 class="works_hp_h">制作ポイント</h3>
+            <p class="works_p">学校カラーを使用しブランディングをイメージして作成しました。</p>
+            <h3 class="works_hp_h">ツール</h3>
+            <p class="works_p">Illustrator / Photoshop</p>
+            <h3 class="works_hp_h">制作時間</h3>
+            <p class="works_p">2:00</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+	
+	
+	
+	
+  <section class="fadeIn wow" id="bn_43">
+      <div class="works_bn_main_img"><img src="<?php echo get_template_directory_uri(); ?>/img/banner/bn_43.jpg" alt=""></div>
+      <h3 class="works_bn_h"><span>札幌ベルエポック製菓調理ウェディング専門学校様</span><br>
+        既卒者・社会人向け 広告バナー</h3>
+      <ul class="accordion-area">
+        <li>
+          <div class="bn_accordion"><a>
+            <h3 class="bn_accordion_ttl">詳細を見る</h3>
+            </a></div>
+          <div class="bn_accordion_box">
+            <h3 class="works_hp_h">目的</h3>
+            <p class="works_p">再進学を希望の方の集客</p>
+            <h3 class="works_hp_h">ターゲット層</h3>
+            <p class="works_p">○性別・年齢<br>
+				男女　19〜30才<br>
+				○ペルソナ<br>
+				飲食に興味のある既卒者・社会人向けなのでしっかりしたフォントを使用し落ち着いた雰囲気に仕上げました。</p>
+            <h3 class="works_hp_h">制作ポイント</h3>
+            <p class="works_p">学校カラーを使用しブランディングをイメージして作成しました。<br>
+			  </p>
+            <h3 class="works_hp_h">ツール</h3>
+            <p class="works_p">Illustrator / Photoshop</p>
+            <h3 class="works_hp_h">制作時間</h3>
+            <p class="works_p">2:00</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+	
+	
   <section class="fadeIn wow" id="bn_5">
       <div class="works_bn_main_img"><img src="<?php echo get_template_directory_uri(); ?>/img/banner/bn_5.jpg" alt=""></div>
       <h3 class="works_bn_h"><span>札幌ベルエポック製菓調理ウェディング専門学校様</span><br>
@@ -586,6 +680,44 @@
             <p class="works_p">Illustrator / Photoshop</p>
             <h3 class="works_hp_h">制作時間</h3>
             <p class="works_p">2:00</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+	
+	
+
+  <section class="fadeIn wow" id="bn_31">
+    <div class="works_bn_main_img">
+        <ul class="col__wrap--margin">
+          <li class="col--pc-6 col--sp-12"><img src="<?php echo get_template_directory_uri(); ?>/img/banner/bn_31.jpg" alt=""></li>
+          <li class="col--pc-6 col--sp-12"><img src="<?php echo get_template_directory_uri(); ?>/img/banner/bn_32.jpg" alt=""></li>
+        </ul>
+        <div class="M--auto w--pc-50 w--sp-100"><img src="<?php echo get_template_directory_uri(); ?>/img/banner/bn_35.jpg" alt=""></div>
+        </ul>
+      </div>
+	  
+	  
+      
+      <h3 class="works_bn_h"><span>美作市スポーツ医療看護専門学校</span><br>
+        コンテンツ 広告バナー</h3>
+      <ul class="accordion-area">
+        <li>
+          <div class="bn_accordion"><a>
+            <h3 class="bn_accordion_ttl">詳細を見る</h3>
+            </a></div>
+          <div class="bn_accordion_box">
+            <h3 class="works_hp_h">目的</h3>
+            <p class="works_p">学科ページへの集客</p>
+            <h3 class="works_hp_h">ターゲット層</h3>
+            <p class="works_p">○性別・年齢<br>
+				男女　17〜18才</p>
+            <h3 class="works_hp_h">制作ポイント</h3>
+            <p class="works_p">医療やスポーツ分野なので清潔感があり優しいデザインに仕上げました。</p>
+            <h3 class="works_hp_h">ツール</h3>
+            <p class="works_p">Illustrator / Photoshop</p>
+            <h3 class="works_hp_h">制作時間</h3>
+            <p class="works_p">3:00</p>
           </div>
         </li>
       </ul>
