@@ -1,99 +1,107 @@
-<section class="content-1000wrap">
-<h2>ABOUT</h2>
-
+<section class="content-1000wrap PB--50">
+	
+<div class="p_r_wrap">
+<h2 class="about_h2">ABOUT</h2>
+</div>
 
 	
-<div class="works_bn_wrap">
+<div class="works_bn_wrap PT--20">
 <ul class="col__wrap--margin">
           <li class="col--pc-3 col--sp-12">
 			  <div class="about_p_img1">
 			  </div></li>
           <li class="col--pc-9 col--sp-12">
 			  <div class="about_p_txt_box">
-			  <p class="MB--0">TSUJITA TOMOYO</p>
-			  <p class="MT--5">経歴<br>
-2015-2017 ECサイトのWEBデザイン・コーディングの業務を行う。<br>
-			  2019-2021 主に専門学校関連のWEBデザイン・コーディングの業務を行う。</p>
+			  <p class="about_p_txt">TSUJITA TOMOYO</p>
+			  <p class="about_p_txt_sub">経歴<br>
+				  2015 大阪総合デザイン専門学校 卒業<br>
+2015-2017 ECサイトのWEBデザイン・コーディング・の業務を行う。<br>
+			  2019-2021 主に専門学校関連のWEBデザイン・コーディング・ディレクションの業務を行う。</p>
 				  </div>
         </ul>
-	
-	<p>ダミーテキストダミーテキストダミーテキストダミーテキストダミーテキストダミーテキスト</p>
-
-	
-	
-	<p>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br>あ<br></p>
 </div>
 	
-	<div style="margin: auto;text-align: center;">
-    <div class="slide_box">
-        <img src="/wp-content/themes/muso/img/banner/bn_44.jpg" alt="">
-        <div class="screen"></div>
-    </div>
-    <div class="slide_box">
-        <img src="/wp-content/themes/muso/img/banner/bn_44.jpg" alt="">
-        <div class="screen"></div>
-    </div>
-    <div class="slide_box">
-        <img src="/wp-content/themes/muso/img/banner/bn_44.jpg" alt="">
-        <div class="screen"></div>
-    </div>
-    <div class="slide_box">
-        <img src="/wp-content/themes/muso/img/banner/bn_44.jpg" alt="">
-        <div class="screen"></div>
-    </div>
-    <div class="slide_box">
-        <img src="/wp-content/themes/muso/img/banner/bn_44.jpg" alt="">
-        <div class="screen"></div>
-    </div>
-    <div class="slide_box">
-        <img src="/wp-content/themes/muso/img/banner/bn_44.jpg" alt="">
-        <div class="screen"></div>
-    </div>
-    <div class="slide_box">
-       <img src="/wp-content/themes/muso/img/banner/bn_44.jpg" alt="">
-        <div class="screen"></div>
-    </div>
-    <div class="slide_box">
-        <img src="/wp-content/themes/muso/img/banner/bn_44.jpg" alt="">
-        <div class="screen"></div>
-    </div>
-	</div>
+
+
 
 	
 	
+<section class="MT--20" id="skill">
+<h2 class="MT--20">SKILL</h2>
+	<div class="works_skill_wrap MT--pc-30 MT--sp-10">
+		
+<table class="works_skill_table">
+	<tbody>
+        <tr>
+          <td><p>CSS/SCSS</p></td>
+          <td><div class="slide_box">
+              <p><img class="works_skill_border_img" src="<?php echo get_template_directory_uri(); ?>/img/about/skill_5.svg" alt=""></p>
+              <div class="screen"></div>
+            </div></td>
+        </tr>
+        <tr>
+          <td><p>PHP</p></td>
+          <td><div class="slide_box">
+              <p><img class="works_skill_border_img" src="<?php echo get_template_directory_uri(); ?>/img/about/skill_3.svg" alt=""></p>
+              <div class="screen"></div>
+            </div></td>
+        </tr>
+        <tr>
+          <td><p>JavaScript/jQuery</p></td>
+          <td><div class="slide_box">
+              <p><img class="works_skill_border_img" src="<?php echo get_template_directory_uri(); ?>/img/about/skill_4.svg" alt=""></p>
+              <div class="screen"></div>
+            </div></td>
+        </tr>
+        <tr>
+          <td><p>Canvas</p></td>
+          <td><div class="slide_box">
+              <p><img class="works_skill_border_img" src="<?php echo get_template_directory_uri(); ?>/img/about/skill_3.svg" alt=""></p>
+              <div class="screen"></div>
+            </div></td>
+        </tr>
+        <tr>
+          <td><p>Git</p></td>
+          <td><div class="slide_box">
+              <p><img class="works_skill_border_img" src="<?php echo get_template_directory_uri(); ?>/img/about/skill_3.svg" alt=""></p>
+              <div class="screen"></div>
+            </div></td>
+        </tr>
+        <tr>
+          <td><p>WordPress</p></td>
+          <td><div class="slide_box">
+              <p><img class="works_skill_border_img" src="<?php echo get_template_directory_uri(); ?>/img/about/skill_4.svg" alt=""></p>
+              <div class="screen"></div>
+            </div></td>
+        </tr>
+        <tr>
+          <td><p>Photoshop</p></td>
+          <td><div class="slide_box">
+              <p><img class="works_skill_border_img" src="<?php echo get_template_directory_uri(); ?>/img/about/skill_5.svg" alt=""></p>
+              <div class="screen"></div>
+            </div></td>
+        </tr>
+        <tr>
+          <td><p>Illustrator</p></td>
+          <td><div class="slide_box">
+              <p><img class="works_skill_border_img" src="<?php echo get_template_directory_uri(); ?>/img/about/skill_5.svg" alt=""></p>
+              <div class="screen"></div>
+            </div></td>
+        </tr>
+        <tr>
+          <td><p>Dreamweaver</p></td>
+          <td><div class="slide_box">
+              <p><img class="works_skill_border_img" src="<?php echo get_template_directory_uri(); ?>/img/about/skill_5.svg" alt=""></p>
+              <div class="screen"></div>
+            </div></td>
+        </tr>
+	</tbody>
+</table>
+		
+		
+		
+	</div>	
+</section>
 </section>
 
-<style>
-
-* {
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-.slide_box{
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-}
-
-.screen{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #fff;
-    transition: 2s cubic-bezier(.26,0,.07,1);
-}
-.screen.show{
-    transform: translateX(100%);
-}
-@keyframes line-anim {
-    to{
-        transform: translateY(100%);
-    }
-}
-	
-	</style>
 

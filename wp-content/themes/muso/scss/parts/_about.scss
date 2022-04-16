@@ -4,6 +4,9 @@
 .about_p_img1{
 	height: 320px;
     position: relative;
+	@include media-sp {
+			height: 120px;
+		}
 	&::before{
 	position: absolute;
     content: "";
@@ -15,6 +18,14 @@
     background-position: bottom;
     bottom: 6px;
 		background-repeat: no-repeat;
+		@include media-sp {
+			top: -20px;
+    height: 160px;
+    width: 75px;
+    background-image: url(/wp-content/themes/muso/img/about/p.gif);
+    left: 0;
+			
+		}
 	}
 	&::after{
 	       content: "";
@@ -26,6 +37,15 @@
     position: absolute;
     top: -21px;
 		background-repeat: no-repeat;
+		@include media-sp {
+			background-image: url(/wp-content/themes/muso/img/about/p.png);
+    bottom: -75px;
+    left: 72px;
+    height: 100%;
+    width: 120px;
+    top: auto;
+    z-index: 30;
+		}
 }
 	}
 
@@ -33,6 +53,31 @@
 	padding: 1rem 3rem;
     background-color: #EB593C;
     color: #FFF;
+	@include media-sp {
+	position: relative;
+    z-index: 25;
+		padding: 2rem 3rem 1rem;
+	}
+}
+
+.about_h2{
+	@include media-sp {
+	position: absolute;
+    right: 0px;
+    bottom: -150px;
+	}
+}
+
+
+
+.about_p_txt{
+	font-size: 1rem;
+	margin-bottom: 0;
+}
+
+.about_p_txt_sub{
+	font-size: 0.8rem;
+	margin-top: 0.5rem;
 }
 
 
@@ -42,15 +87,31 @@
 
 
 
+/* SKILL
+/////////////////////////////////////////////////////////////////////////////////////// */
+
+.works_skill_wrap{
+	width: 450px;
+    max-width: 1200px;
+    margin: auto;
+	@include media-sp {
+		width: 100%;
+	}
+}
+
+.works_skill_border_img{
+	width: 100%;
+	@include media-sp {
+		width: 100%;
+	}
+}
 
 
-
-
-
-
-
-
-
+.works_skill_table{
+	td{
+		padding: 0 1rem;
+	}
+}
 
 
 .slide_box{
@@ -66,15 +127,15 @@
     width: 100%;
     height: 100%;
     background: #fff;
-    transition: 2s cubic-bezier(.26,0,.07,1);
+    transition: 3s cubic-bezier(.26,0,.07,1);
 }
 .screen.show{
     transform: translateX(100%);
 }
-@keyframes line-anim {
-    to{
-        transform: translateY(100%);
-    }
-}
+//@keyframes line-anim {
+//    to{
+//        transform: translateY(100%);
+//    }
+//}
 
 
