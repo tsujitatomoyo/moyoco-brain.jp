@@ -19,7 +19,8 @@
         </h1></div>
       </section>
           
-      <section class="section scroll-section" data-scroll-section="" id="section2" data-scroll-section-id="section1" data-scroll-section-inview="" style="background-color: #EB593C;">
+	 
+      <section class="section scroll-section" data-scroll-section="" id="section2" data-scroll-section-id="section1" data-scroll-section-inview="" style="background-color: #EB593C;"><div class=" Box-pc">
         <div class="section-header">
           <div class="thumbnail section02-img01 trac-back">
             <figure data-scroll="" data-delay="0.05" class="is-inview p_r_wrap"><div class="top_main_img"></div><div class="fadeIn scrolldown4_wrap" style="animation-delay: 4s;"><div class="scrolldown4"><span>Scroll</span></div></div></figure>
@@ -27,7 +28,7 @@
           <div class="thumbnail section02-img02 is-inview" data-scroll="" data-scroll-speed="-2.8" data-scroll-position="">
             <figure></figure>
           </div>
-        </div>
+        </div></div>
       </section>
           
       <section class="section scroll-section" data-scroll-section="" id="section3" data-scroll-section-id="section2" data-scroll-section-inview="">

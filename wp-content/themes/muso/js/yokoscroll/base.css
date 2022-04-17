@@ -1061,7 +1061,14 @@ h1, h2, h3, h4, h5, h6 {
 	display: inline-block;
 	position: relative;
 	top: -4rem;
+
 }
+
+	@media (max-width: 768px) {
+		.title > .label {
+		top: 0rem;
+		}
+	}
 
 .title > a {
 	text-decoration: none;
