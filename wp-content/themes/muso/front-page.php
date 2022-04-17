@@ -1,5 +1,7 @@
 
 <?php get_header('front'); ?>
+ <canvas class="top_wave" id="waveCanvas" height="100px"></canvas>
+
 
 <div class="contents-main">
  <div class="main area-scroll" data-scroll-container="" data-horizontal="true">
@@ -11,18 +13,19 @@
           <h1 class="title size-xl"><span class="label">
             <span data-scroll="" data-scroll-speed="-2" data-delay="0.05" data-scroll-position="left" class="is-inview"><p class="bgextend __box1 bgLRextendTrigger_1 top_ttl_txt_letter-spacing __box1">
 				  <span class="bgappearTrigger_1">TSUJITA</span></p></span><br>
-            <span data-scroll="" data-scroll-speed="3.5" data-delay="0.05" data-scroll-position="left" class="is-inview">portfolio</span>
+			  <span data-scroll="" data-scroll-speed="-2" data-delay="0.05" data-scroll-position="left" class="is-inview"><p class="bgextend bgLRextendTrigger_2 top_ttl_txt_letter-spacing __box2" ><span class="bgappearTrigger_2">TOMOYO</span></p></span><br>
+            <span data-scroll="" data-scroll-speed="3.5" data-delay="0.05" data-scroll-position="left" class="is-inview"><p class="bgextend bgLRextendTrigger_3 top_ttl_txt_letter-spacing __box3"><span class="bgappearTrigger_3">PORTFOLIO</span></p></span>
           </span>
         </h1></div>
       </section>
           
-      <section class="section scroll-section" data-scroll-section="" id="section2" data-scroll-section-id="section1" data-scroll-section-inview="">
+      <section class="section scroll-section" data-scroll-section="" id="section2" data-scroll-section-id="section1" data-scroll-section-inview="" style="background-color: #EB593C;">
         <div class="section-header">
           <div class="thumbnail section02-img01 trac-back">
-            <figure data-scroll="" data-delay="0.05" class="is-inview"><img src="/wp-content/themes/muso/js/yokoscroll/section02-01.jpg"></figure>
+            <figure data-scroll="" data-delay="0.05" class="is-inview p_r_wrap"><div class="top_main_img"></div><div class="fadeIn scrolldown4_wrap" style="animation-delay: 4s;"><div class="scrolldown4"><span>Scroll</span></div></div></figure>
           </div>
           <div class="thumbnail section02-img02 is-inview" data-scroll="" data-scroll-speed="-2.8" data-scroll-position="">
-            <figure><img src="/wp-content/themes/muso/js/yokoscroll/section02-01.jpg"></figure>
+            <figure></figure>
           </div>
         </div>
       </section>

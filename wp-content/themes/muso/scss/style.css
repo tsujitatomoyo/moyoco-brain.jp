@@ -4462,12 +4462,14 @@ footer {
   background-color: rgba(171, 220, 214, 0.5); }
 
 .scrolldown4 {
-  /*描画位置※位置は適宜調整してください*/
   position: absolute;
-  left: -13.9rem;
-  /*矢印の動き1秒かけて永遠にループ*/
+  /* left: -13.9rem; */
+  -webkit-animation: arrowmove 1s ease-in-out infinite;
   animation: arrowmove 1s ease-in-out infinite;
-  z-index: 50;
+  z-index: 210;
+  top: 0;
+  right: 0;
+  width: 100%;
   /*スマホ 768px以下*/ }
   @media (max-width: 48em) {
     .scrolldown4 {
@@ -4484,42 +4486,38 @@ footer {
   100% {
     bottom: 1%; } }
 .scrolldown4 span {
-  /*描画位置*/
   position: absolute;
-  left: -20px;
-  bottom: 150px;
-  /*テキストの形状*/
-  color: #EB593C;
+  /* bottom: 110px; */
+  bottom: 190px;
+  color: #FFF;
   font-size: 0.7rem;
   letter-spacing: 0.05em;
-  /*縦書き設定*/
   -ms-writing-mode: tb-rl;
   -webkit-writing-mode: vertical-rl;
-  writing-mode: vertical-rl; }
+  writing-mode: vertical-rl;
+  right: calc( 50% - 34px ); }
 
 /* 矢印の描写 */
 .scrolldown4:before {
   content: "";
-  /*描画位置*/
   position: absolute;
-  bottom: 143px;
-  right: -6px;
-  /*矢印の形状*/
+  bottom: 170px;
+  right: calc( 50% - 46px );
   width: 1px;
   height: 20px;
-  background: #EB593C;
+  background: #FFF;
+  -webkit-transform: skewX(-31deg);
+  -ms-transform: skewX(-31deg);
   transform: skewX(-31deg); }
 
 .scrolldown4:after {
   content: "";
-  /*描画位置*/
   position: absolute;
-  bottom: 140px;
-  right: 0;
-  /*矢印の形状*/
+  bottom: 170px;
+  right: calc( 50% - 40px );
   width: 1px;
-  height: 200px;
-  background: #EB593C;
+  height: 120px;
+  background: #FFF;
   /*スマホ 768px以下*/ }
   @media (max-width: 48em) {
     .scrolldown4:after {
@@ -4669,17 +4667,21 @@ footer {
 
 /* ---- top ---- */
 .top_main_img {
+  left: 0;
+  right: 0;
+  width: 300px;
+  height: 300px;
+  position: absolute;
   margin: 0rem auto;
-  width: 15rem;
   background-image: url(/wp-content/themes/muso/img/common/brain.svg);
   background-repeat: no-repeat;
-  position: relative;
   z-index: 50;
-  padding: 19rem 7rem;
+  /* padding: 19rem 7rem; */
   background-size: contain;
   background-position: center;
+  -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
-  top: -3rem;
+  top: 8rem;
   /*スマホ 768px以下*/ }
   @media (max-width: 48em) {
     .top_main_img {
@@ -4703,7 +4705,7 @@ footer {
 
 .top_wave {
   position: fixed;
-  top: 35rem;
+  bottom: 5rem;
   width: 100%; }
 
 .top_wave canvas {
@@ -4729,29 +4731,22 @@ footer {
       left: 1rem; } }
 
 .top_ttl_txt_letter-spacing {
-  letter-spacing: 8px;
-  font-size: 16px; }
+  letter-spacing: 26px;
+  font-size: 3rem;
+  line-height: 4rem;
+  /*スマホ 768px以下*/ }
+  @media (max-width: 48em) {
+    .top_ttl_txt_letter-spacing {
+      font-size: 3rem; } }
   .top_ttl_txt_letter-spacing.__box1 span {
-    margin-bottom: -0.8px;
-    margin-left: 6px;
+    margin: 0 2px 0 12px;
     /*スマホ 768px以下*/ }
-    @media (max-width: 48em) {
-      .top_ttl_txt_letter-spacing.__box1 span {
-        margin: 0 10px; } }
   .top_ttl_txt_letter-spacing.__box2 span {
-    margin-bottom: -4px;
-    margin-top: 6px;
+    margin: 0 2px 0 12px;
     /*スマホ 768px以下*/ }
-    @media (max-width: 48em) {
-      .top_ttl_txt_letter-spacing.__box2 span {
-        margin: 0 10px; } }
   .top_ttl_txt_letter-spacing.__box3 span {
-    margin-right: -2px;
-    margin-left: 6.5px;
+    margin: 0 2px 0 12px;
     /*スマホ 768px以下*/ }
-    @media (max-width: 48em) {
-      .top_ttl_txt_letter-spacing.__box3 span {
-        margin: 10 10px; } }
 
 .top_ttl_txt {
   margin: 0;
@@ -4882,7 +4877,9 @@ footer {
   position: relative;
   overflow: hidden;
   /*　はみ出た色要素を隠す　*/
-  opacity: 0; }
+  opacity: 0;
+  margin: 0;
+  color: #FFF; }
 
 @keyframes bgextendAnimeBase {
   from {
