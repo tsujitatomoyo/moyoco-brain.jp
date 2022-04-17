@@ -55,12 +55,97 @@
 	  </div>
         
  </div>
-    <div class="item item04 js-item"><span>contents1</span></div>
-    <div class="item item05 js-item"><span>contents2</span></div>
+			
+			
+			
+
+    <div class="js-item">
+		<p class="MT--30">WORKS PICK UP</p>
+        <ul class="col__wrap--margin front_work_ul MR--5">
+          <li class="col--pc-2 col--sp-4 fadeInUp wow">
+            <div class="backon_wrap"> <a href="<?php echo esc_url(home_url('')); ?>/works/banner/banner_list/#bn_4">
+              <div class="works_link_box"><img src="<?php echo get_template_directory_uri(); ?>/img/banner/bn_4.jpg" alt=""></div>
+              <p><span>広告バナー</span></p>
+              </a> </div>
+          </li>
+          <li class="col--pc-2 col--sp-4 fadeInUp wow">
+            <div class="backon_wrap"> <a href="<?php echo esc_url(home_url('')); ?>/works/banner/banner_list/#bn_4">
+              <div class="works_link_box"><img src="<?php echo get_template_directory_uri(); ?>/img/banner/bn_4.jpg" alt=""></div>
+              <p><span>広告バナー</span></p>
+              </a> </div>
+          </li>
+          <li class="col--pc-2 col--sp-4 fadeInUp wow">
+            <div class="backon_wrap"> <a href="<?php echo esc_url(home_url('')); ?>/works/banner/banner_list/#bn_4">
+              <div class="works_link_box"><img src="<?php echo get_template_directory_uri(); ?>/img/banner/bn_4.jpg" alt=""></div>
+              <p><span>広告バナー</span></p>
+              </a> </div>
+          </li>
+          <li class="col--pc-2 col--sp-4 fadeInUp wow">
+            <div class="backon_wrap"> <a href="<?php echo esc_url(home_url('')); ?>/works/banner/banner_list/#bn_4">
+              <div class="works_link_box"><img src="<?php echo get_template_directory_uri(); ?>/img/banner/bn_4.jpg" alt=""></div>
+              <p><span>広告バナー</span></p>
+              </a> </div>
+          </li>
+          <li class="col--pc-2 col--sp-4 fadeInUp wow">
+            <div class="backon_wrap"> <a href="<?php echo esc_url(home_url('')); ?>/works/banner/banner_list/#bn_4">
+              <div class="works_link_box"><img src="<?php echo get_template_directory_uri(); ?>/img/banner/bn_4.jpg" alt=""></div>
+              <p><span>広告バナー</span></p>
+              </a> </div>
+          </li>
+          <li class="col--pc-2 col--sp-4 fadeInUp wow">
+            <div class="backon_wrap"> <a href="<?php echo esc_url(home_url('')); ?>/works/banner/banner_list/#bn_4">
+              <div class="works_link_box"><img src="<?php echo get_template_directory_uri(); ?>/img/banner/bn_4.jpg" alt=""></div>
+              <p><span>広告バナー</span></p>
+              </a> </div>
+          </li>
+        </ul>
+      </div>
+    <div class="js-item">
+        <ul class="col__wrap--margin front_work_ul">
+          <li class="col--pc-2 col--sp-4 fadeInUp wow">
+            <div class="backon_wrap"> <a href="<?php echo esc_url(home_url('')); ?>/works/banner/banner_list/#bn_4">
+              <div class="works_link_box"><img src="<?php echo get_template_directory_uri(); ?>/img/banner/bn_4.jpg" alt=""></div>
+              <p><span>広告バナー</span></p>
+              </a> </div>
+          </li>
+          <li class="col--pc-2 col--sp-4 fadeInUp wow">
+            <div class="backon_wrap"> <a href="<?php echo esc_url(home_url('')); ?>/works/banner/banner_list/#bn_4">
+              <div class="works_link_box"><img src="<?php echo get_template_directory_uri(); ?>/img/banner/bn_4.jpg" alt=""></div>
+              <p><span>広告バナー</span></p>
+              </a> </div>
+          </li>
+          <li class="col--pc-2 col--sp-4 fadeInUp wow">
+            <div class="backon_wrap"> <a href="<?php echo esc_url(home_url('')); ?>/works/banner/banner_list/#bn_4">
+              <div class="works_link_box"><img src="<?php echo get_template_directory_uri(); ?>/img/banner/bn_4.jpg" alt=""></div>
+              <p><span>広告バナー</span></p>
+              </a> </div>
+          </li>
+          <li class="col--pc-2 col--sp-4 fadeInUp wow">
+            <div class="backon_wrap"> <a href="<?php echo esc_url(home_url('')); ?>/works/banner/banner_list/#bn_4">
+              <div class="works_link_box"><img src="<?php echo get_template_directory_uri(); ?>/img/banner/bn_4.jpg" alt=""></div>
+              <p><span>広告バナー</span></p>
+              </a> </div>
+          </li>
+          <li class="col--pc-2 col--sp-4 fadeInUp wow">
+            <div class="backon_wrap"> <a href="<?php echo esc_url(home_url('')); ?>/works/banner/banner_list/#bn_4">
+              <div class="works_link_box"><img src="<?php echo get_template_directory_uri(); ?>/img/banner/bn_4.jpg" alt=""></div>
+              <p><span>広告バナー</span></p>
+              </a> </div>
+          </li>
+          <li class="col--pc-2 col--sp-4 fadeInUp wow">
+            <div class="backon_wrap"> <a href="<?php echo esc_url(home_url('')); ?>/works/banner/banner_list/#bn_4">
+              <div class="works_link_box"><img src="<?php echo get_template_directory_uri(); ?>/img/banner/bn_4.jpg" alt=""></div>
+              <p><span>広告バナー</span></p>
+              </a> </div>
+          </li>
+        </ul>
+      </div>
     <div class="item item06 js-item"><span>contents3</span></div>
     <div class="item item04 js-item"><span>contents4</span></div>
     <div class="item item05 js-item"><span>contents5</span></div>
     <div class="item item06 js-item"><span>contents6</span></div>
+	
+		
   </div>
 </div></div>
 

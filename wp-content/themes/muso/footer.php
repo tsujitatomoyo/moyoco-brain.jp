@@ -4,7 +4,7 @@
 
 
 
-<p class="copyright MT--0 MB--0" style="
+<p class="copyright MT--0 MB--0 fadeInUp wow" style="
     position: relative;text-align: center;background-color: #EB593C;padding: 1rem;
 ">© TSUJIT TOMOYO PORTFOLIO.</p>
 <?php wp_footer(); ?>
