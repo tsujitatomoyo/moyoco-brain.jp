@@ -2,6 +2,8 @@
 <html <?php language_attributes(); ?>>
 <head>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="<?php bloginfo('template_directory'); ?>/js/yokoscroll/locomotive-scroll.min.js"></script>
+	<script src="<?php bloginfo('template_directory'); ?>/js/yokoscroll/base.js"></script>
 	  <?php /*?><script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><?php */?>
   <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/4-1-4/js/4-1-4.js"></script>
@@ -18,7 +20,8 @@
 	<title>TSUJITA TOMOYO PORTFOLIO</title>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	
+	<link rel="stylesheet" href="/wp-content/themes/muso/js/yokoscroll/base.css"/>
+	<link rel="stylesheet" href="/wp-content/themes/muso/js/yokoscroll/style.css"/>
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/js/animate.css">
 	<link rel="stylesheet" type="text/css" href="http://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/move02/6-1/css/reset.css">
 	

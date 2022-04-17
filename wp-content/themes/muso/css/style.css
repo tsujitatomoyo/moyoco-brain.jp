@@ -4886,7 +4886,8 @@ footer {
   font-weight: bold;
   position: absolute;
   right: 30px;
-  top: 0; }
+  top: 0;
+  width: 500px; }
   .header_pc_menu p {
     text-align: center; }
 
@@ -5482,40 +5483,6 @@ footer {
   opacity: .1;
   background: yellow; }
 
-.title {
-  position: absolute;
-  left: 0;
-  top: 9rem;
-  width: 100%;
-  z-index: 1;
-  text-align: center;
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-  text-transform: uppercase;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
-  text-indent: .3em; }
-  .title.--right {
-    /*スマホ 768px以下*/ }
-    @media (max-width: 48em) {
-      .title.--right {
-        left: auto;
-        right: -50px;
-        top: 5rem; } }
-    @media screen and (max-width: 320px) {
-      .title.--right {
-        right: -35px;
-        top: 6.5rem; } }
-  .title.--left {
-    /*スマホ 768px以下*/ }
-    @media (max-width: 48em) {
-      .title.--left {
-        left: -50px;
-        top: 5rem; } }
-    @media screen and (max-width: 320px) {
-      .title.--left {
-        left: -35px;
-        top: 6.5rem; } }
-
 @-webkit-keyframes drift {
   from {
     -webkit-transform: rotate(0deg);
@@ -6071,9 +6038,6 @@ input {
   @media screen and (max-width: 320px) {
     .works_input_btn_design {
       min-width: 280px; } }
-
-h1 {
-  color: #fff; }
 
 group + group {
   margin-top: 20px; }

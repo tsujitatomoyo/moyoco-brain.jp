@@ -1,173 +1,81 @@
 
 <?php get_header('front'); ?>
 
+<div class="contents-main">
+ <div class="main area-scroll" data-scroll-container="" data-horizontal="true">
 
 
- <canvas class="top_wave" id="waveCanvas" height="100px"></canvas>
 
-
-		<div class="pin-spacer" ><div class="area js-area">
-  <div class="wrap js-wrap">
-    <div class="item js-item">   
-		<div class="p_r_wrap">
-		
-               
-         
-		
-		
-        <div class="">
-
-			
-			
-			
-			
-			  <div class="top_main_img">
-				
-				  <div class="top_ttl_txt--wrap">
-					  
-            <p class="p_r_wrap">
-				<ul class="">
-					
-					<li>
-              <div class="top_ttl_txt __box1"><p class="bgextend __box1 bgLRextendTrigger_1 top_ttl_txt_letter-spacing __box1">
-				  <span class="bgappearTrigger_1">TSUJITA</span></p></div>
-						</li>
-					<li class="Box-pc">
-              <div class="top_ttl_txt __box2"><p class="bgextend bgLRextendTrigger_2 top_ttl_txt_letter-spacing __box2" ><span class="bgappearTrigger_2">OMOY</span></p></div>
-					</li>
-					<li class="Box-sp">
-              <div class="top_ttl_txt __box2"><p class="bgextend bgLRextendTrigger_2 top_ttl_txt_letter-spacing __box2" ><span class="bgappearTrigger_2">TOMOYO</span></p></div>
-					</li>
-					<li>
-              <div class="top_ttl_txt __box3"><p class="bgextend bgLRextendTrigger_3 top_ttl_txt_letter-spacing __box3"><span class="bgappearTrigger_3">PORTFOLIO</span></p></div>
-					  </li>
-            </ul>
-					</p>
-					  
-				  </div>
-			  <div class="fadeIn scrolldown4_wrap" style="animation-delay: 4s;"><div class="scrolldown4"><span>Scroll</span></div>
-		</div>
-				  
-            </div>
+      <section class="section scroll-section" data-scroll-section="" id="section1" data-scroll-section-id="section0" data-scroll-section-inview="">
+        <div class="section-header">
+          <h1 class="title size-xl"><span class="label">
+            <span data-scroll="" data-scroll-speed="-2" data-delay="0.05" data-scroll-position="left" class="is-inview"><p class="bgextend __box1 bgLRextendTrigger_1 top_ttl_txt_letter-spacing __box1">
+				  <span class="bgappearTrigger_1">TSUJITA</span></p></span><br>
+            <span data-scroll="" data-scroll-speed="3.5" data-delay="0.05" data-scroll-position="left" class="is-inview">portfolio</span>
+          </span>
+        </h1></div>
+      </section>
           
+      <section class="section scroll-section" data-scroll-section="" id="section2" data-scroll-section-id="section1" data-scroll-section-inview="">
+        <div class="section-header">
+          <div class="thumbnail section02-img01 trac-back">
+            <figure data-scroll="" data-delay="0.05" class="is-inview"><img src="/wp-content/themes/muso/js/yokoscroll/section02-01.jpg"></figure>
+          </div>
+          <div class="thumbnail section02-img02 is-inview" data-scroll="" data-scroll-speed="-2.8" data-scroll-position="">
+            <figure><img src="/wp-content/themes/muso/js/yokoscroll/section02-01.jpg"></figure>
+          </div>
         </div>
-	  
-	  </div>
+      </section>
+          
+      <section class="section scroll-section" data-scroll-section="" id="section3" data-scroll-section-id="section2" data-scroll-section-inview="">
+        <div class="section-header setion_headding">
+          <h2 class="title section-title type-line_bottom"><span class="label is-inview" data-scroll="" data-scroll-speed="-2" data-scroll-direction="vertical">PICKUP</span></h2>
+        </div>
+        <div class="section-block">
+          <p class="concept">あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、<br>
+            うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。<br>
+            またそのなかでいっしょになったたくさんのひとたち、<br>
+            ファゼーロとロザーロ、羊飼のミーロや、<br>
+            顔の赤いこどもたち、地主のテーモ、山猫博士のボーガント・デストゥパーゴなど、<br>
+            いまこの暗い巨きな石の建物のなかで考えていると、</p>
+        </div>
         
- </div>
-			
-			
-			
-
-    <div class="js-item">
-		<p class="MT--30">WORKS PICK UP</p>
-        <ul class="col__wrap--margin front_work_ul MR--5">
-          <li class="col--pc-2 col--sp-4 fadeInUp wow">
-            <div class="backon_wrap"> <a href="<?php echo esc_url(home_url('')); ?>/works/banner/banner_list/#bn_4">
-              <div class="works_link_box"><img src="<?php echo get_template_directory_uri(); ?>/img/banner/bn_4.jpg" alt=""></div>
-              <p><span>広告バナー</span></p>
-              </a> </div>
-          </li>
-          <li class="col--pc-2 col--sp-4 fadeInUp wow">
-            <div class="backon_wrap"> <a href="<?php echo esc_url(home_url('')); ?>/works/banner/banner_list/#bn_4">
-              <div class="works_link_box"><img src="<?php echo get_template_directory_uri(); ?>/img/banner/bn_4.jpg" alt=""></div>
-              <p><span>広告バナー</span></p>
-              </a> </div>
-          </li>
-          <li class="col--pc-2 col--sp-4 fadeInUp wow">
-            <div class="backon_wrap"> <a href="<?php echo esc_url(home_url('')); ?>/works/banner/banner_list/#bn_4">
-              <div class="works_link_box"><img src="<?php echo get_template_directory_uri(); ?>/img/banner/bn_4.jpg" alt=""></div>
-              <p><span>広告バナー</span></p>
-              </a> </div>
-          </li>
-          <li class="col--pc-2 col--sp-4 fadeInUp wow">
-            <div class="backon_wrap"> <a href="<?php echo esc_url(home_url('')); ?>/works/banner/banner_list/#bn_4">
-              <div class="works_link_box"><img src="<?php echo get_template_directory_uri(); ?>/img/banner/bn_4.jpg" alt=""></div>
-              <p><span>広告バナー</span></p>
-              </a> </div>
-          </li>
-          <li class="col--pc-2 col--sp-4 fadeInUp wow">
-            <div class="backon_wrap"> <a href="<?php echo esc_url(home_url('')); ?>/works/banner/banner_list/#bn_4">
-              <div class="works_link_box"><img src="<?php echo get_template_directory_uri(); ?>/img/banner/bn_4.jpg" alt=""></div>
-              <p><span>広告バナー</span></p>
-              </a> </div>
-          </li>
-          <li class="col--pc-2 col--sp-4 fadeInUp wow">
-            <div class="backon_wrap"> <a href="<?php echo esc_url(home_url('')); ?>/works/banner/banner_list/#bn_4">
-              <div class="works_link_box"><img src="<?php echo get_template_directory_uri(); ?>/img/banner/bn_4.jpg" alt=""></div>
-              <p><span>広告バナー</span></p>
-              </a> </div>
-          </li>
-        </ul>
-      </div>
-    <div class="js-item">
-        <ul class="col__wrap--margin front_work_ul">
-          <li class="col--pc-2 col--sp-4 fadeInUp wow">
-            <div class="backon_wrap"> <a href="<?php echo esc_url(home_url('')); ?>/works/banner/banner_list/#bn_4">
-              <div class="works_link_box"><img src="<?php echo get_template_directory_uri(); ?>/img/banner/bn_4.jpg" alt=""></div>
-              <p><span>広告バナー</span></p>
-              </a> </div>
-          </li>
-          <li class="col--pc-2 col--sp-4 fadeInUp wow">
-            <div class="backon_wrap"> <a href="<?php echo esc_url(home_url('')); ?>/works/banner/banner_list/#bn_4">
-              <div class="works_link_box"><img src="<?php echo get_template_directory_uri(); ?>/img/banner/bn_4.jpg" alt=""></div>
-              <p><span>広告バナー</span></p>
-              </a> </div>
-          </li>
-          <li class="col--pc-2 col--sp-4 fadeInUp wow">
-            <div class="backon_wrap"> <a href="<?php echo esc_url(home_url('')); ?>/works/banner/banner_list/#bn_4">
-              <div class="works_link_box"><img src="<?php echo get_template_directory_uri(); ?>/img/banner/bn_4.jpg" alt=""></div>
-              <p><span>広告バナー</span></p>
-              </a> </div>
-          </li>
-          <li class="col--pc-2 col--sp-4 fadeInUp wow">
-            <div class="backon_wrap"> <a href="<?php echo esc_url(home_url('')); ?>/works/banner/banner_list/#bn_4">
-              <div class="works_link_box"><img src="<?php echo get_template_directory_uri(); ?>/img/banner/bn_4.jpg" alt=""></div>
-              <p><span>広告バナー</span></p>
-              </a> </div>
-          </li>
-          <li class="col--pc-2 col--sp-4 fadeInUp wow">
-            <div class="backon_wrap"> <a href="<?php echo esc_url(home_url('')); ?>/works/banner/banner_list/#bn_4">
-              <div class="works_link_box"><img src="<?php echo get_template_directory_uri(); ?>/img/banner/bn_4.jpg" alt=""></div>
-              <p><span>広告バナー</span></p>
-              </a> </div>
-          </li>
-          <li class="col--pc-2 col--sp-4 fadeInUp wow">
-            <div class="backon_wrap"> <a href="<?php echo esc_url(home_url('')); ?>/works/banner/banner_list/#bn_4">
-              <div class="works_link_box"><img src="<?php echo get_template_directory_uri(); ?>/img/banner/bn_4.jpg" alt=""></div>
-              <p><span>広告バナー</span></p>
-              </a> </div>
-          </li>
-        </ul>
-      </div>
-    <div class="item item06 js-item"><span>contents3</span></div>
-    <div class="item item04 js-item"><span>contents4</span></div>
-    <div class="item item05 js-item"><span>contents5</span></div>
-    <div class="item item06 js-item"><span>contents6</span></div>
-	
+      </section>
+      <section class="section scroll-section" data-scroll-section="" id="section4" data-scroll-section-id="section3" data-scroll-section-inview="">
+        <div class="section-block">
+          <div class="article-list">
+            <article class="article">
+              <div class="thumbnail trac-back"><figure data-scroll="" data-delay="0.5" style="background-image:url(/wp-content/themes/muso/js/yokoscroll/section02-01.jpg)"></figure></div>
+              <h3 class="title"><span class="label">あのイーハトーヴォのすきとおった風</span></h3>
+              <p class="description">夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
+            </article>
+            <article class="article">
+              <div class="thumbnail trac-back"><figure data-scroll="" data-delay="0.5" style="background-image:url(/wp-content/themes/muso/js/yokoscroll/section02-01.jpg)"></figure></div>
+              <h3 class="title"><span class="label">あのイーハトーヴォのすきとおった風</span></h3>
+              <p class="description">夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
+            </article>
+            <article class="article">
+              <div class="thumbnail trac-back"><figure data-scroll="" data-delay="0.5" style="background-image:url(/wp-content/themes/muso/js/yokoscroll/section02-01.jpg)"></figure></div>
+              <h3 class="title"><span class="label">あのイーハトーヴォのすきとおった風</span></h3>
+              <p class="description">夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
+            </article>
+           <article class="article">
+              <div class="thumbnail trac-back"><figure data-scroll="" data-delay="0.5" style="background-image:url(/wp-content/themes/muso/js/yokoscroll/section02-01.jpg)"></figure></div>
+              <h3 class="title"><span class="label">あのイーハトーヴォのすきとおった風</span></h3>
+              <p class="description">夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
+            </article>
+           <article class="article">
+              <div class="thumbnail trac-back"><figure data-scroll="" data-delay="0.5" style="background-image:url(/wp-content/themes/muso/js/yokoscroll/section02-01.jpg)"></figure></div>
+              <h3 class="title"><span class="label">あのイーハトーヴォのすきとおった風</span></h3>
+              <p class="description">夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
+            </article>
+        </div>
+        </div>
+      </section>
+ 
+    </div>
 		
-  </div>
-</div></div>
-
-
-	
-
-	
-	
-	
-	
-
-	
-<?php /*?>	<section id="box2" class="box" data-section-name="Access">
-				<section class="section3">
-  <div class="container">
-  コンテンツコンテンツ<br>コンテンツコンテンツ<br>コンテンツコンテンツ<br>コンテンツコンテンツ<br>コンテンツコンテンツ<br>コンテンツコンテンツ<br>コンテンツコンテンツ<br>コンテンツコンテンツ<br>コンテンツコンテンツ<br>コンテンツコンテンツ<br>コンテンツコンテンツ<br>コンテンツコンテンツ<br>コンテンツコンテンツ<br>コンテンツコンテンツ<br>コンテンツコンテンツ<br>コンテンツコンテンツ<br>コンテンツコンテンツ<br>コンテンツコンテンツ<br>コンテンツコンテンツ<br>コンテンツコンテンツ<br>
 </div>
-</section>
-	<!--/box--></section><?php */?>
-		
-		
-
 
 
 <?php get_footer(); ?>
