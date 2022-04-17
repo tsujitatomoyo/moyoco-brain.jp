@@ -185,9 +185,9 @@ function BgFadeAnime(i){
 // 画面が読み込まれたらすぐに動かしたい場合の記述
   $(window).on('load', function(){
 	  var i = 1;
-    setTimeout('BgFadeAnime(i = 1);', 0);/* アニメーション用の関数を呼ぶ*/
-	  setTimeout('BgFadeAnime(i = 2);', 500);/* アニメーション用の関数を呼ぶ*/
-	  setTimeout('BgFadeAnime(i = 3);', 1000);/* アニメーション用の関数を呼ぶ*/
+    setTimeout('BgFadeAnime(i = 1);', 2700);/* アニメーション用の関数を呼ぶ*/
+	  setTimeout('BgFadeAnime(i = 2);', 3200);/* アニメーション用の関数を呼ぶ*/
+	  setTimeout('BgFadeAnime(i = 3);', 3700);/* アニメーション用の関数を呼ぶ*/
   });// ここまで画面が読み込まれたらすぐに動かしたい場合の記述
 
 

@@ -45,7 +45,7 @@
 					</p>
 					  
 				  </div>
-			  <div class="fadeIn scrolldown4_wrap" style="animation-delay: 2s;"><div class="scrolldown4"><span>Scroll</span></div>
+			  <div class="fadeIn scrolldown4_wrap" style="animation-delay: 4s;"><div class="scrolldown4"><span>Scroll</span></div>
 		</div>
 				  
             </div>

@@ -4666,30 +4666,6 @@ footer {
 .item06 {
   background-color: rgba(171, 220, 214, 0.5); }
 
-.st1 {
-  fill: none;
-  stroke: #E4007F;
-  stroke-width: 8;
-  stroke-miterlimit: 10; }
-
-#rect1 {
-  stroke-dasharray: 1030px;
-  -webkit-animation: line_move 3s;
-  animation: line_move 3s;
-  stroke-linecap: round; }
-
-@-webkit-keyframes line_move {
-  0% {
-    stroke-dashoffset: 1030px; }
-  100% {
-    stroke-dashoffset: 0px; } }
-
-@keyframes line_move {
-  0% {
-    stroke-dashoffset: 1030px; }
-  100% {
-    stroke-dashoffset: 0px; } }
-
 .scrolldown4 {
   /*描画位置※位置は適宜調整してください*/
   position: absolute;
@@ -5294,74 +5270,61 @@ footer {
   width: 100%;
   height: 100%;
   z-index: 999;
-  background: #333;
+  background: #EB593C;
   text-align: center;
   color: #fff; }
 
 /* Loading画像中央配置　*/
 #splash_logo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%); }
+  position: relative;
+  width: 100%;
+  height: 100%; }
 
 /* Loading アイコンの大きさ設定　*/
-#splash_logo img {
-  width: 260px; }
+#splash_logo svg {
+  margin: auto;
+  position: absolute; }
+
+.front_anime_svg_box {
+  position: relative;
+  width: 27%;
+  top: 39vh;
+  left: 27%;
+  /*スマホ 768px以下*/ }
+  @media (max-width: 48em) {
+    .front_anime_svg_box {
+      width: 55%;
+      top: 34%;
+      left: 1rem;
+      right: 0; } }
 
 /* fadeUpをするアイコンの動き */
-.fadeUp {
-  -webkit-animation-name: fadeUpAnime;
-  animation-name: fadeUpAnime;
-  -webkit-animation-duration: 0.5s;
-  animation-duration: 0.5s;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  opacity: 0; }
+#front-anime {
+  -webkit-animation-name: front-anime;
+  animation-name: front-anime;
+  stroke-dasharray: 1600px;
+  -webkit-animation: front-anime 3s;
+  animation: front-anime 3s;
+  -webkit-animation-fill-mode: backwards;
+  animation-fill-mode: backwards; }
 
-@-webkit-keyframes fadeUpAnime {
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(100px);
-    transform: translateY(100px); }
-  to {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    transform: translateY(0); } }
+@-webkit-keyframes front-anime {
+  0% {
+    stroke-dashoffset: 1600px; }
+  100% {
+    stroke-dashoffset: 0px; } }
 
-@keyframes fadeUpAnime {
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(100px);
-    transform: translateY(100px); }
-  to {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    transform: translateY(0); } }
+@keyframes front-anime {
+  0% {
+    stroke-dashoffset: 1600px; }
+  100% {
+    stroke-dashoffset: 0px; } }
 
-/*========= レイアウトのためのCSS ===============*/
-#container {
-  width: 100%;
-  height: 100vh;
-  background: #ccc;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  text-align: center; }
-
-a, a:hover, a:visited {
-  color: #333; }
-
-a:hover {
-  text-decoration: none; }
+.st1 {
+  fill: none;
+  stroke: #333333;
+  stroke-width: 8;
+  stroke-miterlimit: 10; }
 
 /* front-page
 /////////////////////////////////////////////////////////////////////////////////////// */
