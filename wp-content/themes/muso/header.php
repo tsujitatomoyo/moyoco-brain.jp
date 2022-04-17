@@ -67,7 +67,7 @@
 <div id="g-nav-list"><!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
 <ul class="gnavi">
 <li class="li_anime_icon" style="animation-delay: 0.4s;animation-duration:1s; "><div class="g-nav_icon"></div></li>
-<li class="li_anime" style="animation-delay: 0.3s;"><a href="<?php echo esc_url(home_url('')); ?>">HOME</a></li>	
+<li class="li_anime" style="animation-delay: 0.3s;"><a href="/">HOME</a></li>	
 <li class="li_anime" style="animation-delay: 0.5s;"><a href="<?php echo esc_url(home_url('')); ?>/works">WORKS</a></li>	
 <li class="li_anime" style="animation-delay: 0.7s;"><a href="<?php echo esc_url(home_url('')); ?>/about">ABOUT</a></li>	
 <li class="li_anime" style="animation-delay: 0.9s;"><a href="<?php echo esc_url(home_url('')); ?>/about#skill">SKILL</a></li>	
@@ -96,7 +96,7 @@
     <div class="header_pc_menu Box-pc">
           <ul class="col__wrap fadeIn gnavi">
         <li class="col--3">
-              <p><a href="<?php echo esc_url(home_url('')); ?>">HOME</a></p>
+              <p><a href="/">HOME</a></p>
             </li>
         <li class="col--3">
               <p><a href="<?php echo esc_url(home_url('')); ?>/works">WORKS</a></p>
