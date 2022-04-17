@@ -1,4 +1,8 @@
-<?php get_header(); ?>
+
+<?php get_header('front'); ?>
+
+
+
  <canvas class="top_wave" id="waveCanvas" height="100px"></canvas>
 
 

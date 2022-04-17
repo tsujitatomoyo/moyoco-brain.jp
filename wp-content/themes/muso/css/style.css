@@ -5287,6 +5287,82 @@ footer {
   position: inherit;
   z-index: 5; }
 
+/* Loading背景画面設定　*/
+#splash {
+  /*fixedで全面に固定*/
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background: #333;
+  text-align: center;
+  color: #fff; }
+
+/* Loading画像中央配置　*/
+#splash_logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+/* Loading アイコンの大きさ設定　*/
+#splash_logo img {
+  width: 260px; }
+
+/* fadeUpをするアイコンの動き */
+.fadeUp {
+  -webkit-animation-name: fadeUpAnime;
+  animation-name: fadeUpAnime;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  opacity: 0; }
+
+@-webkit-keyframes fadeUpAnime {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px); }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0); } }
+
+@keyframes fadeUpAnime {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px); }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0); } }
+
+/*========= レイアウトのためのCSS ===============*/
+#container {
+  width: 100%;
+  height: 100vh;
+  background: #ccc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center; }
+
+a, a:hover, a:visited {
+  color: #333; }
+
+a:hover {
+  text-decoration: none; }
+
 /* front-page
 /////////////////////////////////////////////////////////////////////////////////////// */
 .frontPage__bg {

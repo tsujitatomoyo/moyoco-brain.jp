@@ -1,3 +1,8 @@
+  <div id="splash">
+    <div id="splash_logo">
+      <img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/4-1-4/img/loading.svg" alt="" class="fadeUp">
+    </div>
+  </div>
 <?php get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">

@@ -40,12 +40,13 @@
 <div id="cursor" class="c-follower is-blend"><span>View</span></div>
 <div id="pointer" class="c-pointer"></div>
 </section>
-	
 
-<?php /*?><div id="loading">
-  <img src="/wp-content/themes/muso/img/common/brain.svg" alt="ローディング用画像">
-</div><?php */?>
- 
+		
+  <div id="splash">
+    <div id="splash_logo">
+      <img src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/4-1-4/img/loading.svg" alt="" class="fadeUp">
+    </div>
+  </div>
 		
 		
 	<section class="main_content">
@@ -69,8 +70,8 @@
 <li class="li_anime_icon" style="animation-delay: 0.4s;animation-duration:1s; "><div class="g-nav_icon"></div></li>
 <li class="li_anime" style="animation-delay: 0.3s;"><a href="<?php echo esc_url(home_url('')); ?>">HOME</a></li>	
 <li class="li_anime" style="animation-delay: 0.5s;"><a href="<?php echo esc_url(home_url('')); ?>/works">WORKS</a></li>	
-<li class="li_anime" style="animation-delay: 0.7s;"><a href="<?php echo esc_url(home_url('')); ?>/about">ABOUT</a></li>	
-<li class="li_anime" style="animation-delay: 0.9s;"><a href="<?php echo esc_url(home_url('')); ?>/about#skill">SKILL</a></li>	
+<li class="li_anime" style="animation-delay: 0.7s;"><a href="<?php echo esc_url(home_url('')); ?>/about#skill">SKILL</a></li>	
+<li class="li_anime" style="animation-delay: 0.9s;"><a href="<?php echo esc_url(home_url('')); ?>/about">ABOUT</a></li>	
 </ul>
 </div>
 </nav>
@@ -102,10 +103,10 @@
               <p><a href="<?php echo esc_url(home_url('')); ?>/works">WORKS</a></p>
             </li>
         <li class="col--3">
-              <p><a href="<?php echo esc_url(home_url('')); ?>/about">ABOUT</a></p>
+              <p><a href="<?php echo esc_url(home_url('')); ?>/about#skill">SKILL</a></p>
             </li>
         <li class="col--3">
-              <p><a href="<?php echo esc_url(home_url('')); ?>/about#skill">SKILL</a></p>
+              <p><a href="<?php echo esc_url(home_url('')); ?>/about">ABOUT</a></p>
             </li>
       </ul>
         </div>
