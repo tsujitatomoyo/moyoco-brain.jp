@@ -46,12 +46,12 @@
         </div></div>
       </section>
           
-      <section class="section scroll-section" data-scroll-section="" id="section3" data-scroll-section-id="section2" data-scroll-section-inview="">
+      <section class="section scroll-section section-margin" data-scroll-section="" id="section3" data-scroll-section-id="section2" data-scroll-section-inview="">
         <div class="section-header setion_headding">
-          <h2 class="title section-title type-line_bottom"><span class="label is-inview" data-scroll="" data-scroll-speed="-2" data-scroll-direction="vertical">PICKUP</span></h2>
+          <h2 class="title section-title type-line_bottom font-bold"><span class="label is-inview" data-scroll="" data-scroll-speed="-2" data-scroll-direction="vertical"><span style="color: #1A8BAC;">P</span>ICK<span style="color: #EB593C;">U</span>P</span></h2>
         </div>
         <div class="section-block">
-          <p class="concept">過去に制作したものの一部をご覧いただくことができます。<br>
+          <p class="concept">過去の制作物の一部をご覧いただくことができます。<br>
 			  それぞれの制作物をクリックしていただきますと、より詳細にご覧いただけます。<br>
 			他の制作物は<a style="text-decoration: underline;" href="<?php echo esc_url(home_url('')); ?>/works">WORKS</a>ページに掲載しております。<br>
 			You can view some of our past productions. <br>
@@ -60,7 +60,7 @@ Other Productions are listed on the <a style="text-decoration: underline;" href=
         </div>
         
       </section>
-      <section class="section scroll-section" data-scroll-section="" id="section4" data-scroll-section-id="section3" data-scroll-section-inview="">
+      <section class="section scroll-section section-margin" data-scroll-section="" id="section4" data-scroll-section-id="section3" data-scroll-section-inview="">
         <div class="section-block">
           <div class="article-list">
             <article class="article"><a href="<?php echo esc_url(home_url('')); ?>/works/hp/hp_003/">
@@ -95,6 +95,10 @@ Other Productions are listed on the <a style="text-decoration: underline;" href=
     </div>
 		
 </div>
-
+  <footer class="contents-footer">
+    <section class="section">
+    <p class="copyright">© 2022 TSUJITA TOMOYO.</p>
+    <section>
+  </section></section></footer>
 
 <?php get_footer(); ?>

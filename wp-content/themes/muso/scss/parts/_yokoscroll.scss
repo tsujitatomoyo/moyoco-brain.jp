@@ -2189,6 +2189,7 @@ a:hover {
   position: absolute;
   left: 0;
   bottom: 0;
+	background-color: transparent;
 }
 
 .contents-footer .section > * {
@@ -2366,7 +2367,7 @@ a:hover {
 
 .title.section-title {
   font-size: 14vh;
-  font-weight: 200;
+  //font-weight: 200;
   letter-spacing: .05em;
 }
 
@@ -2590,6 +2591,12 @@ a:hover {
   /*border-left: 1px solid #000;*/
 }
 
+.section-margin{
+	@include media-pc {
+	margin-top: -5rem!important;
+		}
+}
+
 .scroll-section .thumbnail figure {
   width: 100%;
   height: 100%;
@@ -2797,7 +2804,7 @@ a:hover {
     height: 14px;
     position: absolute;
     top: 102px;
-    right: -20%;
+    right: -23%;
     z-index: 1;
 }
   
@@ -2807,7 +2814,7 @@ a:hover {
     height: 40px;
     position: absolute;
     top: 100px;
-    right: -20%;
+    right: -28%;
     z-index: 1;
 }
   

@@ -6,7 +6,7 @@
 
 <p class="copyright MT--0 MB--0 fadeInUp wow" style="
     position: relative;text-align: center;background-color: #EB593C;padding: 1rem;
-">© TSUJIT TOMOYO PORTFOLIO.</p>
+">© 2022 TSUJITA TOMOYO.</p>
 <?php wp_footer(); ?>
 </footer>
 

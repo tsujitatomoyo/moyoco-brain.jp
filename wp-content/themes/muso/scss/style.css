@@ -4026,6 +4026,9 @@ h6 {
     width: 100%;
     height: auto; }
 
+.font-bold {
+  font-weight: bold; }
+
 .footer {
   z-index: 1001;
   width: 100%;
@@ -4681,7 +4684,7 @@ footer {
   background-position: center;
   -webkit-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
-  top: 8rem;
+  top: 20vh;
   /*スマホ 768px以下*/ }
   @media (max-width: 48em) {
     .top_main_img {
@@ -7862,7 +7865,8 @@ a:hover {
   font-size: 12px;
   position: absolute;
   left: 0;
-  bottom: 0; }
+  bottom: 0;
+  background-color: transparent; }
 
 .contents-footer .section > * {
   max-width: none; }
@@ -8003,7 +8007,6 @@ a:hover {
 
 .title.section-title {
   font-size: 14vh;
-  font-weight: 200;
   letter-spacing: .05em; }
 
 .title.page-title {
@@ -8185,6 +8188,12 @@ a:hover {
   margin-top: 0;
   /*border-left: 1px solid #000;*/ }
 
+.section-margin {
+  /*pc769px以上*/ }
+  @media all and (min-width: 48.0625em) {
+    .section-margin {
+      margin-top: -5rem !important; } }
+
 .scroll-section .thumbnail figure {
   width: 100%;
   height: 100%;
@@ -8362,7 +8371,7 @@ a:hover {
   height: 14px;
   position: absolute;
   top: 102px;
-  right: -20%;
+  right: -23%;
   z-index: 1; }
 
 .section02-img05 {
@@ -8370,7 +8379,7 @@ a:hover {
   height: 40px;
   position: absolute;
   top: 100px;
-  right: -20%;
+  right: -28%;
   z-index: 1; }
 
 .section02-img06 {
