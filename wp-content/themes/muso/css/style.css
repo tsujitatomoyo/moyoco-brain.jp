@@ -6404,10 +6404,12 @@ a.btn--orange:hover {
 .about_p_img1 {
   height: 320px;
   position: relative;
+  z-index: 30;
   /*スマホ 768px以下*/ }
   @media (max-width: 48em) {
     .about_p_img1 {
-      height: 120px; } }
+      height: 120px;
+      z-index: auto; } }
   .about_p_img1::before {
     position: absolute;
     content: "";
@@ -6452,6 +6454,8 @@ a.btn--orange:hover {
   padding: 1rem 3rem;
   background-color: #EB593C;
   color: #FFF;
+  position: relative;
+  z-index: 25;
   /*スマホ 768px以下*/ }
   @media (max-width: 48em) {
     .about_p_txt_box {
@@ -6478,7 +6482,7 @@ a.btn--orange:hover {
 /* SKILL
 /////////////////////////////////////////////////////////////////////////////////////// */
 .works_skill_wrap {
-  width: 450px;
+  width: 500px;
   max-width: 1200px;
   margin: auto;
   /*スマホ 768px以下*/ }
