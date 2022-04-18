@@ -44,7 +44,7 @@
 	<div class="works_hp_wrap">
 		<h3 class="works_hp_h">制作</h3>
 		<p class="works_p"></p>
- <ul class="col__wrap--margin w--pc-80 M--auto">
+ <ul class="col__wrap--margin M--auto">
       <li class="col--pc-6 col--sp-6"><a class="js-modal-open btn btn-flat" data-target="modal01"><span><i class="fa-solid fa-desktop"></i></span></a></li>
       <li class="col--pc-6 col--sp-6"><a class="js-modal-open btn btn-flat" data-target="modal02"><span><i class="fas fa-mobile-alt"></i></span></a></li>
     </ul>

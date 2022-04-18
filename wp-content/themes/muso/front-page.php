@@ -66,44 +66,41 @@ Other Productions are listed on the <a style="text-decoration: underline;" href=
             <article class="article" style="border-left: 1px solid #333;">
 				<a href="<?php echo esc_url(home_url('')); ?>/works/hp/hp_003/">
 					<div class="front_wroks_item_box">
-              <div class="thumbnail trac-back"><figure data-scroll="" data-delay="0.5" style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/works/hp/hp_002_main.png)"></figure></div>
-              <h3 class="title"><span class="label">あのイーハトーヴォのすきとおった風</span></h3>
-              <p class="description">夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
+              <div class="thumbnail trac-back"><figure data-scroll="" data-delay="0.5" style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/works/hp/hp_003_main.png"></figure></div>
+              <h3 class="title"><span class="label">WEBサイト</span></h3>
+              <p class="description">デザイン/コーディング</p>
+            </div></a></article>
+            <article class="article">
+				<a href="<?php echo esc_url(home_url('')); ?>/works/banner/banner_list/#bn_42">
+					<div class="front_wroks_item_box">
+              <div class="thumbnail trac-back"><figure data-scroll="" data-delay="0.5" style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/banner/bn_42.jpg)"></figure></div>
+              <h3 class="title"><span class="label">ブランディング 広告バナー</span></h3>
+              <p class="description">デザイン</p>
             </div></a></article>
             <article class="article">
 				<a href="<?php echo esc_url(home_url('')); ?>/works/hp/hp_003/">
 					<div class="front_wroks_item_box">
-              <div class="thumbnail trac-back"><figure data-scroll="" data-delay="0.5" style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/works/hp/hp_002_main.png)"></figure></div>
-              <h3 class="title"><span class="label">あのイーハトーヴォのすきとおった風</span></h3>
-              <p class="description">夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
+              <div class="thumbnail trac-back"><figure data-scroll="" data-delay="0.5" style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/works/hp/hp_003_main.png"></figure></div>
+              <h3 class="title"><span class="label">WEBサイト</span></h3>
+              <p class="description">デザイン/コーディング</p>
             </div></a></article>
             <article class="article">
-				<a href="<?php echo esc_url(home_url('')); ?>/works/hp/hp_003/">
+				<a href="<?php echo esc_url(home_url('')); ?>/works/banner/banner_list/#bn_42">
 					<div class="front_wroks_item_box">
-              <div class="thumbnail trac-back"><figure data-scroll="" data-delay="0.5" style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/works/hp/hp_002_main.png)"></figure></div>
-              <h3 class="title"><span class="label">あのイーハトーヴォのすきとおった風</span></h3>
-              <p class="description">夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
+              <div class="thumbnail trac-back"><figure data-scroll="" data-delay="0.5" style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/banner/bn_42.jpg)"></figure></div>
+              <h3 class="title"><span class="label">ブランディング 広告バナー</span></h3>
+              <p class="description">デザイン</p>
             </div></a></article>
-           <article class="article">
-				<a href="<?php echo esc_url(home_url('')); ?>/works/hp/hp_003/">
+            <article class="article">
+				<a href="<?php echo esc_url(home_url('')); ?>/works/banner/banner_list/#bn_42">
 					<div class="front_wroks_item_box">
-              <div class="thumbnail trac-back"><figure data-scroll="" data-delay="0.5" style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/works/hp/hp_002_main.png)"></figure></div>
-              <h3 class="title"><span class="label">あのイーハトーヴォのすきとおった風</span></h3>
-              <p class="description">夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
-            </div></a></article>
-           <article class="article">
-				<a href="<?php echo esc_url(home_url('')); ?>/works/hp/hp_003/">
-					<div class="front_wroks_item_box">
-              <div class="thumbnail trac-back"><figure data-scroll="" data-delay="0.5" style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/works/hp/hp_002_main.png)"></figure></div>
-              <h3 class="title"><span class="label">あのイーハトーヴォのすきとおった風</span></h3>
-              <p class="description">夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
+              <div class="thumbnail trac-back"><figure data-scroll="" data-delay="0.5" style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/banner/bn_42.jpg)"></figure></div>
+              <h3 class="title"><span class="label">ブランディング 広告バナー</span></h3>
+              <p class="description">デザイン</p>
             </div></a></article>
            <article class="article">
 				</article>
-			  <article class="article">
-				</article>
-			  <article class="article">
-				</article>
+
         </div>
         </div>
       </section>
