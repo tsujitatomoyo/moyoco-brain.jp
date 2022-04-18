@@ -1055,14 +1055,19 @@
     margin: auto;
     //position: absolute;
 }
+#splash_logo svg path{
+        stroke: $point-color;
+}
+
 
 .front_anime_svg_box{
     position: absolute;
-    width: 110px;
+    width: 120px;
     top: 38vh;
     left: 0;
     right: 0;
     height: 100px;
+	margin: auto;
 	@include media-sp {
 		width: 55%;
     top: 34%;

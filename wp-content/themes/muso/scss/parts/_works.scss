@@ -574,6 +574,9 @@ a.btn-flat:before {
   -webkit-transform: translateX(-98%) translateY(-70%) rotate(135deg);
   transform: translateX(-98%) translateY(-70%) rotate(135deg);
   background: $main-color;
+	@include media-sp {
+		width: 200%;
+	}
 }
 
 a.btn-flat:hover:before {

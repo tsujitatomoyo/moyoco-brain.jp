@@ -74,28 +74,49 @@ Other Productions are listed on the <a style="text-decoration: underline;" href=
 				<a href="<?php echo esc_url(home_url('')); ?>/works/banner/banner_list/#bn_42">
 					<div class="front_wroks_item_box">
               <div class="thumbnail trac-back"><figure data-scroll="" data-delay="0.5" style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/banner/bn_42.jpg)"></figure></div>
-              <h3 class="title"><span class="label">ブランディング 広告バナー</span></h3>
+              <h3 class="title"><span class="label">広告バナー</span></h3>
               <p class="description">デザイン</p>
             </div></a></article>
             <article class="article">
-				<a href="<?php echo esc_url(home_url('')); ?>/works/hp/hp_003/">
+				<a href="<?php echo esc_url(home_url('')); ?>/works/hp/hp_004/">
 					<div class="front_wroks_item_box">
-              <div class="thumbnail trac-back"><figure data-scroll="" data-delay="0.5" style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/works/hp/hp_003_main.png"></figure></div>
-              <h3 class="title"><span class="label">WEBサイト</span></h3>
+              <div class="thumbnail trac-back"><figure data-scroll="" data-delay="0.5" style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/works/hp/hp_004_main.png"></figure></div>
+              <h3 class="title"><span class="label">コンテンツページ</span></h3>
               <p class="description">デザイン/コーディング</p>
             </div></a></article>
-            <article class="article">
-				<a href="<?php echo esc_url(home_url('')); ?>/works/banner/banner_list/#bn_42">
+           <article class="article">
+				<a href="<?php echo esc_url(home_url('')); ?>/works/banner/banner_list/#bn_4">
 					<div class="front_wroks_item_box">
-              <div class="thumbnail trac-back"><figure data-scroll="" data-delay="0.5" style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/banner/bn_42.jpg)"></figure></div>
-              <h3 class="title"><span class="label">ブランディング 広告バナー</span></h3>
+              <div class="thumbnail trac-back"><figure data-scroll="" data-delay="0.5" style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/banner/bn_4.jpg)"></figure></div>
+              <h3 class="title"><span class="label">広告バナー</span></h3>
               <p class="description">デザイン</p>
             </div></a></article>
             <article class="article">
-				<a href="<?php echo esc_url(home_url('')); ?>/works/banner/banner_list/#bn_42">
+				<a href="<?php echo esc_url(home_url('')); ?>/works/banner/banner_list/#bn_12">
 					<div class="front_wroks_item_box">
-              <div class="thumbnail trac-back"><figure data-scroll="" data-delay="0.5" style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/banner/bn_42.jpg)"></figure></div>
-              <h3 class="title"><span class="label">ブランディング 広告バナー</span></h3>
+              <div class="thumbnail trac-back"><figure data-scroll="" data-delay="0.5" style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/banner/bn_12.jpg)"></figure></div>
+              <h3 class="title"><span class="label">広告バナー</span></h3>
+              <p class="description">デザイン</p>
+            </div></a></article>
+            <article class="article">
+				<a href="<?php echo esc_url(home_url('')); ?>/works/hp/hp_006/">
+					<div class="front_wroks_item_box">
+              <div class="thumbnail trac-back"><figure data-scroll="" data-delay="0.5" style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/works/hp/hp_006_main.png"></figure></div>
+              <h3 class="title"><span class="label">トップページ</span></h3>
+              <p class="description">デザイン/コーディング</p>
+            </div></a></article>
+           <article class="article">
+				<a href="<?php echo esc_url(home_url('')); ?>/works/banner/banner_list/#bn_44">
+					<div class="front_wroks_item_box">
+              <div class="thumbnail trac-back"><figure data-scroll="" data-delay="0.5" style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/banner/bn_44.jpg)"></figure></div>
+              <h3 class="title"><span class="label">広告バナー</span></h3>
+              <p class="description">デザイン</p>
+            </div></a></article>
+            <article class="article">
+				<a href="<?php echo esc_url(home_url('')); ?>/works/banner/banner_list/#bn_40">
+					<div class="front_wroks_item_box">
+              <div class="thumbnail trac-back"><figure data-scroll="" data-delay="0.5" style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/banner/bn_40.jpg)"></figure></div>
+              <h3 class="title"><span class="label">ストーリーズ広告バナー</span></h3>
               <p class="description">デザイン</p>
             </div></a></article>
            <article class="article">
