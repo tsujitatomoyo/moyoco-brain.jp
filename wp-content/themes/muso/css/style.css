@@ -5579,6 +5579,25 @@ footer {
       .front_work_ul .backon_wrap a {
         padding: 0.5rem; } }
 
+.front_wroks_item_box {
+  width: 300px;
+  height: 300px;
+  /* vertical-align: middle; */
+  background-color: aquamarine;
+  padding: 1rem;
+  /*スマホ 768px以下*/ }
+  @media (max-width: 48em) {
+    .front_wroks_item_box {
+      width: 100%;
+      margin: 1rem 0; } }
+
+.front_ttl_label {
+  margin-top: -8rem;
+  /*スマホ 768px以下*/ }
+  @media (max-width: 48em) {
+    .front_ttl_label {
+      margin: auto; } }
+
 .p_r_wrap {
   position: relative; }
 
@@ -5967,7 +5986,7 @@ input {
     grid-template-columns: repeat(2, 1fr); } }
 
 .gallery {
-  margin: 50px 0; }
+  padding-bottom: 5rem; }
 
 .works_link_wrap div.backon {
   opacity: 0;
@@ -7283,8 +7302,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   /*line-height: 1.4;*/
   display: inline-block;
-  position: relative;
-  top: -4rem; }
+  position: relative; }
 
 @media (max-width: 768px) {
   .title > .label {
@@ -8902,12 +8920,11 @@ a:hover {
   flex-wrap: wrap; }
 
 .article-list > * {
-  padding: 0 var(--margin);
-  margin: 0 !important;
-  border-left: 1px solid var(--black-color); }
-
-.article-list > :last-child {
-  border-right: 1px solid var(--black-color); }
+  padding: 0 6rem;
+  /*スマホ 768px以下*/ }
+  @media (max-width: 48em) {
+    .article-list > * {
+      padding: 0 0.5rem; } }
 
 .article-list .thumbnail {
   width: 100%; }
@@ -8921,6 +8938,34 @@ a:hover {
 .article-list .article .title {
   margin-top: var(--margin-top);
   font-weight: 400; }
+
+.article-list .article {
+  margin-top: 4rem;
+  /*スマホ 768px以下*/ }
+  @media (max-width: 48em) {
+    .article-list .article {
+      margin: auto; } }
+
+.article-list .article:nth-of-type(2n) {
+  margin-top: 1rem;
+  /*スマホ 768px以下*/ }
+  @media (max-width: 48em) {
+    .article-list .article:nth-of-type(2n) {
+      margin: auto; } }
+
+.article-list .article:nth-of-type(3n) {
+  margin-top: -2rem;
+  /*スマホ 768px以下*/ }
+  @media (max-width: 48em) {
+    .article-list .article:nth-of-type(3n) {
+      margin: auto; } }
+
+.article-list .article:nth-of-type(4n) {
+  margin-top: 1rem;
+  /*スマホ 768px以下*/ }
+  @media (max-width: 48em) {
+    .article-list .article:nth-of-type(4n) {
+      margin: auto; } }
 
 .journal-list .article .description {
   color: #aaa; }
@@ -8946,8 +8991,6 @@ a:hover {
   .article-list > * {
     padding: 0;
     border: none !important; }
-  .article-list > * + * {
-    margin-top: var(--margin-l) !important; }
   .article-list .thumbnail {
     width: 100%;
     height: auto; }

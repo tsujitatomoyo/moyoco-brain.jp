@@ -992,7 +992,7 @@ h1, h2, h3, h4, h5, h6 {
 	/*line-height: 1.4;*/
 	display: inline-block;
 	position: relative;
-	top: -4rem;
+	//top: -4rem;
 
 }
 
@@ -2937,13 +2937,17 @@ a:hover {
 }
 
 .article-list > * {
-  padding: 0 var(--margin);
-  margin: 0 !important;
-  border-left: 1px solid var(--black-color);
+	padding: 0 6rem;
+  //padding: 0 var(--margin);
+  //margin: 0 !important;
+  //border-left: 1px solid var(--black-color);
+	@include media-sp {
+		padding: 0 0.5rem;
+	}
 }
 
 .article-list > :last-child {
-  border-right: 1px solid var(--black-color);
+  //border-right: 1px solid var(--black-color);
 }
 
 .article-list .thumbnail {
@@ -2960,6 +2964,35 @@ a:hover {
 .article-list .article .title {
   margin-top: var(--margin-top);
   font-weight: 400;
+}
+
+.article-list .article{
+  margin-top: 4rem;
+	@include media-sp {
+		margin: auto;
+	}
+}
+
+.article-list .article:nth-of-type(2n){
+  margin-top: 1rem;
+	@include media-sp {
+		margin: auto;
+	}
+}
+
+.article-list .article:nth-of-type(3n){
+  margin-top: -2rem;
+	@include media-sp {
+		margin: auto;
+	}
+}
+
+
+.article-list .article:nth-of-type(4n){
+  margin-top: 1rem;
+	@include media-sp {
+		margin: auto;
+	}
 }
 
 .journal-list .article .description {
@@ -2993,7 +3026,7 @@ a:hover {
     border: none !important;
   }
   .article-list > * + * {
-    margin-top: var(--margin-l) !important;
+    //margin-top: var(--margin-l) !important;
   }
 
   .article-list .thumbnail {

@@ -10,7 +10,7 @@
 
       <section class="section scroll-section" data-scroll-section="" id="section1" data-scroll-section-id="section0" data-scroll-section-inview="">
         <div class="section-header">
-          <h1 class="title size-xl"><span class="label">
+          <h1 class="title size-xl"><span class="label front_ttl_label">
             <span data-scroll="" data-scroll-speed="-2" data-delay="0.05" data-scroll-position="left" class="is-inview"><p class="bgextend __box1 bgLRextendTrigger_1 top_ttl_txt_letter-spacing __box1">
 				  <span class="bgappearTrigger_1">TSUJITA</span></p></span><br>
 			  <span data-scroll="" data-scroll-speed="-2" data-delay="0.05" data-scroll-position="left" class="is-inview"><p class="bgextend bgLRextendTrigger_2 top_ttl_txt_letter-spacing __box2" ><span class="bgappearTrigger_2">TOMOYO</span></p></span><br>
@@ -21,7 +21,7 @@
           
 	 
       <section class="section scroll-section" data-scroll-section="" id="section2" data-scroll-section-id="section1" data-scroll-section-inview="" style="background-color: #EB593C;"><div class=" Box-pc">
-        <div class="section-header">
+        <div class="section-header Box-pc">
           <div class="thumbnail section02-img01 trac-back">
             <figure data-scroll="" data-delay="0.05" class="is-inview p_r_wrap"><div class="top_main_img"></div><div class="fadeIn scrolldown4_wrap" style="animation-delay: 4s;"><div class="scrolldown4"><span>Scroll</span></div></div></figure>
           </div>
@@ -63,31 +63,47 @@ Other Productions are listed on the <a style="text-decoration: underline;" href=
       <section class="section scroll-section section-margin" data-scroll-section="" id="section4" data-scroll-section-id="section3" data-scroll-section-inview="">
         <div class="section-block">
           <div class="article-list">
-            <article class="article"><a href="<?php echo esc_url(home_url('')); ?>/works/hp/hp_003/">
-              <div class="thumbnail trac-back"><figure data-scroll="" data-delay="0.5" style="background-image:url(/wp-content/themes/muso/js/yokoscroll/section02-01.jpg)"></figure></div>
+            <article class="article" style="border-left: 1px solid #333;">
+				<a href="<?php echo esc_url(home_url('')); ?>/works/hp/hp_003/">
+					<div class="front_wroks_item_box">
+              <div class="thumbnail trac-back"><figure data-scroll="" data-delay="0.5" style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/works/hp/hp_002_main.png)"></figure></div>
               <h3 class="title"><span class="label">あのイーハトーヴォのすきとおった風</span></h3>
               <p class="description">夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
-            </a></article>
+            </div></a></article>
             <article class="article">
-              <div class="thumbnail trac-back"><figure data-scroll="" data-delay="0.5" style="background-image:url(/wp-content/themes/muso/js/yokoscroll/section02-01.jpg)"></figure></div>
+				<a href="<?php echo esc_url(home_url('')); ?>/works/hp/hp_003/">
+					<div class="front_wroks_item_box">
+              <div class="thumbnail trac-back"><figure data-scroll="" data-delay="0.5" style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/works/hp/hp_002_main.png)"></figure></div>
               <h3 class="title"><span class="label">あのイーハトーヴォのすきとおった風</span></h3>
               <p class="description">夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
-            </article>
+            </div></a></article>
             <article class="article">
-              <div class="thumbnail trac-back"><figure data-scroll="" data-delay="0.5" style="background-image:url(/wp-content/themes/muso/js/yokoscroll/section02-01.jpg)"></figure></div>
+				<a href="<?php echo esc_url(home_url('')); ?>/works/hp/hp_003/">
+					<div class="front_wroks_item_box">
+              <div class="thumbnail trac-back"><figure data-scroll="" data-delay="0.5" style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/works/hp/hp_002_main.png)"></figure></div>
               <h3 class="title"><span class="label">あのイーハトーヴォのすきとおった風</span></h3>
               <p class="description">夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
-            </article>
+            </div></a></article>
            <article class="article">
-              <div class="thumbnail trac-back"><figure data-scroll="" data-delay="0.5" style="background-image:url(/wp-content/themes/muso/js/yokoscroll/section02-01.jpg)"></figure></div>
+				<a href="<?php echo esc_url(home_url('')); ?>/works/hp/hp_003/">
+					<div class="front_wroks_item_box">
+              <div class="thumbnail trac-back"><figure data-scroll="" data-delay="0.5" style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/works/hp/hp_002_main.png)"></figure></div>
               <h3 class="title"><span class="label">あのイーハトーヴォのすきとおった風</span></h3>
               <p class="description">夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
-            </article>
+            </div></a></article>
            <article class="article">
-              <div class="thumbnail trac-back"><figure data-scroll="" data-delay="0.5" style="background-image:url(/wp-content/themes/muso/js/yokoscroll/section02-01.jpg)"></figure></div>
+				<a href="<?php echo esc_url(home_url('')); ?>/works/hp/hp_003/">
+					<div class="front_wroks_item_box">
+              <div class="thumbnail trac-back"><figure data-scroll="" data-delay="0.5" style="background-image:url(<?php echo get_template_directory_uri(); ?>/img/works/hp/hp_002_main.png)"></figure></div>
               <h3 class="title"><span class="label">あのイーハトーヴォのすきとおった風</span></h3>
               <p class="description">夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
-            </article>
+            </div></a></article>
+           <article class="article">
+				</article>
+			  <article class="article">
+				</article>
+			  <article class="article">
+				</article>
         </div>
         </div>
       </section>
@@ -95,10 +111,6 @@ Other Productions are listed on the <a style="text-decoration: underline;" href=
     </div>
 		
 </div>
-  <footer class="contents-footer">
-    <section class="section">
-    <p class="copyright">© 2022 TSUJITA TOMOYO.</p>
-    <section>
-  </section></section></footer>
 
-<?php get_footer(); ?>
+
+<?php get_footer('front'); ?>
