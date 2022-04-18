@@ -4971,6 +4971,9 @@ footer {
       letter-spacing: 16px;
       font-size: 1.5rem;
       line-height: 4rem; } }
+  @media screen and (max-width: 320px) {
+    .top_ttl_txt_letter-spacing {
+      font-size: 1rem; } }
   .top_ttl_txt_letter-spacing.__box1 span {
     margin: 0 2px 0 12px;
     /*スマホ 768px以下*/ }
@@ -7080,7 +7083,11 @@ background-color: #fff;
 .contents-footer.position-bottom {
   width: 100%;
   position: absolute;
-  bottom: 0; }
+  bottom: 0;
+  /*スマホ 768px以下*/ }
+  @media (max-width: 48em) {
+    .contents-footer.position-bottom {
+      text-align: center; } }
 
 .contents-footer .section.copyright {
   padding: 10px;
@@ -8306,7 +8313,9 @@ a:hover {
 
 @media (max-width: 768px) {
   .contents-footer {
-    position: static; } }
+    position: static;
+    text-align: center;
+    color: #333333; } }
 
 /*---------------------------------------------------------------
 	section

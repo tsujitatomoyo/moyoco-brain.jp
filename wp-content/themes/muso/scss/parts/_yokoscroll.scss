@@ -702,6 +702,9 @@ background-color: #fff;
 	width: 100%;
 	position: absolute;
 	bottom: 0;
+	@include media-sp {
+		text-align: center;
+	}
 }
 
 .contents-footer .section.copyright {
@@ -2199,6 +2202,8 @@ a:hover {
 @media (max-width: 768px) {
   .contents-footer {
     position: static;
+	  text-align: center;
+	  color: $font-color__defo;
   }
 }
 

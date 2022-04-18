@@ -52,7 +52,7 @@
         </div>
         <div class="section-block">
           <p class="concept">過去の制作物の一部をご覧いただくことができます。<br>
-			  それぞれの制作物をクリックしていただきますと、より詳細にご覧いただけます。<br>
+			  それぞれの制作物をクリックしていただきますと、<br class="Box-sp">より詳細にご覧いただけます。<br>
 			他の制作物は<a style="text-decoration: underline;" href="<?php echo esc_url(home_url('')); ?>/works">WORKS</a>ページに掲載しております。<br>
 			You can view some of our past productions. <br>
 Please click on each piece to see more details. <br>
