@@ -23,7 +23,7 @@
       <section class="section scroll-section" data-scroll-section="" id="section2" data-scroll-section-id="section1" data-scroll-section-inview="" style="background-color: #EB593C;"><div class=" Box-pc">
         <div class="section-header Box-pc">
           <div class="thumbnail section02-img01 trac-back">
-            <figure data-scroll="" data-delay="0.05" class="is-inview p_r_wrap"><div class="top_main_img"></div><div class="fadeIn scrolldown4_wrap" style="animation-delay: 4s;"><div class="scrolldown4"><span>Scroll</span></div></div></figure>
+            <figure class="is-inview p_r_wrap"><div class="top_main_img"></div><div class="fadeIn scrolldown4_wrap" style="animation-delay: 4s;"><div class="scrolldown4"><span>Scroll</span></div></div></figure>
           </div>
           <div class="thumbnail section02-img02 is-inview" data-scroll="" data-scroll-speed="-3" data-scroll-position="">
             <figure><img src="<?php echo get_template_directory_uri(); ?>/img/common/nerve.png" alt=""></figure>
@@ -39,6 +39,12 @@
           </div>
 			<div class="thumbnail section02-img07 is-inview" data-scroll="" data-scroll-speed="-2" data-scroll-position="">
             <figure><img src="<?php echo get_template_directory_uri(); ?>/img/common/circle.png" alt=""></figure>
+          </div>
+			<div class="thumbnail section02-img09 is-inview" data-scroll="" data-scroll-speed="-2" data-scroll-position="">
+            <figure><img src="<?php echo get_template_directory_uri(); ?>/img/common/circle.png" alt=""></figure>
+          </div>
+			<div class="thumbnail section02-img08 is-inview" data-scroll="" data-scroll-speed="-2.5" data-scroll-position="">
+            <figure><img src="<?php echo get_template_directory_uri(); ?>/img/common/circle2.png" alt=""></figure>
           </div>
 			<div class="thumbnail section02-img03 is-inview" data-scroll="" data-scroll-speed="-2.5" data-scroll-position="">
             <figure><img src="<?php echo get_template_directory_uri(); ?>/img/common/nerve2.png" alt=""></figure>
