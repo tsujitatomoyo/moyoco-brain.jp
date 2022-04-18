@@ -26,6 +26,15 @@
 
 	  
     <ul class="targets col__wrap--margin works_random_wrap">
+        <li class="target works_link_wrap col--pc-3 col--sp-4" data-category="cat-c">
+          <div class="backon_wrap">
+            <div class="backon"></div>
+            <a href="<?php echo esc_url(home_url('')); ?>/works/others/others_001/" class="js-matchHeight">
+            <div class="works_link_box"><img src="<?php echo get_template_directory_uri(); ?>/img/works/others/others_001_main.png" alt=""></div>
+            <p>札幌ベルエポック製菓調理ウェディング様<br>
+				<span>コンテンツ企画・カスタム投稿</span></p>
+            </a> </div>
+        </li>
         <li class="target works_link_wrap col--pc-3 col--sp-4" data-category="cat-a">
           <div class="backon_wrap">
             <div class="backon"></div>
