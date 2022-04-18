@@ -423,7 +423,7 @@
     position: absolute;
     bottom: 170px;
     right: calc( 50% - 46px );
-    width: 1px;
+    width: 3px;
     height: 20px;
     background: #FFF;
     -webkit-transform: skewX(-31deg);
@@ -436,7 +436,7 @@
     position: absolute;
     bottom: 170px;
     right: calc( 50% - 40px );
-    width: 1px;
+    width: 3px;
     height: 120px;
     background: #FFF;
 	@include media-sp {
@@ -669,6 +669,11 @@
       position: fixed;
    bottom: 5rem;
 	width: 100%;
+	@include media-sp {
+		    position: absolute;
+    top: 17rem;
+    width: 100%;
+	}
 }
 
 .top_wave canvas {

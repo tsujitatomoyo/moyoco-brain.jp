@@ -45,7 +45,7 @@
 </section>
 		
 		
-<div id="splash">
+<?php /*?><div id="splash">
       <div id="splash_logo">
     <div class="front_anime_svg_box">
           <svg viewBox="0 0 360 380">
@@ -53,7 +53,7 @@
       </svg>
         </div>
   </div>
-    </div>
+    </div><?php */?>
 		
 
 

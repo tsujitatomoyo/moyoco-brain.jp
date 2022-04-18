@@ -25,8 +25,23 @@
           <div class="thumbnail section02-img01 trac-back">
             <figure data-scroll="" data-delay="0.05" class="is-inview p_r_wrap"><div class="top_main_img"></div><div class="fadeIn scrolldown4_wrap" style="animation-delay: 4s;"><div class="scrolldown4"><span>Scroll</span></div></div></figure>
           </div>
-          <div class="thumbnail section02-img02 is-inview" data-scroll="" data-scroll-speed="-2.8" data-scroll-position="">
-            <figure></figure>
+          <div class="thumbnail section02-img02 is-inview" data-scroll="" data-scroll-speed="-3" data-scroll-position="">
+            <figure><img src="<?php echo get_template_directory_uri(); ?>/img/common/nerve.png" alt=""></figure>
+          </div>
+			<div class="thumbnail section02-img04 is-inview" data-scroll="" data-scroll-speed="-2" data-scroll-position="">
+            <figure><img src="<?php echo get_template_directory_uri(); ?>/img/common/circle.png" alt=""></figure>
+          </div>
+			<div class="thumbnail section02-img05 is-inview" data-scroll="" data-scroll-speed="-2.2" data-scroll-position="">
+            <figure><img src="<?php echo get_template_directory_uri(); ?>/img/common/circle2.png" alt=""></figure>
+          </div>
+			<div class="thumbnail section02-img06 is-inview" data-scroll="" data-scroll-speed="-2.5" data-scroll-position="">
+            <figure><img src="<?php echo get_template_directory_uri(); ?>/img/common/circle2.png" alt=""></figure>
+          </div>
+			<div class="thumbnail section02-img07 is-inview" data-scroll="" data-scroll-speed="-2" data-scroll-position="">
+            <figure><img src="<?php echo get_template_directory_uri(); ?>/img/common/circle.png" alt=""></figure>
+          </div>
+			<div class="thumbnail section02-img03 is-inview" data-scroll="" data-scroll-speed="-2.5" data-scroll-position="">
+            <figure><img src="<?php echo get_template_directory_uri(); ?>/img/common/nerve2.png" alt=""></figure>
           </div>
         </div></div>
       </section>
@@ -36,23 +51,23 @@
           <h2 class="title section-title type-line_bottom"><span class="label is-inview" data-scroll="" data-scroll-speed="-2" data-scroll-direction="vertical">PICKUP</span></h2>
         </div>
         <div class="section-block">
-          <p class="concept">あのイーハトーヴォのすきとおった風、夏でも底に冷たさをもつ青いそら、<br>
-            うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。<br>
-            またそのなかでいっしょになったたくさんのひとたち、<br>
-            ファゼーロとロザーロ、羊飼のミーロや、<br>
-            顔の赤いこどもたち、地主のテーモ、山猫博士のボーガント・デストゥパーゴなど、<br>
-            いまこの暗い巨きな石の建物のなかで考えていると、</p>
+          <p class="concept">過去に制作したものの一部をご覧いただくことができます。<br>
+			  それぞれの制作物をクリックしていただきますと、より詳細にご覧いただけます。<br>
+			他の制作物は<a style="text-decoration: underline;" href="<?php echo esc_url(home_url('')); ?>/works">WORKS</a>ページに掲載しております。<br>
+			You can view some of our past productions. <br>
+Please click on each piece to see more details. <br>
+Other Productions are listed on the <a style="text-decoration: underline;" href="<?php echo esc_url(home_url('')); ?>/works">WORKS</a> page.</p>
         </div>
         
       </section>
       <section class="section scroll-section" data-scroll-section="" id="section4" data-scroll-section-id="section3" data-scroll-section-inview="">
         <div class="section-block">
           <div class="article-list">
-            <article class="article">
+            <article class="article"><a href="<?php echo esc_url(home_url('')); ?>/works/hp/hp_003/">
               <div class="thumbnail trac-back"><figure data-scroll="" data-delay="0.5" style="background-image:url(/wp-content/themes/muso/js/yokoscroll/section02-01.jpg)"></figure></div>
               <h3 class="title"><span class="label">あのイーハトーヴォのすきとおった風</span></h3>
               <p class="description">夏でも底に冷たさをもつ青いそら、うつくしい森で飾られたモリーオ市、郊外のぎらぎらひかる草の波。</p>
-            </article>
+            </a></article>
             <article class="article">
               <div class="thumbnail trac-back"><figure data-scroll="" data-delay="0.5" style="background-image:url(/wp-content/themes/muso/js/yokoscroll/section02-01.jpg)"></figure></div>
               <h3 class="title"><span class="label">あのイーハトーヴォのすきとおった風</span></h3>
